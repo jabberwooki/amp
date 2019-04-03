@@ -1,16 +1,16 @@
-uuid: 223f0612-6b01-4f6d-bdac-40e8001317f1
+uuid: bcc73b62-4514-40d6-96d4-73abfe6a7110
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - amp
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
-region: breadcrumb
+id: amp_breadcrumbs
+theme: amp
+region: navigation
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

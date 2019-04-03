@@ -1,0 +1,25 @@
+uuid: 6a4cb0fc-53d4-4100-8d3b-f5395f5ade1f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - amp
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: amp_branding
+theme: amp
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,13 +1,13 @@
-uuid: 7333f55a-80ec-4126-bd2e-7e397022d53a
+uuid: 52cb183c-7adc-49e0-a157-a7c70b890119
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bartik
+    - amp
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: bartik_local_actions
-theme: bartik
+id: amp_local_actions
+theme: amp
 region: content
 weight: -20
 provider: null

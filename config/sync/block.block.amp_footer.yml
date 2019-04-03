@@ -1,4 +1,4 @@
-uuid: 13dcf361-7a1d-44f2-a518-9d88a1f8ec1e
+uuid: d364e572-07fe-4e94-9b52-7e6d8d55ef20
 langcode: fr
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - amp
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: bartik_footer
-theme: bartik
-region: footer_fifth
+id: amp_footer
+theme: amp
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

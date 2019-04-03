@@ -1,0 +1,22 @@
+uuid: d59d6eec-19ba-44ce-b9ce-1049f4a4a66e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - amp
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: amp_help
+theme: amp
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  provider: help
+  label_display: '0'
+visibility: {  }

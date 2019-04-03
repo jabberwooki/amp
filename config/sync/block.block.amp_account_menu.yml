@@ -1,4 +1,4 @@
-uuid: 54800749-3675-47e3-936a-f606517fcf25
+uuid: 0f48986c-1fd4-4dc0-81f5-625f6448a81a
 langcode: fr
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - amp
 _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
-id: bartik_account_menu
-theme: bartik
-region: secondary_menu
+id: amp_account_menu
+theme: amp
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'

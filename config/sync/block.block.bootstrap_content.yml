@@ -1,22 +1,22 @@
-uuid: 851bb760-e0b6-4b5c-9b2a-405ba48624d7
+uuid: 2b98ca1b-3e26-4e77-85c9-4ee9afed2922
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - bootstrap
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: bootstrap_content
+theme: bootstrap
 region: content
 weight: 0
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Contenu de la page principale'
+  label: 'Main page content'
   provider: system
   label_display: '0'
 visibility: {  }
