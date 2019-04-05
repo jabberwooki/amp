@@ -22,7 +22,6 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.26",
         "drupal/bootstrap": "^3.17",
-        "drupal/config_installer": "^1.8",
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
