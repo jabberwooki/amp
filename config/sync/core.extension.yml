@@ -47,6 +47,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  views_bootstrap: 0
   views_ui: 0
   viewsreference: 0
   ds: 1
