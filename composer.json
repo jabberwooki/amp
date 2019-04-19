@@ -28,6 +28,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drupal/devel": "^2.0",
+        "drupal/ds": "^3.3",
         "drupal/paragraphs": "^1.8",
         "drupal/smtp": "^1.0@beta",
         "drush/drush": "^9.0.0",
