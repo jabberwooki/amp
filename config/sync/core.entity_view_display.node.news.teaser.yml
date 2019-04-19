@@ -41,6 +41,10 @@ third_party_settings:
         weight: 1
         label: hidden
         formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
       node_link:
         plugin_id: node_link
         weight: 4
@@ -62,12 +66,13 @@ bundle: news
 mode: teaser
 content:
   field_image:
-    type: image_url
+    type: image
     weight: 0
     region: ds_content
     label: hidden
     settings:
       image_style: ''
+      image_link: content
     third_party_settings: {  }
   field_summary:
     type: basic_string
