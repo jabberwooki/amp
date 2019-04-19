@@ -1,0 +1,10 @@
+uuid: 5dc99efa-4c7c-4c83-8bff-99871b0f7314
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.front
+label: Accueil
+targetEntityType: node
+cache: true

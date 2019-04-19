@@ -1,9 +1,9 @@
-uuid: 65372c22-c433-4fb3-a148-1bf2e7d409c3
+uuid: 40579861-e848-481d-a851-1b8ba4a7bbae
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.front
     - field.field.node.news.field_content
     - field.field.node.news.field_image
     - field.field.node.news.field_summary
@@ -56,26 +56,27 @@ third_party_settings:
         weight: 2
         label: hidden
         formatter: ds_post_date_long
-id: node.news.teaser
+id: node.news.front
 targetEntityType: node
 bundle: news
-mode: teaser
+mode: front
 content:
   field_image:
-    type: image_url
     weight: 0
-    region: ds_content
     label: hidden
     settings:
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
-  field_summary:
-    type: basic_string
-    weight: 3
+    type: image
     region: ds_content
+  field_summary:
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: basic_string
+    region: ds_content
 hidden:
   addtoany: true
   field_content: true
