@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.news.field_content
     - field.field.node.news.field_image
     - field.field.node.news.field_summary
+    - image.style.news_page
     - node.type.news
   module:
     - ds
@@ -71,7 +72,7 @@ content:
     region: ds_content
     label: hidden
     settings:
-      image_style: ''
+      image_style: news_page
       image_link: content
     third_party_settings: {  }
   field_summary:

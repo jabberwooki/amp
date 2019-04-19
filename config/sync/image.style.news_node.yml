@@ -1,0 +1,25 @@
+uuid: 0f3fdc37-7b0a-4746-a25e-0eb3c67030bb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.news_node
+  module:
+    - crop
+name: news_node
+label: 'Actus node'
+effects:
+  e0753131-c689-469b-8910-5bcd9fa80264:
+    uuid: e0753131-c689-469b-8910-5bcd9fa80264
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: news_node
+  cc38500d-54c3-4b0e-9a7b-9dab9e009739:
+    uuid: cc38500d-54c3-4b0e-9a7b-9dab9e009739
+    id: image_scale
+    weight: 2
+    data:
+      width: 375
+      height: null
+      upscale: false

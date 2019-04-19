@@ -9,7 +9,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.news
   module:
-    - image
+    - image_widget_crop
     - paragraphs
     - path
 id: node.news.default
@@ -38,10 +38,22 @@ content:
   field_image:
     weight: 1
     settings:
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - news_node
+        - news_front
+        - news_page
+      crop_types_required:
+        - news_node
+        - news_front
+        - news_page
+      progress_indicator: throbber
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   field_summary:
     weight: 2

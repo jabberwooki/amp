@@ -1,0 +1,25 @@
+uuid: 3670f2c4-478c-48b6-a2f5-c93e0f722b45
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.news_front
+  module:
+    - crop
+name: news_front
+label: 'Actus accueil'
+effects:
+  d5ad7f6b-8db5-4657-8e8f-bfbffeed0dda:
+    uuid: d5ad7f6b-8db5-4657-8e8f-bfbffeed0dda
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: news_front
+  3c33234e-f32a-4ef2-92db-e94033a18838:
+    uuid: 3c33234e-f32a-4ef2-92db-e94033a18838
+    id: image_scale
+    weight: 2
+    data:
+      width: 350
+      height: null
+      upscale: false

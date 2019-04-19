@@ -1,0 +1,12 @@
+uuid: 3c57c3bd-2bc9-4feb-be0b-face98df713c
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Actus accueil'
+id: news_front
+description: ''
+aspect_ratio: '350:240'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
