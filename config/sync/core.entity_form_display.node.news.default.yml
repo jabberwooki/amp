@@ -48,7 +48,12 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      maxlength:
+        maxlength_js: 300
+        maxlength_js_label: 'Contenu limité à @limit caractères, restant : <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
     type: string_textarea
     region: content
   langcode:
