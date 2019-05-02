@@ -1,0 +1,19 @@
+uuid: d241d1ea-a3ba-406e-86cf-f484ead324d6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - footer
+    parent: 'main:'
+name: 'Page avancée'
+type: advanced_page
+description: 'Permet de créer une page complexe, avec différents types de paragraphes à disposition : texte simple, image, texte/image, carousel, vidéo, document, texte/document...'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

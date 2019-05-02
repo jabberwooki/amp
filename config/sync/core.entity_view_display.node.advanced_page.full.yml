@@ -1,0 +1,33 @@
+uuid: 1c38ab6c-79a0-4c84-86ea-53d0f7f7a0b0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.advanced_page.field_content
+    - node.type.advanced_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.advanced_page.full
+targetEntityType: node
+bundle: advanced_page
+mode: full
+content:
+  addtoany:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  langcode: true
+  links: true
