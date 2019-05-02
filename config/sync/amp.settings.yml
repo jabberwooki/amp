@@ -20,3 +20,4 @@ logo:
   use_default: false
 table_responsive: '-1'
 table: ''
+langcode: fr
