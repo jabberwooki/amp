@@ -4,18 +4,19 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://www.amp.localhost/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://www.amp.localhost/themes/custom/amp/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  amp: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
 logo:
-  path: ''
+  path: themes/custom/amp/logo-amp.jpg
   url: ''
-  use_default: true
-schemas:
-  bootstrap: 8000
-  amp: 8000
-langcode: fr
+  use_default: false
+table_responsive: '-1'
+table: ''
