@@ -10,7 +10,7 @@ dependencies:
 id: amp_programme_block
 theme: amp
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: arb_programme_block
 settings:
