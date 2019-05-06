@@ -1,0 +1,8 @@
+uuid: 6b7c3906-3270-46de-a925-ba7b43ceb41d
+langcode: fr
+status: true
+dependencies: {  }
+id: front_image_info
+label: 'Image/info accueil'
+revision: 0
+description: 'Bloc affiché sur la page d''accueil contenant une grande image, un texte et optionnellement un lien.'

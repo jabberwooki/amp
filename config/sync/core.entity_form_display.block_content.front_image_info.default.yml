@@ -1,0 +1,59 @@
+uuid: ce10c975-aafb-415e-9e30-e9c1a8e3c075
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.front_image_info
+    - field.field.block_content.front_image_info.field_image
+    - field.field.block_content.front_image_info.field_info_text
+    - field.field.block_content.front_image_info.field_link
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: block_content.front_image_info.default
+targetEntityType: block_content
+bundle: front_image_info
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_info_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

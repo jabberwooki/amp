@@ -1,0 +1,11 @@
+uuid: 34fd9f19-9a72-4ea9-a651-9adb7a516d52
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.front_image_info
+id: block_content.front_image_info
+target_entity_type_id: block_content
+target_bundle: front_image_info
+default_langcode: site_default
+language_alterable: false
