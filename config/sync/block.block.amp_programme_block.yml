@@ -1,4 +1,4 @@
-uuid: 3ea20007-5513-483e-8d1c-eaea99ecc0b7
+uuid: 1151a385-e9cd-4bfa-873e-418077f2baef
 langcode: fr
 status: true
 dependencies:
@@ -12,9 +12,9 @@ theme: amp
 region: content
 weight: 0
 provider: null
-plugin: arb_programme_block
+plugin: amp_programme_block
 settings:
-  id: arb_programme_block
+  id: amp_programme_block
   label: 'AMP Programme Block'
   provider: amp_programme
   label_display: '0'

@@ -17,7 +17,7 @@ use Drupal\Core\Block\BlockBase;
 
 /**
  * @Block(
- *   id = "arb_programme_block",
+ *   id = "amp_programme_block",
  *   admin_label = @Translation("AMP Programme Block"),
  *   category = @Translation("Custom")
  * )
