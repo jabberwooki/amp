@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "825076f5ea4e09721443ca46ed117f1c",
+    "content-hash": "782218c5dc323f53f50c98e52cce1896",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3422,6 +3422,53 @@
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "https://git.drupalcode.org/project/pathauto"
+            }
+        },
+        {
+            "name": "drupal/sendinblue",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sendinblue.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sendinblue-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "9d7029e8c6e528462b8e087cb72da0d781642776"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1527586984",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "sendinblue",
+                    "homepage": "https://www.drupal.org/user/3057617"
+                }
+            ],
+            "description": "SendinBlue email service integration.",
+            "homepage": "https://www.drupal.org/project/sendinblue",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sendinblue"
             }
         },
         {
