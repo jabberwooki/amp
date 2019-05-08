@@ -9,7 +9,7 @@ dependencies:
 id: socialmedialinks_footer
 theme: amp
 region: footer
-weight: -5
+weight: -7
 provider: null
 plugin: social_media_links_block
 settings:

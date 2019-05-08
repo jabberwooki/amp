@@ -1,0 +1,25 @@
+uuid: 31e94da0-4201-4ddb-9896-d97a9be2cb72
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:logos_block:8d80c8a2-90b1-47ed-ace2-8000c1494ea6'
+  module:
+    - block_content
+  theme:
+    - amp
+id: partner_top_block
+theme: amp
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:8d80c8a2-90b1-47ed-ace2-8000c1494ea6'
+settings:
+  id: 'block_content:8d80c8a2-90b1-47ed-ace2-8000c1494ea6'
+  label: Partenaires
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
