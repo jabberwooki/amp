@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "782218c5dc323f53f50c98e52cce1896",
+    "content-hash": "17e0b3f9977d811eab1d13add5b657c3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3099,6 +3099,48 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
             }
+        },
+        {
+            "name": "drupal/field_image_link",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_image_link.git",
+                "reference": "c083c8655df307620d077bca3402f59f1c43bc7c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1531954726",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "alphawebgroup",
+                    "homepage": "https://www.drupal.org/user/330008"
+                }
+            ],
+            "description": "Provides the field_image_link module.",
+            "homepage": "https://www.drupal.org/project/field_image_link",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_image_link"
+            },
+            "time": "2018-07-18 22:56:21"
         },
         {
             "name": "drupal/image_widget_crop",
@@ -9393,6 +9435,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/bootstrap_paragraphs": 10,
+        "drupal/field_image_link": 20,
         "drupal/maxlength": 10,
         "drupal/smtp": 10
     },
