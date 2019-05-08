@@ -1,0 +1,30 @@
+uuid: d582677e-512c-423a-87c2-193f42c58dbf
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+    - field_image_link
+    - file
+id: block_content.field_logo
+field_name: field_logo
+entity_type: block_content
+type: image_link
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: field_image_link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
