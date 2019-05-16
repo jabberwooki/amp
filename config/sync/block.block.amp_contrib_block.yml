@@ -10,7 +10,7 @@ dependencies:
 id: amp_contrib_block
 theme: amp
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: amp_contribution_block
 settings:
