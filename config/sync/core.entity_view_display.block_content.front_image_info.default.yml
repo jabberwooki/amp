@@ -8,7 +8,7 @@ dependencies:
     - field.field.block_content.front_image_info.field_info_text
     - field.field.block_content.front_image_info.field_link
   module:
-    - image
+    - image_title_caption
     - link
     - text
 id: block_content.front_image_info.default
@@ -23,7 +23,7 @@ content:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: image_title_caption
     region: content
   field_info_text:
     weight: 1

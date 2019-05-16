@@ -11,7 +11,7 @@ dependencies:
     - node.type.news
   module:
     - ds
-    - image
+    - image_title_caption
     - user
 third_party_settings:
   ds:
@@ -73,7 +73,7 @@ content:
       image_style: news_front
       image_link: content
     third_party_settings: {  }
-    type: image
+    type: image_title_caption
     region: ds_content
   field_summary:
     weight: 3
