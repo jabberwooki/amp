@@ -23,7 +23,6 @@
         "drupal/addtoany": "^1.12",
         "drupal/admin_toolbar": "^1.26",
         "drupal/bootstrap": "^3.17",
-        "drupal/bootstrap_paragraphs": "^2.0@beta",
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
