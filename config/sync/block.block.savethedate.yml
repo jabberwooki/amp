@@ -11,8 +11,8 @@ dependencies:
     - amp
 id: savethedate
 theme: amp
-region: content
-weight: -3
+region: highlighted
+weight: -9
 provider: null
 plugin: 'block_content:d2729386-db33-482e-bc67-d0ea2726c706'
 settings:
