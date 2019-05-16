@@ -1,0 +1,10 @@
+.field--name-field-image{
+    position: relative;
+    .image-caption{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background: $brand-primary;
+        color: white;
+    }
+}
