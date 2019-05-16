@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffed3cfa723f2aa94c0e3d453b98a500",
+    "content-hash": "d9377959bd4f2ec4a6e33570a8938849",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2038,64 +2038,6 @@
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
                 "irc": "irc://irc.freenode.org/drupal-bootstrap"
-            }
-        },
-        {
-            "name": "drupal/bootstrap_paragraphs",
-            "version": "2.0.0-beta6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/bootstrap_paragraphs.git",
-                "reference": "8.x-2.0-beta6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap_paragraphs-8.x-2.0-beta6.zip",
-                "reference": "8.x-2.0-beta6",
-                "shasum": "ae24c14a87186f2b9e9ef12822ac40cb7ad68b15"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/entity_reference_revisions": "*",
-                "drupal/paragraphs": "*",
-                "drupal/viewsreference": "*"
-            },
-            "require-dev": {
-                "drupal/contact_formatter": "*",
-                "drupal/paragraphs": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-beta6",
-                    "datestamp": "1541261280",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "albertski",
-                    "homepage": "https://www.drupal.org/user/1327432"
-                },
-                {
-                    "name": "thejimbirch",
-                    "homepage": "https://www.drupal.org/user/2507260"
-                }
-            ],
-            "description": "A suite of Paragraph bundles made with the Boostrap framework.",
-            "homepage": "https://www.drupal.org/project/bootstrap_paragraphs",
-            "support": {
-                "source": "https://git.drupalcode.org/project/bootstrap_paragraphs"
             }
         },
         {
@@ -9561,7 +9503,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/bootstrap_paragraphs": 10,
         "drupal/field_image_link": 20,
         "drupal/maxlength": 10,
         "drupal/smtp": 10
