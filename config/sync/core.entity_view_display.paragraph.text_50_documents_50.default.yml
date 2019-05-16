@@ -1,0 +1,32 @@
+uuid: 63dbecbc-09d1-4a86-83e5-aba286e25966
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_50_documents_50.field_documents
+    - field.field.paragraph.text_50_documents_50.field_text
+    - paragraphs.paragraphs_type.text_50_documents_50
+  module:
+    - file
+    - text
+id: paragraph.text_50_documents_50.default
+targetEntityType: paragraph
+bundle: text_50_documents_50
+mode: default
+content:
+  field_documents:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_text:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

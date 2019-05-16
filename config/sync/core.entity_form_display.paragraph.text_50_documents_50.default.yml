@@ -1,0 +1,34 @@
+uuid: ed04695b-5d0e-47a0-94e6-7caa7d825fd8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_50_documents_50.field_documents
+    - field.field.paragraph.text_50_documents_50.field_text
+    - paragraphs.paragraphs_type.text_50_documents_50
+  module:
+    - file
+    - text
+id: paragraph.text_50_documents_50.default
+targetEntityType: paragraph
+bundle: text_50_documents_50
+mode: default
+content:
+  field_documents:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

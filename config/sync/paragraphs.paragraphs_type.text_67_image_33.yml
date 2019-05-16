@@ -1,0 +1,9 @@
+uuid: 179fb6cb-86a7-43bc-af9b-7da8b1572074
+langcode: fr
+status: true
+dependencies: {  }
+id: text_67_image_33
+label: 'Texte 67% - Image 33%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+uuid: 84e6a899-d5cc-416a-90cc-7237ab063e7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_documents
+    - paragraphs.paragraphs_type.text_50_documents_50
+  module:
+    - file
+id: paragraph.text_50_documents_50.field_documents
+field_name: field_documents
+entity_type: paragraph
+bundle: text_50_documents_50
+label: 'Documents à télécharger'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: paragraphs_documents
+  file_extensions: 'pdf doc docx xsl xlsx jpg jpeg gif odt ods'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

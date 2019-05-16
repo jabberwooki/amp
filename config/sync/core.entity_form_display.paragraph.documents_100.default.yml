@@ -1,0 +1,24 @@
+uuid: f9269c60-f89b-4334-b794-a0598b871e75
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.documents_100.field_documents
+    - paragraphs.paragraphs_type.documents_100
+  module:
+    - file
+id: paragraph.documents_100.default
+targetEntityType: paragraph
+bundle: documents_100
+mode: default
+content:
+  field_documents:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  status: true
