@@ -1,0 +1,33 @@
+uuid: acf3b087-1c13-4226-8bce-745721702b82
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_50_image_50.field_image
+    - field.field.paragraph.text_50_image_50.field_text
+    - paragraphs.paragraphs_type.text_50_image_50
+  module:
+    - image_title_caption
+    - text
+id: paragraph.text_50_image_50.default
+targetEntityType: paragraph
+bundle: text_50_image_50
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image_title_caption
+    region: content
+  field_text:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
