@@ -11,7 +11,7 @@ dependencies:
 id: partner_top_block
 theme: amp
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:8d80c8a2-90b1-47ed-ace2-8000c1494ea6'
 settings:
