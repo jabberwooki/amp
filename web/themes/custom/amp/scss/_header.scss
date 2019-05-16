@@ -1,8 +1,16 @@
 
 .region-header{
 
+    .navbar-brand {
+        position: absolute;
+        text-indent: -9999px;
+    }
+
     #block-partner-top-block{
         float: left;
+        .field--item{
+            display: inline-block;
+        }
     }
     
     #block-socialmedialinks-header{
@@ -12,7 +20,27 @@
     .block-superfish{
         clear:left;
         float: right;
+        background: $brand-primary;
+        a{
+            color:#fff;
+        }
     }
 
 }
+
+#block-savethedate{
+    position: relative;
+    .field--name-field-info-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+    }
+}
+
+
 

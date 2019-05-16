@@ -16,3 +16,9 @@ $theme-root: '..';
 // Set other directories relative to theme root.
 $image-path: '#{$theme-root}/images';
 $icon-font-path: '#{$theme-root}/bootstrap/assets/fonts/bootstrap/';
+
+
+$brand-primary:         #0167b1;
+$brand-secondary:       #f37521;
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
