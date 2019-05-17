@@ -94,15 +94,6 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
-
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
@@ -122,13 +113,6 @@
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
 
         {# Help #}
         {% if page.help %}
