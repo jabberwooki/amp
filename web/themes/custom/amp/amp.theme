@@ -6,3 +6,16 @@
  *
  * Place your custom PHP code in this file.
  */
+
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function amp_preprocess_paragraph__image_text_banner(&$variables) {
+  $banner_paragraph = $variables['paragraph'];
+  if (!$banner_paragraph->field_image->isEmpty()) {
+    $image_url = $banner_paragraph->field_image->entity->url();
+    $variables['attributes']['style'][] = 'background-image: url("' . $image_url . '");';
+    $variables['attributes']['style'][] = 'background-position: center center;';
+  }
+}
