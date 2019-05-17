@@ -156,10 +156,12 @@
   </div>
 {% endblock %}
 
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
-{% endif %}
+<div class="footer-fluid container-fluid">
+  {% if page.footer %}
+    {% block footer %}
+      <footer class="footer {{ container }}" role="contentinfo">
+        {{ page.footer }}
+      </footer>
+    {% endblock %}
+  {% endif %}
+</div>
