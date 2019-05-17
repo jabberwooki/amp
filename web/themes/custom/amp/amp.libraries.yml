@@ -21,3 +21,14 @@ fonts:
     theme:
       '//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap': { type: external, minified: true }
       '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css': {type: external}
+
+slick:
+  js:
+    libraries/slick/slick/slick.min.js: {}
+    js/amp-carousel.js: {}
+  css:
+    theme:
+      libraries/slick/slick/slick.css: {}
+      libraries/slick/slick/slick-theme.css: {}
+  dependencies:
+    - core/jquery

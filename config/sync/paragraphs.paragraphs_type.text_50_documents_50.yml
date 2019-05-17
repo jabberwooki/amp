@@ -1,0 +1,9 @@
+uuid: c0f4157c-13be-4c31-920b-22eb53f66744
+langcode: fr
+status: true
+dependencies: {  }
+id: text_50_documents_50
+label: 'Texte 50% - Documents 50%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

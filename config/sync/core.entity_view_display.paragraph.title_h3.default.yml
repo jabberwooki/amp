@@ -1,0 +1,21 @@
+uuid: 37293139-9a03-4ebb-8645-f69ee44ab16f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_h3.field_title
+    - paragraphs.paragraphs_type.title_h3
+id: paragraph.title_h3.default
+targetEntityType: paragraph
+bundle: title_h3
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 8d5a9ce2-9e57-4712-a87a-fc1bfcd647d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_h3.field_title
+    - paragraphs.paragraphs_type.title_h3
+id: paragraph.title_h3.default
+targetEntityType: paragraph
+bundle: title_h3
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

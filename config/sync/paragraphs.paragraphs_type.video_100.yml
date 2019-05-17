@@ -1,0 +1,9 @@
+uuid: 46a49abb-3b88-4155-a741-9442f9413cca
+langcode: fr
+status: true
+dependencies: {  }
+id: video_100
+label: 'Vidéo 100%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

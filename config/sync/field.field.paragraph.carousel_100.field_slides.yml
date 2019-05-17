@@ -1,27 +1,27 @@
-uuid: 98818b3c-998f-4b3a-ac3a-78d92faa15b1
+uuid: bc3dea96-e916-4753-9884-f49bd82a10d8
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.advanced_page
+    - field.storage.paragraph.field_slides
+    - paragraphs.paragraphs_type.carousel_100
     - paragraphs.paragraphs_type.carousel_image
   module:
     - entity_reference_revisions
-id: node.advanced_page.field_content
-field_name: field_content
-entity_type: node
-bundle: advanced_page
-label: Contenu
+id: paragraph.carousel_100.field_slides
+field_name: field_slides
+entity_type: paragraph
+bundle: carousel_100
+label: Diapositives
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 1
+    negate: 0
     target_bundles:
       carousel_image: carousel_image
     target_bundles_drag_drop:
