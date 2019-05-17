@@ -66,6 +66,7 @@
     </header>
 
 <div class="container-fluid">
+
     <div class="row">
       {# Highlighted #}
         {% if page.highlighted %}
@@ -74,6 +75,18 @@
           {% endblock %}
         {% endif %}
       </div>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+          {# Pre-content #}
+            {% if page.precontent %}
+              {% block precontent %}
+                <div class="precontent">{{ page.precontent }}</div>
+              {% endblock %}
+            {% endif %}
+        </div>
+      </div>
+
 </div>
 
 
