@@ -10,6 +10,20 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+@font-face {
+  font-family: 'Spotka';
+  src: url("../fonts/SpotkaRegular/SpotkaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SpotkaRegular/SpotkaRegular.woff") format("woff"), url("../fonts/SpotkaRegular/SpotkaRegular.ttf") format("truetype"), url("../fonts/SpotkaRegular/SpotkaRegular.svg#SpotkaRegular") format("svg");
+  font-weight: normal;
+  font-style: 400;
+}
+
+@font-face {
+  font-family: 'Spotka';
+  src: url("../fonts/SpotkaBlack/SpotkaBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/SpotkaBlack/SpotkaBlack.woff") format("woff"), url("../fonts/SpotkaBlack/SpotkaBlack.ttf") format("truetype"), url("../fonts/SpotkaBlack/SpotkaBlack.svg#SpotkaBlack") format("svg");
+  font-weight: normal;
+  font-style: 800;
+}
+
 /*!
  * Bootstrap v3.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 Twitter, Inc.
@@ -1392,11 +1406,11 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 input,
@@ -1445,7 +1459,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2781,7 +2795,7 @@ th {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 .table-condensed > thead > tr > th,
@@ -4784,7 +4798,7 @@ tbody.collapse.in {
 .nav-tabs > li.active > a:focus {
   color: #555555;
   cursor: default;
-  background-color: #fff;
+  background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4868,7 +4882,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a,
   .nav-tabs.nav-justified > .active > a, .nav-tabs-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:hover, .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #f7f7f7;
   }
 }
 
@@ -5900,7 +5914,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -7099,7 +7113,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857;
@@ -7233,7 +7247,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857;
@@ -8620,7 +8634,7 @@ body.toolbar-loading.toolbar {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 14px;
   list-style: none;
   min-width: 160px;
@@ -8741,6 +8755,8 @@ p:last-child,
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  font-family: 'Spotka';
+  font-style: 800;
 }
 
 .field--name-field-image {
