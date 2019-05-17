@@ -9,8 +9,8 @@ dependencies:
     - amp
 id: amp_contrib_block
 theme: amp
-region: content
-weight: -3
+region: precontent
+weight: -8
 provider: null
 plugin: amp_contribution_block
 settings:
