@@ -8759,6 +8759,14 @@ p:last-child,
   font-style: 800;
 }
 
+.precontent {
+  margin-left: 65px;
+}
+
+.precontent .region-precontent {
+  background: #f37521;
+}
+
 .field--name-field-image {
   position: relative;
 }
