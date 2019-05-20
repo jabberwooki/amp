@@ -8,3 +8,11 @@
         color: white;
     }
 }
+
+#views-bootstrap-news-list .node,
+#views-bootstrap-news-front-block .node{
+    background: white;
+    .news-content{
+       padding: 0 15px 15px 15px;
+    }
+}
