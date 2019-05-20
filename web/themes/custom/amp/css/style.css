@@ -8767,6 +8767,10 @@ p:last-child,
   background: #f37521;
 }
 
+.precontent .region-precontent a {
+  color: white;
+}
+
 .field--name-field-image {
   position: relative;
 }
