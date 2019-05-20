@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.front
+    - core.entity_view_mode.node.teaser
     - node.type.news
     - system.menu.main
   module:
@@ -87,12 +87,14 @@ display:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: front
+          view_mode: teaser
           alternating_fieldset:
             alternating: false
             allpages: false
             item_0: teaser
             item_1: teaser
+            item_2: teaser
+            item_3: teaser
           grouping_fieldset:
             group: false
             group_field: node_field_data|created
