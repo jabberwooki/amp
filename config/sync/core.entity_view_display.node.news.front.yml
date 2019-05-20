@@ -60,7 +60,7 @@ third_party_settings:
         plugin_id: node_post_date
         weight: 2
         label: hidden
-        formatter: ds_post_date_long
+        formatter: ds_post_date_amp
 id: node.news.front
 targetEntityType: node
 bundle: news
