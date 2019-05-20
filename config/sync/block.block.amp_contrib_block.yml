@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - amp_contribution
-    - system
   theme:
     - amp
 id: amp_contrib_block
@@ -18,9 +17,4 @@ settings:
   label: 'AMP Contribution Block'
   provider: amp_contribution
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-    context_mapping: {  }
+visibility: {  }
