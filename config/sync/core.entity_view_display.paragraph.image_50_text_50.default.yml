@@ -7,16 +7,68 @@ dependencies:
     - field.field.paragraph.image_50_text_50.field_text
     - paragraphs.paragraphs_type.image_50_text_50
   module:
+    - field_group
     - image_title_caption
     - text
+third_party_settings:
+  field_group:
+    group_left:
+      children:
+        - field_image
+      parent_name: group_row
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-sm-6
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Left
+    group_right:
+      children:
+        - field_text
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-sm-6
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Right
+    group_row:
+      children:
+        - group_left
+        - group_right
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
 id: paragraph.image_50_text_50.default
 targetEntityType: paragraph
 bundle: image_50_text_50
 mode: default
 content:
   field_image:
-    weight: 0
-    label: above
+    weight: 1
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -24,8 +76,8 @@ content:
     type: image_title_caption
     region: content
   field_text:
-    weight: 1
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
