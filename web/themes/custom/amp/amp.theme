@@ -19,3 +19,20 @@ function amp_preprocess_paragraph__image_text_banner(&$variables) {
     $variables['attributes']['style'][] = 'background-position: center center;';
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ * Add suggestion template for page.html.twig
+ */
+function amp_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Suggestion de template pour un groupe régional.
+  if ($group = \Drupal::routeMatch()->getParameter('group')) {
+    $bundle = $group->bundle();
+    $suggestions[] = 'page__'. $bundle;
+  }
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__type__'.$content_type;
+    $suggestions[] = 'page__node__' . $node->id();
+  }
+}
