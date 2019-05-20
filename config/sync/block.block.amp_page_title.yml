@@ -1,6 +1,6 @@
 uuid: 5c358ddc-8a4a-4ca6-bbf0-454317c8ce8c
 langcode: fr
-status: true
+status: false
 dependencies:
   theme:
     - amp
