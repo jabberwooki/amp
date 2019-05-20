@@ -12,6 +12,7 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
+    - field_group
     - image
     - user
 third_party_settings:
@@ -32,29 +33,67 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
+        - group_left
         - field_image
+        - group_right
         - addtoany
         - node_post_date
         - node_title
         - field_content
     fields:
-      node_title:
-        plugin_id: node_title
-        weight: 3
-        label: hidden
-        formatter: default
       node_post_date:
         plugin_id: node_post_date
         weight: 2
         label: hidden
         formatter: ds_post_date_amp
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+  field_group:
+    group_left:
+      children:
+        - field_image
+        - addtoany
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-4'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Left
+    group_right:
+      children:
+        - node_post_date
+        - node_title
+        - field_content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Right
 id: node.news.full
 targetEntityType: node
 bundle: news
 mode: full
 content:
   addtoany:
-    weight: 1
+    weight: 2
     region: ds_content
     settings: {  }
     third_party_settings: {  }
@@ -69,7 +108,7 @@ content:
     third_party_settings: {  }
   field_image:
     type: image
-    weight: 0
+    weight: 1
     region: ds_content
     label: hidden
     settings:
