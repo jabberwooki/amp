@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.front_image_info.field_image
     - field.field.block_content.front_image_info.field_info_text
     - field.field.block_content.front_image_info.field_link
+    - image.style.bandeau_home_desktop
   module:
     - image_title_caption
     - link
@@ -20,7 +21,7 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      image_style: ''
+      image_style: bandeau_home_desktop
       image_link: ''
     third_party_settings: {  }
     type: image_title_caption

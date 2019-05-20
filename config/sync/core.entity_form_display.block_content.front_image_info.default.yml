@@ -9,7 +9,7 @@ dependencies:
     - field.field.block_content.front_image_info.field_link
     - image.style.thumbnail
   module:
-    - image
+    - image_widget_crop
     - link
     - text
 id: block_content.front_image_info.default
@@ -20,10 +20,18 @@ content:
   field_image:
     weight: 2
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - bandeau_desktop
+      crop_types_required:
+        - bandeau_desktop
+      progress_indicator: throbber
+      show_crop_area: false
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   field_info_text:
     weight: 3
