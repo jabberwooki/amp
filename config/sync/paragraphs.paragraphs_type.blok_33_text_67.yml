@@ -1,0 +1,9 @@
+uuid: 7b2fa3b1-3c62-4dea-b48e-c16a102ce54b
+langcode: fr
+status: true
+dependencies: {  }
+id: blok_33_text_67
+label: 'Bloc couleur 33% - Texte 67%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
