@@ -8821,6 +8821,16 @@ h3.titre {
   font-size: 20px;
   font-weight: 800;
   color: #0167b1;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h3 .field--item:after,
+h3.titre:after {
+  content: '_';
+  line-height: 40px;
+  position: absolute;
+  left: 0;
 }
 
 h4.titre {
@@ -8828,6 +8838,15 @@ h4.titre {
   color: #f37521;
   font-size: 20px;
   font-weight: 800;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h4.titre:after {
+  content: '_';
+  line-height: 40px;
+  position: absolute;
+  left: 0;
 }
 
 h4.titredebloc {
@@ -8835,6 +8854,15 @@ h4.titredebloc {
   color: #fff;
   font-size: 18px;
   font-weight: 800;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h4.titredebloc:after {
+  content: '_';
+  line-height: 40px;
+  position: absolute;
+  left: 0;
 }
 
 h5.titre {
@@ -8843,12 +8871,15 @@ h5.titre {
   font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-h6.titre {
-  color: #0167b1;
-  font-size: 18px;
-  font-weight: 700;
+h5.titre:after {
+  content: '_';
+  line-height: 40px;
+  position: absolute;
+  left: 0;
 }
 
 blockquote {
@@ -8931,22 +8962,32 @@ blockquote {
   background: #0167b1;
   border-radius: 5px;
   color: #fff;
-  padding: 60px 50px;
+  padding: 30px 20px;
   margin-top: 52px;
 }
 
 .paragraph--type--text-50-documents-50 .field--label,
 .paragraph--type--documents-50-text-50 .field--label,
 .paragraph--type--documents-100 .field--label {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   border: none;
-  padding-bottom: 35px;
+  font-family: 'Spotka';
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.paragraph--type--text-50-documents-50 .field--label:after,
+.paragraph--type--documents-50-text-50 .field--label:after,
+.paragraph--type--documents-100 .field--label:after {
+  content: '_';
+  line-height: 50px;
+  position: absolute;
+  left: 0;
 }
 
 .paragraph--type--text-50-documents-50 .field--item .file,
@@ -9018,6 +9059,17 @@ blockquote {
 .paragraph--type--documents-100 .file-icon .text-primary {
   color: white;
   font-size: 300%;
+}
+
+.paragraph--type--documents-100 .field--label {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph--type--documents-100 .field--label:after {
+  left: 50%;
 }
 
 .paragraph--type--documents-100 .field--items {

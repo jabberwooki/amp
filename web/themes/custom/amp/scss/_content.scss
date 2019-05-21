@@ -42,18 +42,42 @@ h3.titre{
     font-size: 20px;
     font-weight: 800;
     color: $brand-primary;
+    margin-bottom: 20px;
+    position: relative;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
 }
 h4.titre{
     font-family: 'Spotka';
     color: $brand-secondary;
     font-size: 20px;
     font-weight: 800;
+    position: relative;
+    margin-bottom: 20px;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
 }
 h4.titredebloc{
     font-family: 'Spotka';
     color: #fff;
     font-size: 18px;
     font-weight: 800;
+    position: relative;
+    margin-bottom: 20px;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
 }
 h5.titre{
     font-family: 'Spotka';
@@ -61,11 +85,14 @@ h5.titre{
     font-size: 16px;
     font-weight: 800;
     text-transform: uppercase;
-}
-h6.titre{
-    color: $brand-primary;
-    font-size: 18px;
-    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
 }
 blockquote {
     margin: 0 auto;
@@ -142,19 +169,26 @@ blockquote {
         background: $brand-primary;
         border-radius: 5px;
         color: #fff;
-        padding: 60px 50px;
+        padding: 30px 20px;
         margin-top: 52px;
     }
     .field--label{
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 0.1em;
+        color: white;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: left;
+        justify-content: left;
         border: none;
-        padding-bottom: 35px;
+        font-family: 'Spotka';
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        position: relative;
+        &:after{
+            content:'_';
+            line-height: 50px;
+            position: absolute;
+            left: 0;
+        }
     }
     .field--item .file {
         display: inline-block;
@@ -199,14 +233,26 @@ blockquote {
         }
     }
 } 
-.paragraph--type--documents-100 .field--items{
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
-    -webkit-column-gap: 50px;
-    -moz-column-gap: 50px;
-    column-gap: 50px;
+.paragraph--type--documents-100{
+    .field--label{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after{
+            left: 50%;
+        }
+    }
+    .field--items{
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+        -webkit-column-gap: 50px;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+    }
 }
+
 
 
 
