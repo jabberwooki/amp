@@ -1,0 +1,33 @@
+from-morelink: /gdpr-compliance/policy
+user-register: 1
+user-login: 0
+contact_message-mode: all
+contact_message-bundles:
+  feedback: 0
+  personal: 0
+node-mode: disable
+node-bundles:
+  advanced_page: 0
+  article: 0
+  news: 0
+  page: 0
+webform-mode: custom
+webform-bundles:
+  contribution: contribution
+  contact: 0
+popup-guests: 1
+popup-users: 1
+popup-position: bottom
+popup-morelink: /gdpr-compliance/policy
+popup-custom-color: 0
+popup-color: '#0167b1'
+popup-text: white
+button-color: '#f57421'
+button-text: black
+popup-text-cookies: ''
+popup-text-analytics: ''
+popup-btn-agree: 'J''accepte'
+popup-btn-findmore: ''
+_core:
+  default_config_hash: P6YjZQN0wv2MHVDNRVc46Plx_OiZFESe-I78R-ovdVQ
+langcode: fr
