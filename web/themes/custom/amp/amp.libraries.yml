@@ -25,10 +25,12 @@ fonts:
 slick:
   js:
     libraries/slick/slick/slick.min.js: {}
+    libraries/slick-lightbox/slick-lightbox.js: {}
     js/amp-carousel.js: {}
   css:
     theme:
       libraries/slick/slick/slick.css: {}
       libraries/slick/slick/slick-theme.css: {}
+      libraries/slick-lightblox/slick-lightbox.css: {}
   dependencies:
     - core/jquery

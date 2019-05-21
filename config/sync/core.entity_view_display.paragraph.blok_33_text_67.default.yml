@@ -1,0 +1,30 @@
+uuid: cf09866e-fd95-4c9b-8902-71cf57d6fe0f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blok_33_text_67.field_colored_block
+    - field.field.paragraph.blok_33_text_67.field_text
+    - paragraphs.paragraphs_type.blok_33_text_67
+  module:
+    - text
+id: paragraph.blok_33_text_67.default
+targetEntityType: paragraph
+bundle: blok_33_text_67
+mode: default
+content:
+  field_colored_block:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

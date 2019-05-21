@@ -1,0 +1,34 @@
+uuid: 42f5f2b6-fadb-4c1b-8b32-fe035c64e52d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blok_33_text_67.field_colored_block
+    - field.field.paragraph.blok_33_text_67.field_text
+    - paragraphs.paragraphs_type.blok_33_text_67
+  module:
+    - text
+id: paragraph.blok_33_text_67.default
+targetEntityType: paragraph
+bundle: blok_33_text_67
+mode: default
+content:
+  field_colored_block:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

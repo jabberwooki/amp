@@ -1,0 +1,30 @@
+uuid: aae69828-6884-417b-bfb0-0a386ab44a27
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_67_block_33.field_colored_block
+    - field.field.paragraph.text_67_block_33.field_text
+    - paragraphs.paragraphs_type.text_67_block_33
+  module:
+    - text
+id: paragraph.text_67_block_33.default
+targetEntityType: paragraph
+bundle: text_67_block_33
+mode: default
+content:
+  field_colored_block:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

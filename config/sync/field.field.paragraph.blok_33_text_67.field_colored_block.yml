@@ -1,0 +1,21 @@
+uuid: 04a62f0b-d23b-4e5d-8151-983d38f29dc7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colored_block
+    - paragraphs.paragraphs_type.blok_33_text_67
+  module:
+    - text
+id: paragraph.blok_33_text_67.field_colored_block
+field_name: field_colored_block
+entity_type: paragraph
+bundle: blok_33_text_67
+label: 'Bloc couleur'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
