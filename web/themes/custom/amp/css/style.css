@@ -8862,6 +8862,10 @@ blockquote {
   line-height: 19px;
 }
 
+.paragraph {
+  margin-bottom: 35px;
+}
+
 /*LIENS HYPERTEXTES*/
 .paragraph a {
   color: #f37521;
@@ -8896,42 +8900,28 @@ blockquote {
   margin-top: 3px;
 }
 
-.content_page .bloc_right {
+.bloc-left .field--name-field-colored-block {
   background-color: #0167b1;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   padding: 20px 25px;
 }
 
-.content_page .bloc_left {
-  background-color: #3e3e3e;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.bloc-right .field--name-field-colored-block {
+  background-color: #f37521;
   padding: 20px 25px;
 }
 
-.content_page .bloc_left table,
-.content_page .bloc_right table,
-.content_page .bloc_left ul li,
-.content_page .bloc_left ul li a,
-.content_page .bloc_right ul li,
-.content_page .bloc_right ul li a,
-.content_page .bloc_right a,
-.content_page .bloc_left a,
-.content_page .bloc_left p a,
-.content_page .bloc_right p a,
-.content_page .bloc_left p,
-.content_page .bloc_right p {
+.field--name-field-colored-block table,
+.field--name-field-colored-block ul li,
+.field--name-field-colored-block ul li a,
+.field--name-field-colored-block a,
+.field--name-field-colored-block p a,
+.field--name-field-colored-block p {
   color: #fff;
 }
 
-.content_page .bloc_left ul li a:hover,
-.content_page .bloc_right ul li a:hover,
-.content_page .bloc_left p a:hover,
-.content_page .bloc_right p a:hover {
-  color: #003365;
+.field--name-field-colored-block ul li a:hover,
+.field--name-field-colored-block p a:hover {
+  color: #fff;
 }
 
 /*DOCUMENTS A TELECHARGER*/
