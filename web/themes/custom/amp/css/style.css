@@ -8767,6 +8767,10 @@ p:last-child,
   background: #f37521;
 }
 
+.precontent .region-precontent a {
+  color: white;
+}
+
 .field--name-field-image {
   position: relative;
 }
@@ -8777,6 +8781,16 @@ p:last-child,
   left: 0;
   background: #0167b1;
   color: white;
+}
+
+#views-bootstrap-news-list .node,
+#views-bootstrap-news-front-block .node {
+  background: white;
+}
+
+#views-bootstrap-news-list .node .news-content,
+#views-bootstrap-news-front-block .node .news-content {
+  padding: 0 15px 15px 15px;
 }
 
 .footer-fluid {

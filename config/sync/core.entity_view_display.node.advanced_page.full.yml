@@ -7,18 +7,40 @@ dependencies:
     - field.field.node.advanced_page.field_content
     - node.type.advanced_page
   module:
+    - ds
     - entity_reference_revisions
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_content
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
 id: node.advanced_page.full
 targetEntityType: node
 bundle: advanced_page
 mode: full
 content:
-  addtoany:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_content:
     weight: 1
     label: hidden
@@ -27,7 +49,8 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: content
+    region: ds_content
 hidden:
+  addtoany: true
   langcode: true
   links: true

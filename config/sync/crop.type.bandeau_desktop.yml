@@ -1,11 +1,11 @@
-uuid: 3454dc10-6e7c-4b27-b195-ea7b4bd54e6e
+uuid: 4aa792d6-fcbd-482b-a975-3b18c55caa2a
 langcode: fr
 status: true
 dependencies: {  }
-label: 'Actus page'
-id: news_page
+label: 'Bandeau desktop'
+id: bandeau_desktop
 description: ''
-aspect_ratio: '3:2'
+aspect_ratio: '4:1'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null

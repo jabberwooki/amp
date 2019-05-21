@@ -28,6 +28,7 @@
         "drupal/core": "^8.6.0",
         "drupal/devel": "^2.0",
         "drupal/ds": "^3.3",
+        "drupal/field_group": "^1.0",
         "drupal/field_image_link": "1.x-dev",
         "drupal/image_widget_crop": "^2.2",
         "drupal/maxlength": "^1.0@beta",
