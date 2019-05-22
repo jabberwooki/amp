@@ -54,15 +54,17 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 
 
-    <header class="container">
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
+    <header class="container-fluid">
+      <div class="container">
+        {# Header #}
+        {% if page.header %}
+          {% block header %}
+            <div class="col-sm-12" role="heading">
+              {{ page.header }}
+            </div>
+          {% endblock %}
+        {% endif %}
+        </div>
     </header>
 
 <div class="container-fluid">
