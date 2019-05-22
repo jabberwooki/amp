@@ -8719,30 +8719,48 @@ body {
   font-weight: 500;
 }
 
-.region-header .navbar-brand {
+a.logo {
+  background: url(../images/logo_colloque_amp_2019.svg) no-repeat;
+  content: '';
+  width: 317px;
+  height: 104px;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a.logo img {
+  visibility: hidden;
+}
+
+header {
+  background: white;
+}
+
+header .region-header .navbar-brand {
   position: absolute;
   text-indent: -9999px;
 }
 
-.region-header #block-partner-top-block {
+header .region-header #block-partner-top-block {
   float: left;
 }
 
-.region-header #block-partner-top-block .field--item {
+header .region-header #block-partner-top-block .field--item {
   display: inline-block;
 }
 
-.region-header #block-socialmedialinks-header {
+header .region-header #block-socialmedialinks-header {
   float: right;
 }
 
-.region-header .block-superfish {
+header .region-header .block-superfish {
   clear: left;
   float: right;
   background: #0167b1;
 }
 
-.region-header .block-superfish a {
+header .region-header .block-superfish a {
   color: #fff;
 }
 
