@@ -1,0 +1,26 @@
+uuid: c26e26e5-a69a-443f-8683-04ec22414f25
+langcode: fr
+status: true
+dependencies:
+  module:
+    - sendinblue
+    - system
+  theme:
+    - amp
+id: sib_front_form
+theme: amp
+region: precontent
+weight: 0
+provider: null
+plugin: 'sendinblue_block:6'
+settings:
+  id: 'sendinblue_block:6'
+  label: 'SendinBlue Subscription Form: sib_front'
+  provider: sendinblue
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
