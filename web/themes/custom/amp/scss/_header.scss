@@ -15,6 +15,24 @@ a.logo{
     }
 }
 
+a{
+    transition : all .25s ease-in-out;
+    -moz-transition : all .25s ease-in-out;
+    -webkit-transition : all .25s ease-in-out;
+}
+a:hover{
+    text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    outline:none
+} 
+a:focus {
+    outline:0 !important
+}
+
 header{
     background: white;
     .region-header{
@@ -70,6 +88,3 @@ header{
         }
     }
 }
-
-
-

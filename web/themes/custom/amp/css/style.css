@@ -8733,6 +8733,27 @@ a.logo img {
   visibility: hidden;
 }
 
+a {
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  outline: none;
+}
+
+a:focus {
+  outline: 0 !important;
+}
+
 header {
   background: white;
 }
@@ -8813,6 +8834,62 @@ header .region-header .block-superfish a {
 #views-bootstrap-news-list .node .news-content,
 #views-bootstrap-news-front-block .node .news-content {
   padding: 0 15px 15px 15px;
+}
+
+#views-bootstrap-news-list .node .news-content h3,
+#views-bootstrap-news-front-block .node .news-content h3 {
+  font-size: 20px;
+  font-family: 'Spotka';
+}
+
+#views-bootstrap-news-list .node .news-content h3 a,
+#views-bootstrap-news-front-block .node .news-content h3 a {
+  color: #0167b1;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#views-bootstrap-news-list .node .news-content h3 a:hover,
+#views-bootstrap-news-front-block .node .news-content h3 a:hover {
+  color: #f37521;
+}
+
+#views-bootstrap-news-list .node .news-content .field--name-node-post-date,
+#views-bootstrap-news-front-block .node .news-content .field--name-node-post-date {
+  font-size: 14px;
+  font-family: 'Spotka';
+  font-weight: 800;
+  color: #333;
+}
+
+#views-bootstrap-news-list .node .news-content .field--name-field-summary,
+#views-bootstrap-news-front-block .node .news-content .field--name-field-summary {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#views-bootstrap-news-list .node .news-content .field--name-node-link,
+#views-bootstrap-news-front-block .node .news-content .field--name-node-link {
+  text-align: right;
+  margin-top: 15px;
+}
+
+#views-bootstrap-news-list .node .news-content .field--name-node-link a,
+#views-bootstrap-news-front-block .node .news-content .field--name-node-link a {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #0167b1;
+  border: 2px solid #0167b1;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+#views-bootstrap-news-list .node .news-content .field--name-node-link a:hover,
+#views-bootstrap-news-front-block .node .news-content .field--name-node-link a:hover {
+  color: #f37521;
+  border-color: #f37521;
 }
 
 .field--name-node-title h2 {

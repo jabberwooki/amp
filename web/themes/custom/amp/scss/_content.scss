@@ -17,6 +17,46 @@
     background: white;
     .news-content{
        padding: 0 15px 15px 15px;
+       h3{
+        font-size: 20px;
+        font-family: 'Spotka';
+        a{
+            color:$brand-primary;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-decoration: none;
+            &:hover{
+                color:$brand-secondary;
+            }
+        }
+       }
+       .field--name-node-post-date{
+        font-size: 14px;
+        font-family: 'Spotka';
+        font-weight: 800;
+        color: #333;
+       }
+       .field--name-field-summary{
+           font-size: 13px;
+           line-height: 18px;
+       }
+       .field--name-node-link{
+        text-align: right;
+        margin-top: 15px;
+        a{
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            color:$brand-primary;
+            border: 2px solid $brand-primary;
+            border-radius: 20px;
+            padding: 5px 10px;
+            &:hover{
+                color: $brand-secondary;
+                border-color: $brand-secondary;
+            }
+        }
+       }
     }
 }
 
