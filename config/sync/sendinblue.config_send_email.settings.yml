@@ -1,6 +1,6 @@
 sendinblue_smtp_details:
   username: sographik@gmail.com
-  password: dummy
+  password: 18BNtcJR6Mgq5xPb
   relay: smtp-relay-eu-fr-1.51b.tech
   port: '587'
 sendinblue_on: '1'
