@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8088e8b64472a4fbac9ca7d9ab657bb1",
+    "content-hash": "49f91c3b1d6f9532533be805989dca79",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2000,7 +2000,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.17",
-                    "datestamp": "1557526081",
+                    "datestamp": "1548102180",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2029,6 +2029,10 @@
                     "name": "Fabiano Sant'Ana (wundo)",
                     "homepage": "https://www.drupal.org/u/wundo",
                     "role": "Co-maintainer"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
                 }
             ],
             "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
@@ -3144,7 +3148,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_image_link"
             },
-            "time": "2018-07-18 22:56:21"
+            "time": "2018-07-18T22:56:21+00:00"
         },
         {
             "name": "drupal/gdpr_compliance",
@@ -3854,6 +3858,61 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/twig_tweak",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twig_tweak.git",
+                "reference": "8.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "753d69b39d94f9b16723de506d9e13c2415983c5"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "better dump() function for debugging Twig variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.3",
+                    "datestamp": "1555516385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chi",
+                    "homepage": "https://www.drupal.org/user/556138"
+                }
+            ],
+            "description": "A Twig extension with some useful functions and filters for Drupal development.",
+            "homepage": "https://www.drupal.org/project/twig_tweak",
+            "keywords": [
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/twig_tweak",
+                "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
         },
         {
@@ -7573,7 +7632,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2018-06-24 20:08:51"
+            "time": "2018-06-24T20:08:51+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -7745,7 +7804,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10 12:39:06"
+            "time": "2018-10-10T12:39:06+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -9643,17 +9702,6 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.6.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webflo/drupal-core-require-dev.git",
-                "reference": "ec02673dbd55068e4fff8edc322af4a226d7f59c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/ec02673dbd55068e4fff8edc322af4a226d7f59c",
-                "reference": "ec02673dbd55068e4fff8edc322af4a226d7f59c",
-                "shasum": ""
-            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
