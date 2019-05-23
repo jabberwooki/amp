@@ -4,4 +4,3 @@ sendinblue_smtp_details:
   relay: smtp-relay-eu-fr-1.51b.tech
   port: '587'
 sendinblue_on: '1'
-cat
