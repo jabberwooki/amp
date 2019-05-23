@@ -1,10 +1,10 @@
-sendinblue_access_key: YwWjvNMkyCI2KF83
+sendinblue_access_key: dummy
 sendinblue_account_email: sographik@gmail.com
 sendinblue_account_username: 'Sophie BONNIN'
 sendinblue_account_data:
   -
     plan_type: CREDIT_REC
-    credits: 60000
+    credits: 59999
     credit_type: 'Send Limit'
     start_date: '2019-05-20'
     end_date: '2019-06-20'
