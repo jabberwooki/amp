@@ -8722,8 +8722,6 @@ body {
 a.logo {
   background: url(../images/logo_colloque_amp_2019.svg) no-repeat;
   content: '';
-  width: 317px;
-  height: 104px;
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -8765,28 +8763,56 @@ header .region-header .navbar-brand {
 
 header .region-header #block-partner-top-block {
   float: left;
+  width: 65%;
+  text-align: right;
 }
 
 header .region-header #block-partner-top-block .field--item {
   display: inline-block;
 }
 
+header .region-header #block-partner-top-block .field--item .img-responsive {
+  display: block;
+  max-width: 72%;
+  height: auto;
+}
+
 header .region-header #block-socialmedialinks-header {
   float: right;
 }
 
-header .region-header .block-superfish {
-  clear: left;
-  float: right;
-  background: #0167b1;
+header .region-header #block-socialmedialinks-header a {
+  color: #333;
 }
 
-header .region-header .block-superfish a {
+header .region-header #block-socialmedialinks-header a:hover {
+  color: #0167b1;
+}
+
+header .region-header #block-socialmedialinks-header .fa-2x {
+  font-size: 18px;
+}
+
+.block-superfish {
+  background: #0167b1;
+  width: 75%;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  height: 70px;
+}
+
+.block-superfish span.nolink,
+.block-superfish li a {
   color: #fff;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #block-savethedate {
+  margin-top: -20px;
   position: relative;
+  z-index: -10;
 }
 
 #block-savethedate .field--name-field-info-text {
@@ -8824,6 +8850,30 @@ header .region-header .block-superfish a {
   left: 0;
   background: #0167b1;
   color: white;
+}
+
+#block-views-block-news-front-block h2.block-title {
+  font-family: 'Spotka';
+  font-weight: 400;
+  font-size: 48px;
+  color: #333;
+  padding: 0;
+  height: 100%;
+}
+
+#block-views-block-news-front-block .all-news-link a {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+#block-views-block-news-front-block .all-news-link a:hover {
+  color: #f37521;
+  border-color: #f37521;
 }
 
 #views-bootstrap-news-list .node,
@@ -8890,6 +8940,35 @@ header .region-header .block-superfish a {
 #views-bootstrap-news-front-block .node .news-content .field--name-node-link a:hover {
   color: #f37521;
   border-color: #f37521;
+}
+
+.header-amp .bg {
+  position: absolute;
+  right: 0;
+  background: #0167b1;
+  height: 35%;
+  width: 20%;
+  margin-top: 65px;
+}
+
+#block-amp-programme-block {
+  background: #0167b1;
+  margin-top: 65px;
+  color: white;
+}
+
+#block-amp-programme-block .amp-programme-block-title {
+  font-size: 20px;
+  font-family: 'Spotka';
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#block-amp-programme-block .amp-programme-link-title a {
+  color: white;
+  background: #f37521;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 .field--name-node-title h2 {
@@ -9178,6 +9257,7 @@ blockquote {
 
 .footer-fluid {
   background: white;
+  margin-top: 80px;
 }
 
 .footer-fluid .footer {

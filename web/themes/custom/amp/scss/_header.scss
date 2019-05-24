@@ -5,8 +5,6 @@ body{
 a.logo{
     background: url(../images/logo_colloque_amp_2019.svg) no-repeat;
     content: '';
-    width: 317px;
-    height: 104px;
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -43,28 +41,52 @@ header{
 
         #block-partner-top-block{
             float: left;
+            width: 65%;
+            text-align: right;
             .field--item{
                 display: inline-block;
+                .img-responsive {
+                    display: block;
+                    max-width: 72%;
+                    height: auto;
+                }
             }
         }
         
         #block-socialmedialinks-header{
             float: right;
-        }
-        
-        .block-superfish{
-            clear:left;
-            float: right;
-            background: $brand-primary;
             a{
-                color:#fff;
+                color: #333;
+                &:hover{
+                    color: $brand-primary;
+                }
+            }
+            .fa-2x{
+                font-size: 18px;
             }
         }
     }
 }
 
+.block-superfish{
+    background: $brand-primary;
+    width: 75%;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    height: 70px;
+    span.nolink,
+    li a{
+        color:#fff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
 #block-savethedate{
+    margin-top: -20px;
     position: relative;
+    z-index: -10;
     .field--name-field-info-text{
         position: absolute;
         top: 50%;

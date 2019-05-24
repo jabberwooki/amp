@@ -9,14 +9,38 @@
         color: white;
     }
 }
-
-
 //ACTUS
+#block-views-block-news-front-block{
+    h2.block-title{
+        font-family: 'Spotka';
+        font-weight: 400;
+        font-size: 48px;
+        color: #333;
+        padding: 0;
+        height : 100%;
+    }
+    .all-news-link a {
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        color:#333;
+        border: 2px solid #333;
+        border-radius: 20px;
+        padding: 5px 10px;
+            &:hover{
+                color: $brand-secondary;
+                border-color: $brand-secondary;
+            }
+    }
+}
+
 #views-bootstrap-news-list .node,
 #views-bootstrap-news-front-block .node{
     background: white;
-    .news-content{
-       padding: 0 15px 15px 15px;
+}
+#views-bootstrap-news-list .node .news-content,
+#views-bootstrap-news-front-block .node .news-content{
+    padding: 0 15px 15px 15px;
        h3{
         font-size: 20px;
         font-family: 'Spotka';
@@ -57,6 +81,35 @@
             }
         }
        }
+}
+
+//BLOC PROGRAMME
+.header-amp .bg {
+    position: absolute;
+    right: 0;
+    background: $brand-primary;
+    height: 35%;
+    width: 20%;
+    margin-top: 65px;
+}
+#block-amp-programme-block{
+    background: $brand-primary;
+    margin-top: 65px;
+    color: white;
+    .amp-programme-block-title{
+        font-size: 20px;
+        font-family: 'Spotka';
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .amp-programme-image{
+        
+    }
+    .amp-programme-link-title a{
+        color: white;
+        background: $brand-secondary;
+        border-radius: 20px;
+        padding: 10px 20px;
     }
 }
 
@@ -292,8 +345,3 @@ blockquote {
         column-gap: 50px;
     }
 }
-
-
-
-
-
