@@ -8717,6 +8717,7 @@ p:last-child,
 
 body {
   font-weight: 500;
+  margin: 0;
 }
 
 a.logo {
@@ -8725,6 +8726,7 @@ a.logo {
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 15px 0;
 }
 
 a.logo img {
@@ -8767,18 +8769,24 @@ header .region-header #block-partner-top-block {
   text-align: right;
 }
 
-header .region-header #block-partner-top-block .field--item {
-  display: inline-block;
+header .region-header #block-partner-top-block .field--items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5px;
 }
 
-header .region-header #block-partner-top-block .field--item .img-responsive {
-  display: block;
-  max-width: 72%;
+header .region-header #block-partner-top-block .field--item {
+  flex-grow: 3;
+  max-width: 110px;
+  margin-left: 20px;
   height: auto;
+  position: relative;
 }
 
 header .region-header #block-socialmedialinks-header {
   float: right;
+  margin-top: 25px;
 }
 
 header .region-header #block-socialmedialinks-header a {
@@ -8971,18 +8979,28 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   color: #f37521;
 }
 
+#views-bootstrap-news-list .node .news-content h3 a:after,
+#views-bootstrap-news-front-block .node .news-content h3 a:after {
+  content: '_';
+  line-height: 50px;
+  position: absolute;
+  left: 15px;
+}
+
 #views-bootstrap-news-list .node .news-content .field--name-node-post-date,
 #views-bootstrap-news-front-block .node .news-content .field--name-node-post-date {
   font-size: 14px;
   font-family: 'Spotka';
   font-weight: 800;
   color: #333;
+  margin-top: 20px;
 }
 
 #views-bootstrap-news-list .node .news-content .field--name-field-summary,
 #views-bootstrap-news-front-block .node .news-content .field--name-field-summary {
   font-size: 13px;
   line-height: 18px;
+  margin-top: 5px;
 }
 
 #views-bootstrap-news-list .node .news-content .field--name-node-link,
