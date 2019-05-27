@@ -7,4 +7,36 @@
         padding-bottom: 36px;
         border-top: none;
     }
+
+    #block-partner-footer-block{
+        .field--items{
+            display: flex;
+            justify-content: flex-end;
+            align-items : center;
+            margin-top: 0;
+            flex-wrap: wrap;
+        }
+        .field--item{
+            flex-grow: 2;
+            max-width: 110px;
+            margin-right: 20px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    #block-socialmedialinks-footer{
+        text-align: center;
+        a{
+            color: #333;
+            margin-left: 10px;
+            &:hover{
+                color: $brand-primary;
+            }
+        }
+        .fa-3x{
+            font-size: 24px;
+        }
+    }
+
 }
