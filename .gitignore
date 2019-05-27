@@ -25,3 +25,7 @@
 
 * Ignore Prepros compiler settings
 prepros-6.config
+
+* Ignore Sendinblue block positioning settings.
+config/sync/block.block.sib_front_form.yml
+
