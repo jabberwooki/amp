@@ -28,4 +28,7 @@ prepros-6.config
 
 * Ignore Sendinblue block positioning settings.
 config/sync/block.block.sib_front_form.yml
+config/sync/sendinblue.config_global.settings.yml
+config/sync/sendinblue.config_registering_user.settings.yml
+config/sync/sendinblue.config_send_email.settings.yml
 
