@@ -71,11 +71,12 @@
 
     <div class="row">
       {# Highlighted #}
-
           {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
+            <div class="highlighted">
+            {{ page.highlighted }}
+            {% include directory ~ '/templates/region--highlighted.html.twig' %}
+            </div>
           {% endblock %}
-
       </div>
 
       <div class="row">

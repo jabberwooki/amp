@@ -8822,6 +8822,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   width: 100%;
   height: 257px;
   position: relative;
+  z-index: -10;
 }
 
 .highlighted .region-highlighted {
@@ -8833,13 +8834,17 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   width: 1513px;
   height: 173px;
   position: absolute;
-  bottom: 8%;
+  bottom: 26%;
   right: 0;
 }
 
 .path-frontpage .highlighted {
   height: auto;
   background: none;
+}
+
+.path-frontpage .highlighted .persos-vecto {
+  bottom: 8%;
 }
 
 #block-savethedate {
