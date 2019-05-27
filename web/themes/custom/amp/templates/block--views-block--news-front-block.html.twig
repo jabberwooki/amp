@@ -62,8 +62,10 @@
   {#{{ title_suffix }}#}
 
   {#<h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>#}
+  <div class="row header_news">
   <h2 class="block-title col-md-8">Actualités</h2>
   <div class="all-news-link col-md-4"><a href="/actualites">Toutes les actualités</a></div>
+  </div>
 
   {% block content %}
     {{ content }}

@@ -11,26 +11,51 @@
 }
 //ACTUS
 #block-views-block-news-front-block{
+    margin-top: 65px;
+    .header_news{
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     h2.block-title{
+        margin-top: 0;
+        margin-bottom: 30px;
         font-family: 'Spotka';
         font-weight: 400;
         font-size: 48px;
         color: #333;
         padding: 0;
         height : 100%;
+        position: relative;
+        &:after{
+            content: " ";
+            background: url('../images/trait_bleu.jpg') no-repeat;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
     }
-    .all-news-link a {
-        font-weight: 700;
-        font-size: 13px;
-        text-transform: uppercase;
-        color:#333;
-        border: 2px solid #333;
-        border-radius: 20px;
-        padding: 5px 10px;
-            &:hover{
-                color: $brand-secondary;
-                border-color: $brand-secondary;
-            }
+    .all-news-link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 30px;
+        text-align: right;
+        a {
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            color:#333;
+            border: 2px solid #333;
+            border-radius: 20px;
+            padding: 5px 10px;
+                &:hover{
+                    color: $brand-secondary;
+                    border-color: $brand-secondary;
+                }
+        }
     }
 }
 
@@ -96,20 +121,36 @@
     background: $brand-primary;
     margin-top: 65px;
     color: white;
+    padding: 35px 30px 45px 30px;
     .amp-programme-block-title{
         font-size: 20px;
         font-family: 'Spotka';
         text-transform: uppercase;
         font-weight: 800;
+        position: relative;
+        &:after{
+            content: " ";
+            background: url('../images/trait_orange.jpg') no-repeat;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
     }
     .amp-programme-image{
-        
+        background: url('../images/programme_img.png') no-repeat;
+        width: 320px;
+        height: 391px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
-    .amp-programme-link-title a{
-        color: white;
-        background: $brand-secondary;
-        border-radius: 20px;
-        padding: 10px 20px;
+    .amp-programme-link-title{
+        text-align: center;
+        margin-top: 28px;
+        a{
+            @include btn-amp;
+        }
     }
 }
 

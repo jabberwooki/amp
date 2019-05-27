@@ -8852,13 +8852,44 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   color: white;
 }
 
+#block-views-block-news-front-block {
+  margin-top: 65px;
+}
+
+#block-views-block-news-front-block .header_news {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 #block-views-block-news-front-block h2.block-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-family: 'Spotka';
   font-weight: 400;
   font-size: 48px;
   color: #333;
   padding: 0;
   height: 100%;
+  position: relative;
+}
+
+#block-views-block-news-front-block h2.block-title:after {
+  content: " ";
+  background: url("../images/trait_bleu.jpg") no-repeat;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+#block-views-block-news-front-block .all-news-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 30px;
+  text-align: right;
 }
 
 #block-views-block-news-front-block .all-news-link a {
@@ -8955,6 +8986,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   background: #0167b1;
   margin-top: 65px;
   color: white;
+  padding: 35px 30px 45px 30px;
 }
 
 #block-amp-programme-block .amp-programme-block-title {
@@ -8962,13 +8994,48 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   font-family: 'Spotka';
   text-transform: uppercase;
   font-weight: 800;
+  position: relative;
+}
+
+#block-amp-programme-block .amp-programme-block-title:after {
+  content: " ";
+  background: url("../images/trait_orange.jpg") no-repeat;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+#block-amp-programme-block .amp-programme-image {
+  background: url("../images/programme_img.png") no-repeat;
+  width: 320px;
+  height: 391px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#block-amp-programme-block .amp-programme-link-title {
+  text-align: center;
+  margin-top: 28px;
 }
 
 #block-amp-programme-block .amp-programme-link-title a {
-  color: white;
-  background: #f37521;
-  border-radius: 20px;
-  padding: 10px 20px;
+  background-image: linear-gradient(to right, #f48439, #f37521);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-size: 13px;
+  border: 1px solid #0167b1;
+}
+
+#block-amp-programme-block .amp-programme-link-title a:hover {
+  background-image: linear-gradient(to right, #01497e, #002c4c);
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .field--name-node-title h2 {
