@@ -94,7 +94,7 @@
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container container">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
       <section>
@@ -111,7 +111,7 @@
           {{ page.content }}
         {% endblock %}
       </section>
-      <div class='header-amp'><div class="bg hidden-xs hidden-sm"></div>
+      <div class='header-amp'><div class="bg hidden-xs hidden-sm"></div></div>
 
     </div>
   </div>
