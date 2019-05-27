@@ -2,6 +2,23 @@ body{
     font-weight:500;
 }
 
+@mixin btn-amp {
+    background-image: linear-gradient(to right, lighten( $brand-secondary, 5% ), $brand-secondary );
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 13px;
+    border: 1px solid $brand-primary;
+    &:hover {
+      background-image: linear-gradient(to right, darken( $brand-primary, 10% ),  darken( $brand-primary, 20% ));
+      color:#fff;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+  }
+
 a.logo{
     background: url(../images/logo_colloque_amp_2019.svg) no-repeat;
     content: '';
