@@ -100,13 +100,25 @@ header{
     }
 }
 
+.region-highlighted{
+    position: relative;
+    .persos-vecto{
+        background: url('../images/persos_vecto.png') no-repeat;
+        width: 1513px;
+        height: 173px;
+        position: absolute;
+        bottom: 8%;
+        right: 0;
+    }
+}
+
 #block-savethedate{
     margin-top: -20px;
     position: relative;
     z-index: -10;
     .field--name-field-info-text{
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
@@ -114,7 +126,25 @@ header{
         text-align: center;
         color: white;
         font-family: 'Spotka';
-        font-style:800;
+        font-weight:800;
+        p.niv1{
+            font-weight: 400;
+            font-size: 113px;
+            text-transform: uppercase;
+            line-height: 90px;
+        }
+        p.niv2{
+            font-size: 32px;
+            text-transform: uppercase;
+            background: $brand-secondary;
+            margin-bottom: 0;
+        }
+        p.niv3{
+            font-size: 37.74px;
+            text-transform: uppercase;
+            font-weight: 400;
+            line-height: 50px;
+        }
     }
 }
 
@@ -122,6 +152,7 @@ header{
     margin-left:65px;
     .region-precontent{
         background: $brand-secondary;
+        margin-top: -50px;
         a{
             color: white;
         }

@@ -1,4 +1,4 @@
-sendinblue_access_key: dummy
+sendinblue_access_key: 18BNtcJR6Mgq5xPb
 sendinblue_account_email: sographik@gmail.com
 sendinblue_account_username: 'Sophie BONNIN'
 sendinblue_account_data:
@@ -18,7 +18,7 @@ sendinblue_account_data:
     last_name: BONNIN
     email: sographik@gmail.com
     company: sographik
-    address: dummy
+    address: '18 rue Delmas'
     city: Montpellier
     zip_code: '34000'
     country: France

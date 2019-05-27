@@ -5,7 +5,7 @@ dependencies: {  }
 label: 'Bandeau desktop'
 id: bandeau_desktop
 description: ''
-aspect_ratio: '4:1'
+aspect_ratio: '85:29'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null

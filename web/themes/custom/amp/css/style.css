@@ -8809,6 +8809,19 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   font-weight: 600;
 }
 
+.region-highlighted {
+  position: relative;
+}
+
+.region-highlighted .persos-vecto {
+  background: url("../images/persos_vecto.png") no-repeat;
+  width: 1513px;
+  height: 173px;
+  position: absolute;
+  bottom: 8%;
+  right: 0;
+}
+
 #block-savethedate {
   margin-top: -20px;
   position: relative;
@@ -8817,7 +8830,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
 
 #block-savethedate .field--name-field-info-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -8825,7 +8838,28 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   text-align: center;
   color: white;
   font-family: 'Spotka';
-  font-style: 800;
+  font-weight: 800;
+}
+
+#block-savethedate .field--name-field-info-text p.niv1 {
+  font-weight: 400;
+  font-size: 113px;
+  text-transform: uppercase;
+  line-height: 90px;
+}
+
+#block-savethedate .field--name-field-info-text p.niv2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  background: #f37521;
+  margin-bottom: 0;
+}
+
+#block-savethedate .field--name-field-info-text p.niv3 {
+  font-size: 37.74px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 50px;
 }
 
 .precontent {
@@ -8834,6 +8868,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
 
 .precontent .region-precontent {
   background: #f37521;
+  margin-top: -50px;
 }
 
 .precontent .region-precontent a {
