@@ -7,17 +7,17 @@
     attach: function (context, settings) {
 
       $('.paragraph--type--carousel-100 .field--items').slick({
-        //dots: true,
-        //speed: 1500,
-        //autoplay: false,
-        //arrows: true,
+        dots: true,
+        speed: 1500,
+        autoplay: false,
+        arrows: true,
         //fade: true
       });
 
-      $('.paragraph--type--carousel-100 .field--items').slickLightbox({
-        src: 'src',
-        itemSelector: '.field--item img'
-      });
+      //$('.paragraph--type--carousel-100 .field--items').slickLightbox({
+      //  src: 'src',
+      //  itemSelector: '.field--item img'
+      //});
     }
   };
 })(jQuery);
