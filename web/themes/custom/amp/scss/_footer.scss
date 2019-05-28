@@ -39,4 +39,14 @@
         }
     }
 
+    .nav > li > a{
+        font-weight: 600;
+        font-size: 13px;
+        color: #333;
+        &:hover{
+            background: none;
+            color: $brand-primary;
+        }
+    }
+
 }
