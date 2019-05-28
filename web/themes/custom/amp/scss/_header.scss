@@ -105,6 +105,22 @@ header{
         position: absolute;
         top: 20%;
     }
+    ul.sf-menu.sf-horizontal.sf-shadow ul li{
+        background: $brand-primary;
+        &:hover{
+            background: $brand-secondary;
+        }
+    }
+    ul.sf-menu li:hover > ul, ul.sf-menu li.sfHover > ul {
+        left: 0;
+        top: 4em;
+    }
+    ul.sf-menu ul li{
+        border-bottom: 1px solid #fff;
+        &:last-of-type{
+            border: none;
+        }
+    }
     span.nolink,
     li a{
         color:#fff;
@@ -176,19 +192,36 @@ header{
 .precontent{
     margin-left:65px;
     .region-precontent{
-        background: $brand-secondary;
+        background-image: linear-gradient(to right, #ff8e2d, #ff6701 );
         margin-top: -50px;
-        padding: 10px 0 10px 10px;
+        padding: 0 0 0 10px;
         a{
             color: white;
         }
     }
     #block-amp-contrib-block{
         position: relative;
+        background-image: linear-gradient(to right, #ff8e2d, #ff6701 );
+        margin-right: 30px;
+        &:after {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-top: 40px solid transparent;
+            border-left: 20px solid #ff6701;
+            border-bottom: 40px solid transparent;
+            margin-top: -40px;
+        }
         .icon{
             background: url('../images/icon_user.png') no-repeat;
             width: 56px;
             height: 62px;
+            margin: 10px 0;
         }
         a{
             font-family: 'Spotka';
@@ -198,11 +231,15 @@ header{
             text-decoration: none;
             background: #ff4800;
             border-radius: 30px;
-            padding: 4px 35px;
+            padding: 4px 40px;
             position: absolute;
             left: 100px;
             top: 50%;
             transform: translateY(-50%);
+            &:hover{
+                color: #ff4800;
+                background: #fff;
+            }
         }
         .amp-contrib-link-title:after{
             font-size:20px;
@@ -213,7 +250,7 @@ header{
             background: #fff;
             border-radius: 50%;
             padding: 6px 16px;
-            left: 50%;
+            left: 75%;
             position: absolute;
             top:50%;
             transform: translateY(-50%);
@@ -235,6 +272,7 @@ header{
             width: 62px;
             height: 64px;
             float: left;
+            margin: 10px 0;
         }
         input#edit-fields-email {
             float: left;

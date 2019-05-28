@@ -8816,6 +8816,27 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   top: 20%;
 }
 
+.block-superfish ul.sf-menu.sf-horizontal.sf-shadow ul li {
+  background: #0167b1;
+}
+
+.block-superfish ul.sf-menu.sf-horizontal.sf-shadow ul li:hover {
+  background: #f37521;
+}
+
+.block-superfish ul.sf-menu li:hover > ul, .block-superfish ul.sf-menu li.sfHover > ul {
+  left: 0;
+  top: 4em;
+}
+
+.block-superfish ul.sf-menu ul li {
+  border-bottom: 1px solid #fff;
+}
+
+.block-superfish ul.sf-menu ul li:last-of-type {
+  border: none;
+}
+
 .block-superfish span.nolink,
 .block-superfish li a {
   color: #fff;
@@ -8895,9 +8916,9 @@ header .region-header #block-socialmedialinks-header .fa-2x {
 }
 
 .precontent .region-precontent {
-  background: #f37521;
+  background-image: linear-gradient(to right, #ff8e2d, #ff6701);
   margin-top: -50px;
-  padding: 10px 0 10px 10px;
+  padding: 0 0 0 10px;
 }
 
 .precontent .region-precontent a {
@@ -8906,12 +8927,30 @@ header .region-header #block-socialmedialinks-header .fa-2x {
 
 .precontent #block-amp-contrib-block {
   position: relative;
+  background-image: linear-gradient(to right, #ff8e2d, #ff6701);
+  margin-right: 30px;
+}
+
+.precontent #block-amp-contrib-block:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top: 40px solid transparent;
+  border-left: 20px solid #ff6701;
+  border-bottom: 40px solid transparent;
+  margin-top: -40px;
 }
 
 .precontent #block-amp-contrib-block .icon {
   background: url("../images/icon_user.png") no-repeat;
   width: 56px;
   height: 62px;
+  margin: 10px 0;
 }
 
 .precontent #block-amp-contrib-block a {
@@ -8922,11 +8961,16 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   text-decoration: none;
   background: #ff4800;
   border-radius: 30px;
-  padding: 4px 35px;
+  padding: 4px 40px;
   position: absolute;
   left: 100px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.precontent #block-amp-contrib-block a:hover {
+  color: #ff4800;
+  background: #fff;
 }
 
 .precontent #block-amp-contrib-block .amp-contrib-link-title:after {
@@ -8938,7 +8982,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   background: #fff;
   border-radius: 50%;
   padding: 6px 16px;
-  left: 50%;
+  left: 75%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -8964,6 +9008,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   width: 62px;
   height: 64px;
   float: left;
+  margin: 10px 0;
 }
 
 .precontent #block-sib-front-form input#edit-fields-email {
