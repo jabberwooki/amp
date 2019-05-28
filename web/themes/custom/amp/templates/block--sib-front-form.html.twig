@@ -50,7 +50,7 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'col-md-6',
+    'col-md-4',
     'clearfix',
   ]
 %}
@@ -62,6 +62,7 @@
   {{ title_suffix }}
 
   {% block content %}
+  <div class="icon"></div>
     {{ content }}
   {% endblock %}
 </section>

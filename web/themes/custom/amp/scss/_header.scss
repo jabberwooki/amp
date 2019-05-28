@@ -135,7 +135,7 @@ header{
     height: auto;
     background: none;
     .persos-vecto{
-        bottom: 8%;
+        bottom: 11%;
     }
 }
 
@@ -178,8 +178,87 @@ header{
     .region-precontent{
         background: $brand-secondary;
         margin-top: -50px;
+        padding: 10px 0 10px 10px;
         a{
             color: white;
+        }
+    }
+    #block-amp-contrib-block{
+        position: relative;
+        .icon{
+            background: url('../images/icon_user.png') no-repeat;
+            width: 56px;
+            height: 62px;
+        }
+        a{
+            font-family: 'Spotka';
+            font-size:20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            background: #ff4800;
+            border-radius: 30px;
+            padding: 4px 35px;
+            position: absolute;
+            left: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .amp-contrib-link-title:after{
+            font-size:20px;
+            font-family: 'Spotka';
+            font-weight: 700;
+            content:">";
+            color: #ff4800;
+            background: #fff;
+            border-radius: 50%;
+            padding: 6px 16px;
+            left: 50%;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+    #block-sib-front-form{
+        position: relative;
+        label{
+            display: none;
+        }
+        form{
+            margin-left: 80px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .icon{
+            background: url('../images/icon_newsletter.png') no-repeat;
+            width: 62px;
+            height: 64px;
+            float: left;
+        }
+        input#edit-fields-email {
+            float: left;
+            border-radius: 30px;
+        }
+        .form-control {
+            width: 65% !important;
+        }
+        button{
+            float: left;
+        }
+        .btn-default {
+            color: #333;
+            background-color: #ccc;
+            border-color: #ccc;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 7px 20px;
+            margin-left: -20px;
+            &:hover{
+                color: #ccc;
+                background-color: #333;
+            }
         }
     }
 }
