@@ -7,14 +7,50 @@ dependencies:
     - field.field.paragraph.carousel_image.field_image
     - paragraphs.paragraphs_type.carousel_image
   module:
+    - field_group
     - image_title_caption
+third_party_settings:
+  field_group:
+    group_container:
+      children:
+        - group_bundle
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Container
+    group_bundle:
+      children:
+        - field_image
+        - field_caption
+      parent_name: group_container
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-offset-2 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Bundle
 id: paragraph.carousel_image.default
 targetEntityType: paragraph
 bundle: carousel_image
 mode: default
 content:
   field_caption:
-    weight: 1
+    weight: 2
     label: visually_hidden
     settings:
       link_to_entity: false
@@ -22,7 +58,7 @@ content:
     type: string
     region: content
   field_image:
-    weight: 0
+    weight: 1
     label: visually_hidden
     settings:
       image_style: ''

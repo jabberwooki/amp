@@ -14,7 +14,7 @@ bundle: image_text_banner
 mode: default
 content:
   field_text:
-    weight: 0
+    weight: 1
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }

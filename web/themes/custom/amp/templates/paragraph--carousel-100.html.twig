@@ -49,10 +49,11 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 
 {{ attach_library('amp/slick') }}
 
-{% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
-        {% block content %}
-            {{ content }}
-        {% endblock %}
-    </div>
-{% endblock paragraph %}
+
+    {% block paragraph %}
+        <div{{ attributes.addClass(classes) }}>
+            {% block content %}
+                {{ content }}
+            {% endblock %}
+        </div>
+    {% endblock paragraph %}

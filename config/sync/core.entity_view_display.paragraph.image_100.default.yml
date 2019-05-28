@@ -6,14 +6,49 @@ dependencies:
     - field.field.paragraph.image_100.field_image
     - paragraphs.paragraphs_type.image_100
   module:
+    - field_group
     - image_title_caption
+third_party_settings:
+  field_group:
+    group_container:
+      children:
+        - group_bundle
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Container
+    group_bundle:
+      children:
+        - field_image
+      parent_name: group_container
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-offset-2 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Bundle
 id: paragraph.image_100.default
 targetEntityType: paragraph
 bundle: image_100
 mode: default
 content:
   field_image:
-    weight: 0
+    weight: 1
     label: visually_hidden
     settings:
       image_style: ''

@@ -6,14 +6,49 @@ dependencies:
     - field.field.paragraph.simple_text.field_text
     - paragraphs.paragraphs_type.simple_text
   module:
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_container:
+      children:
+        - group_bundle
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Container
+    group_bundle:
+      children:
+        - field_text
+      parent_name: group_container
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-offset-2 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: bundle
 id: paragraph.simple_text.default
 targetEntityType: paragraph
 bundle: simple_text
 mode: default
 content:
   field_text:
-    weight: 0
+    weight: 21
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }

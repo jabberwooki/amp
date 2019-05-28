@@ -9406,6 +9406,10 @@ blockquote {
   color: #fff;
 }
 
+.paragraph.paragraph--type--image-text-banner.paragraph--view-mode--default {
+  min-height: 300px;
+}
+
 /*DOCUMENTS A TELECHARGER*/
 .paragraph--type--text-50-documents-50 .field--name-field-documents,
 .paragraph--type--documents-50-text-50 .field--name-field-documents,
