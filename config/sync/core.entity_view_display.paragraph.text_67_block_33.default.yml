@@ -47,7 +47,7 @@ third_party_settings:
       children:
         - group_left
         - group_right
-      parent_name: group_bundle
+      parent_name: ''
       weight: 1
       format_type: html_element
       format_settings:
@@ -60,38 +60,6 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
-    group_container:
-      children:
-        - group_bundle
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: container
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: Container
-    group_bundle:
-      children:
-        - group_row
-      parent_name: group_container
-      weight: 2
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: 'col-xs-12 col-md-offset-2 col-md-8'
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: Bundle
 id: paragraph.text_67_block_33.default
 targetEntityType: paragraph
 bundle: text_67_block_33

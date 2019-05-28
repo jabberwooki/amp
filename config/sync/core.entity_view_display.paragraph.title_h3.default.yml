@@ -5,42 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.title_h3.field_title
     - paragraphs.paragraphs_type.title_h3
-  module:
-    - field_group
-third_party_settings:
-  field_group:
-    group_container:
-      children:
-        - group_bundle
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: container
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: Container
-    group_bundle:
-      children:
-        - field_title
-      parent_name: group_container
-      weight: 2
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: 'col-xs-12 col-md-offset-2 col-md-8'
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: Bundle
 id: paragraph.title_h3.default
 targetEntityType: paragraph
 bundle: title_h3
