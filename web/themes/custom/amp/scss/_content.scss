@@ -424,6 +424,30 @@ blockquote {
     }
 }
 
+//NODE ACTU
+.node--type-news{
+    margin-top: 45px;
+    .field--name-node-post-date {
+        font-size: 24px;
+        font-family: 'Spotka';
+        font-weight: 800;
+        color: #333;
+    }
+    .field--name-node-title h2{
+        position: relative;
+        margin-bottom:50px;
+        &:after{
+            content: " ";
+            background: url('../images/trait_bleu.jpg') no-repeat;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
+    }
+}
+
 //PAGINATION
 .pagination{
     .pager__item.pager__item--first,
