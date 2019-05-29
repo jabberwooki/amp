@@ -1,7 +1,9 @@
 uuid: 5c358ddc-8a4a-4ca6-bbf0-454317c8ce8c
 langcode: fr
-status: false
+status: true
 dependencies:
+  module:
+    - system
   theme:
     - amp
 _core:
@@ -17,4 +19,9 @@ settings:
   label: 'Titre de page'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /actualites
+    negate: false
+    context_mapping: {  }

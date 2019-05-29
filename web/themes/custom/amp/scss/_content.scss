@@ -115,6 +115,30 @@
         }
        }
 }
+#views-bootstrap-news-list .node{
+    margin-bottom: 30px;
+}
+
+.path-actualites h2.js-quickedit-page-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Spotka';
+    font-weight: 400;
+    font-size: 48px;
+    color: #333;
+    padding: 0;
+    height : 100%;
+    position: relative;
+    &:after{
+        content: " ";
+        background: url('../images/trait_bleu.jpg') no-repeat;
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+    }
+}
 
 //BLOC PROGRAMME
 .header-amp .bg {
