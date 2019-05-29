@@ -9562,6 +9562,41 @@ blockquote {
   column-gap: 50px;
 }
 
+.pagination .pager__item.pager__item--first a,
+.pagination .pager__item.pager__item--previous a,
+.pagination .pager__item.pager__item--next a,
+.pagination .pager__item.pager__item--last a {
+  border: none;
+  background: transparent;
+  color: #333;
+  font-family: 'Spotka';
+  font-weight: 400;
+}
+
+.pagination .pager__item.pager__item--first a:hover,
+.pagination .pager__item.pager__item--previous a:hover,
+.pagination .pager__item.pager__item--next a:hover,
+.pagination .pager__item.pager__item--last a:hover {
+  background: transparent;
+  color: #0167b1;
+}
+
+.pagination li.pager__item a {
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #0167b1;
+  color: #0167b1;
+  font-family: 'Spotka';
+  font-weight: 800;
+  margin-left: 8px;
+}
+
+.pagination li.pager__item a:hover,
+.pagination li.pager__item.is-active.active a {
+  background: #0167b1;
+  color: #fff;
+}
+
 .footer-fluid {
   background: white;
   margin-top: 80px;

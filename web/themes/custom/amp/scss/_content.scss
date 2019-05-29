@@ -423,3 +423,40 @@ blockquote {
         column-gap: 50px;
     }
 }
+
+//PAGINATION
+.pagination{
+    .pager__item.pager__item--first,
+    .pager__item.pager__item--previous,
+    .pager__item.pager__item--next,
+    .pager__item.pager__item--last{
+        a{
+            border: none;
+            background: transparent;
+            color: #333;
+            font-family: 'Spotka';
+            font-weight: 400;
+            &:hover{
+                background: transparent;
+                color: $brand-primary;
+            }
+        }
+    }
+    li.pager__item{
+        a{
+            background: #fff;
+            border-radius: 50%;
+            border:2px solid $brand-primary;
+            color: $brand-primary;
+            font-family: 'Spotka';
+            font-weight: 800;
+            margin-left: 8px;
+        }
+    }
+    li.pager__item a:hover,
+    li.pager__item.is-active.active a{
+        background: $brand-primary;
+        color: #fff;
+    }
+}
+
