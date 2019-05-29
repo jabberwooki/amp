@@ -34,3 +34,8 @@ slick:
       #libraries/slick-lightblox/slick-lightbox.css: {}
   dependencies:
     - core/jquery
+
+amp:
+  js:
+    js/jquery.matchHeight.js: {}
+    js/amp.js: {}

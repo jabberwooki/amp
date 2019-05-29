@@ -22,6 +22,7 @@ regions:
 
 libraries:
   - 'amp/fonts'
+  - 'amp/amp'
 
 libraries-extend:
   bootstrap/framework:

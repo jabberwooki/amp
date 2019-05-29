@@ -34,6 +34,7 @@ third_party_settings:
       ds_content:
         - field_image
         - group_content
+        - group_wrapper
         - node_title
         - node_post_date
         - field_summary
@@ -41,7 +42,7 @@ third_party_settings:
     fields:
       node_link:
         plugin_id: node_link
-        weight: 5
+        weight: 24
         label: hidden
         formatter: default
         settings:
@@ -51,12 +52,12 @@ third_party_settings:
           class: ''
       node_post_date:
         plugin_id: node_post_date
-        weight: 3
+        weight: 22
         label: hidden
         formatter: ds_post_date_amp
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 21
         label: hidden
         formatter: default
         settings:
@@ -66,8 +67,7 @@ third_party_settings:
   field_group:
     group_content:
       children:
-        - node_title
-        - node_post_date
+        - group_wrapper
         - field_summary
         - node_link
       parent_name: ''
@@ -83,6 +83,23 @@ third_party_settings:
         effect: none
         speed: fast
       label: Content
+    group_wrapper:
+      children:
+        - node_title
+        - node_post_date
+      parent_name: group_content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: wrapper-title
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
 id: node.news.front
 targetEntityType: node
 bundle: news
@@ -98,7 +115,7 @@ content:
     type: image_title_caption
     region: ds_content
   field_summary:
-    weight: 4
+    weight: 23
     label: hidden
     settings: {  }
     third_party_settings: {  }
