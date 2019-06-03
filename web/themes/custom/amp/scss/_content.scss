@@ -5,8 +5,11 @@
         position: absolute;
         bottom: 0;
         left:0;
-        background: $brand-primary;
+        background-color: rgba(52, 52, 62, 0.85);
         color: white;
+        font-size:10px;
+        font-weight: 600;
+        padding: 2px 5px;
     }
 }
 //ACTUS
@@ -329,9 +332,53 @@ blockquote {
 //PARAGRAPH BANNER
 .paragraph.paragraph--type--image-text-banner.paragraph--view-mode--default {
     min-height: 300px;
+    position: relative;
+    .field--name-field-text{
+        font-size: 36px;
+        font-family: 'Spotka';
+        font-weight: 800;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
 }
 
-//DOCUMENTS A TELECHERGAR
+//PARAGRAPH DIAPORAMA
+.paragraph--type--carousel-100 .slick-prev.slick-arrow{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 100;
+}
+.paragraph--type--carousel-100 .slick-next.slick-arrow{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    z-index: 100;
+}
+.paragraph--type--carousel-100 .slick-prev:before {
+    content: '←';
+}
+.paragraph--type--carousel-100 .slick-prev:before,
+.paragraph--type--carousel-100 .slick-next:before {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 800;
+}
+
+
 /*DOCUMENTS A TELECHARGER*/
 .paragraph--type--text-50-documents-50, 
 .paragraph--type--documents-50-text-50,

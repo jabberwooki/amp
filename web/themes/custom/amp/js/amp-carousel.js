@@ -7,7 +7,7 @@
     attach: function (context, settings) {
 
       $('.paragraph--type--carousel-100 .field--items').slick({
-        dots: true,
+        dots: false,
         speed: 1500,
         autoplay: false,
         arrows: true,
