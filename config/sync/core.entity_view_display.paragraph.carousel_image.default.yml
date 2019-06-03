@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.carousel_image.field_caption
     - field.field.paragraph.carousel_image.field_image
+    - image.style.carrousel_paragraph
     - paragraphs.paragraphs_type.carousel_image
   module:
     - image_title_caption
@@ -25,7 +26,7 @@ content:
     weight: 1
     label: visually_hidden
     settings:
-      image_style: ''
+      image_style: carrousel_paragraph
       image_link: ''
     third_party_settings: {  }
     type: image_title_caption
