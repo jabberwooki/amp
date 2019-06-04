@@ -351,33 +351,50 @@ blockquote {
 }
 
 //PARAGRAPH DIAPORAMA
-.paragraph--type--carousel-100 .slick-prev.slick-arrow{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    z-index: 100;
+.paragraph--type--carousel-100{
+    .slick-prev.slick-arrow{
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        z-index: 100;
+    }
+    .slick-next.slick-arrow{
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        z-index: 100;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-family: 'fontawesome';
+        font-size: 16px;
+        line-height: 1;
+        opacity: 1;
+        color: $brand-primary !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: #fff;
+        border-radius: 50%;
+        padding: 60% 78%;
+    }
+    .slick-next:before {
+        content: '\f061';
+    }
+    .slick-prev:before {
+        content: '\f060';
+    }
+    .field--name-field-caption{
+        background: #fff;
+        font-weight: 600;
+        color: $brand-primary;
+        padding: 10px 15px;
+        -moz-box-shadow: 10px 10px 20px 0px #f1f1f1;
+        -webkit-box-shadow: 10px 10px 20px 0px #f1f1f1;
+        -o-box-shadow: 10px 10px 20px 0px #f1f1f1;
+        box-shadow: 10px 10px 20px 0px #f1f1f1;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#f1f1f1, Direction=134, Strength=20);
+    }
 }
-.paragraph--type--carousel-100 .slick-next.slick-arrow{
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    z-index: 100;
-}
-.paragraph--type--carousel-100 .slick-prev:before {
-    content: '←';
-}
-.paragraph--type--carousel-100 .slick-prev:before,
-.paragraph--type--carousel-100 .slick-next:before {
-    font-family: 'Montserrat';
-    font-size: 30px;
-    line-height: 1;
-    opacity: .75;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 800;
-}
-
 
 /*DOCUMENTS A TELECHARGER*/
 .paragraph--type--text-50-documents-50, 
@@ -388,7 +405,7 @@ blockquote {
         border-radius: 5px;
         color: #fff;
         padding: 30px 20px;
-        margin-top: 52px;
+        margin-top: 25px;
     }
     .field--label{
         color: white;
@@ -452,6 +469,9 @@ blockquote {
     }
 } 
 .paragraph--type--documents-100{
+    .field--name-field-documents{
+        margin-top: 52px;
+    }
     .field--label{
         color: white;
         display: flex;
