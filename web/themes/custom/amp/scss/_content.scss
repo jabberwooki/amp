@@ -190,6 +190,7 @@
 }
 
 //BUNDLES PARAGRAPHS
+
 .field--name-node-title h2{
     font-family: 'Spotka';
     font-weight: 400;
@@ -265,14 +266,21 @@ h5.titre{
 }
 blockquote {
     margin: 0 auto;
-    width: 80%;
-    color: $brand-primary;
+    width: 75%;
+    color: #0167b1;
     font-weight: 500;
     font-style: italic;
     border-left: 0;
     font-size: 14px;
     line-height: 19px;
+    position: relative;
+    background-image: url(../images/citation.png);
+    background-position: middle left;
+    background-repeat: no-repeat;
+    padding: 0 40px 0 80px;
+    margin-bottom: 10px;
 }
+
 //PARAGRAPH
 .paragraph{
     margin-bottom: 35px;
@@ -289,7 +297,8 @@ blockquote {
 // LISTES
 .field--name-body ul,
 .paragraph .field--name-field-text ul {
-    padding-left: 0.8em;
+    padding-left: 3em;
+    margin-bottom: 25px;
 }
 .paragraph .field--name-field-text ul li,
 .field--name-body li{
@@ -299,14 +308,35 @@ blockquote {
  }
  .paragraph .field--name-field-text ul li:before,
  .field--name-body li:before {
+    content: '\f061';
     font-family: 'FontAwesome';
-    content: '\f054';
     float: left;
-    margin-left: -1em;
+    margin-left: -1.5em;
     color: $brand-primary;
     font-size: 10px;
     margin-top: 3px;
 }
+.paragraph .field--name-field-text ol {
+    list-style: none;
+    counter-reset: li;
+    padding-left: 3em;
+    margin-bottom: 25px;
+}
+.paragraph .field--name-field-text ol li {
+    counter-increment: li;
+    margin-bottom: 5px;
+}
+.paragraph .field--name-field-text ol li::before {
+    content: counter(li) ". ";
+    color: $brand-primary;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: 700;
+    padding-right: 20px;
+    font-weight: 700;
+}
+
 // BLOCS DE COULEURS
 .bloc-left .field--name-field-colored-block{
     background-color: $brand-primary;
@@ -427,7 +457,7 @@ blockquote {
     }
     .field--item .file {
         display: inline-block;
-        border-bottom: 1px solid #4d96af;
+        border-bottom: 1px solid #fff;
         padding: 8px 0;
     }
     .file>span:first-child {
@@ -440,6 +470,13 @@ blockquote {
     }
     .file-link{ 
         float: left;
+        margin-left: 10px;
+        &:after{
+            content: '_';
+            line-height: 30px;
+            position: absolute;
+            left: 28px;
+        }
         a{
             color: #fff;
             text-decoration: none;
@@ -457,6 +494,9 @@ blockquote {
         text-align: left;
         padding: 0;
         font-weight: 400;
+        margin-top: 10px;
+        float: left;
+        margin-left: 10px;
     }
     .file{
         min-height: 87px;
@@ -492,7 +532,8 @@ blockquote {
 }
 
 //NODE ACTU
-.node--type-news{
+.page-node-type-page .node--type-page,
+.page-node-type-news .node--type-news{
     margin-top: 45px;
     .field--name-node-post-date {
         font-size: 24px;
