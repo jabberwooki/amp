@@ -197,11 +197,16 @@
     color: $brand-primary;
     font-size:40px;
 }
+.paragraph .field--name-field-text p{
+    margin: 0 0 20px;
+    line-height: 22px;
+}
 p.intro{
     font-family: 'Spotka';
     font-size: 24px;
     font-weight: 400;
     color: #333;
+    line-height: 1.42857 !important;
 }
 p.color{
     color: $brand-secondary;
@@ -377,6 +382,9 @@ blockquote {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         position: absolute;
+        p{
+            line-height: 1.42857 !important;
+        }
     }
 }
 
@@ -532,6 +540,7 @@ blockquote {
 }
 
 //NODE ACTU
+.page-node-type-advanced-page .node--type-advanced-page,
 .page-node-type-page .node--type-page,
 .page-node-type-news .node--type-news{
     margin-top: 45px;
@@ -552,6 +561,13 @@ blockquote {
             position: absolute;
             bottom: -15px;
             left: 0;
+        }
+    }
+}
+.page-node-type-advanced-page .node--type-advanced-page{
+    .field--name-node-title h2{
+        &:after{
+            left: 20px;
         }
     }
 }
