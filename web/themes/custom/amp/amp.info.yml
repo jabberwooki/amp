@@ -27,3 +27,6 @@ libraries:
 libraries-extend:
   bootstrap/framework:
     - amp/framework
+
+ckeditor_stylesheets:
+  - css/style.css
