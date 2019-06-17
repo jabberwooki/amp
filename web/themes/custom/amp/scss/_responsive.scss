@@ -6,12 +6,55 @@
     }
 
     /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
-
+    @media only screen and (max-width : 1024px) {
+        header{
+        .region-header{
+                a.logo {
+                    width: 22%;
+                }
+                #block-partner-top-block {
+                    width: 55%;
+                }
+            }
+        }
+        .header-amp .bg{
+            width: 7%;
+        }
+        #block-views-block-news-front-block .all-news-link a {
+            font-size: 11px;
+        }
+        #block-amp-programme-block .amp-programme-link-title a{
+            padding: 10px 15px;
+        }
+        #block-savethedate .field--name-field-info-text{
+            p.niv1 {
+                font-size: 56px;
+                line-height: 40px;
+            }
+            p.niv2 {
+                font-size: 16px;
+            }
+            p.niv3 {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+        .precontent {
+            margin-left: 35px;
+            #block-amp-contrib-block a {
+                font-size: 16px;
+            }
+            #block-amp-contrib-block .amp-contrib-link-title:after {
+                left: 85%;
+            }
+        }
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+        header .region-header a.logo {
+            width: 62%;
+        }
         #block-socialmedialinks-header,
         #block-partner-top-block{
             display: none;
