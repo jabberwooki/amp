@@ -9205,7 +9205,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   margin-bottom: 30px;
 }
 
-.path-actualites h2.js-quickedit-page-title {
+.path-actualites h2.page-header {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: 'Spotka';
@@ -9217,7 +9217,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   position: relative;
 }
 
-.path-actualites h2.js-quickedit-page-title:after {
+.path-actualites h2.page-header:after {
   content: " ";
   background: url("../images/trait_bleu.jpg") no-repeat;
   width: 100px;
