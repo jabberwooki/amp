@@ -129,6 +129,7 @@ header{
     }
 }
 
+//HIGHLIGHTED
 .highlighted{
     background: url(../images/bandeau_interne.jpg) no-repeat;
     width: 100%;
@@ -203,6 +204,9 @@ header{
         position: relative;
         background-image: linear-gradient(to right, #ff8e2d, #ff6701 );
         margin-right: 30px;
+            .block{
+                display: none;
+            }
         &:after {
             left: 100%;
             top: 50%;
@@ -258,6 +262,15 @@ header{
     }
     #block-sib-front-form{
         position: relative;
+        h2.block-title{
+            color: #fff;
+            font-size: 12px;
+            width: 78%;
+            right: 0;
+            position: absolute;
+            margin: 0;
+            top: 8px;
+        }
         label{
             display: none;
         }
