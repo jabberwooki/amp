@@ -9861,6 +9861,18 @@ blockquote {
     font-size: 18px;
     line-height: 25px;
   }
+  .path-frontpage .highlighted .persos-vecto {
+    bottom: 6%;
+  }
+  .highlighted .persos-vecto {
+    background: url(../images/persos_vecto.png) no-repeat right;
+    width: 1513px;
+    height: 173px;
+    position: absolute;
+    bottom: 26%;
+    right: 0;
+    background-size: 65%;
+  }
   .precontent {
     margin-left: 35px;
   }
@@ -9983,6 +9995,18 @@ blockquote {
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .path-frontpage .highlighted .persos-vecto {
+    bottom: -50px;
+  }
+  .highlighted .persos-vecto {
+    background: url(../images/persos_vecto.png) no-repeat right;
+    width: 1513px;
+    height: 173px;
+    position: absolute;
+    bottom: 26%;
+    right: auto;
+    background-size: 40%;
   }
   .paragraph.paragraph--type--image-text-banner.paragraph--view-mode--default .field--name-field-text {
     width: 80%;
