@@ -8931,10 +8931,6 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   margin-right: 30px;
 }
 
-.precontent #block-amp-contrib-block .block {
-  display: none;
-}
-
 .precontent #block-amp-contrib-block:after {
   left: 100%;
   top: 50%;
