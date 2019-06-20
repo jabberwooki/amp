@@ -65,6 +65,9 @@
 #views-bootstrap-news-list .node,
 #views-bootstrap-news-front-block .node{
     background: white;
+    .image-caption{
+        display: none;
+    }
 }
 #views-bootstrap-news-list .node .news-content,
 #views-bootstrap-news-front-block .node .news-content{

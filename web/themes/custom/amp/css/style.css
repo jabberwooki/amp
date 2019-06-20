@@ -9125,6 +9125,11 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   background: white;
 }
 
+#views-bootstrap-news-list .node .image-caption,
+#views-bootstrap-news-front-block .node .image-caption {
+  display: none;
+}
+
 #views-bootstrap-news-list .node .news-content,
 #views-bootstrap-news-front-block .node .news-content {
   padding: 0 25px 25px 25px;
