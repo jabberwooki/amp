@@ -8718,8 +8718,8 @@ p:last-child,
 body {
   font-weight: 500;
   margin: 0;
-  overflow-x: hidden;
-  position: initial;
+  /*overflow-x: hidden;
+    position: initial;*/
 }
 
 a.logo {
@@ -10018,8 +10018,8 @@ blockquote {
     width: 100%;
   }
   .footer-fluid #block-partner-footer-block .field--item {
-    flex-grow: 1;
-    max-width: 180px;
+    flex-grow: 0;
+    max-width: auto;
   }
   .menu--footer {
     text-align: center;
@@ -10027,4 +10027,29 @@ blockquote {
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .precontent {
+    margin-left: 0;
+  }
+  .precontent #block-amp-contrib-block a {
+    font-size: 14px;
+    left: 60px;
+  }
+  .precontent #block-amp-contrib-block .icon {
+    background-size: 60%;
+  }
+  .precontent #block-sib-front-form form {
+    margin-left: 50px;
+  }
+  .precontent #block-sib-front-form .icon {
+    background-size: 60%;
+  }
+  .precontent #block-sib-front-form .btn-default {
+    font-size: 12px;
+  }
+  #block-views-block-news-front-block .all-news-link {
+    display: none;
+  }
+}
+
 /* Custom, iPhone Retina */

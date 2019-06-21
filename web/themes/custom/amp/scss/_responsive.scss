@@ -198,8 +198,8 @@
         }
 
         .footer-fluid #block-partner-footer-block .field--item {
-            flex-grow: 1;
-            max-width: 180px;
+            flex-grow: 0;
+            max-width: auto;
         }
         .menu--footer{
             text-align: center;
@@ -208,7 +208,32 @@
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-
+        .precontent {
+            margin-left: 0;
+            #block-amp-contrib-block{
+                    a {
+                        font-size: 14px;
+                        left: 60px;
+                    }
+                    .icon{
+                        background-size:60%;
+                    }
+            }
+            #block-sib-front-form{
+                form {
+                margin-left: 50px;
+                }
+                .icon{
+                    background-size: 60%;
+                }
+                .btn-default{
+                    font-size: 12px;
+                }
+            }
+        }
+        #block-views-block-news-front-block .all-news-link{
+            display: none;
+        }
     }
 
     /* Custom, iPhone Retina */ 
