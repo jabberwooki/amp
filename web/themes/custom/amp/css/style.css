@@ -8718,6 +8718,8 @@ p:last-child,
 body {
   font-weight: 500;
   margin: 0;
+  overflow-x: hidden;
+  position: initial;
 }
 
 a.logo {
@@ -8992,6 +8994,16 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   position: relative;
 }
 
+.precontent #block-sib-front-form h2.block-title {
+  color: #fff;
+  font-size: 12px;
+  width: 78%;
+  right: 0;
+  position: absolute;
+  margin: 0;
+  top: 8px;
+}
+
 .precontent #block-sib-front-form label {
   display: none;
 }
@@ -9115,6 +9127,11 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   background: white;
 }
 
+#views-bootstrap-news-list .node .image-caption,
+#views-bootstrap-news-front-block .node .image-caption {
+  display: none;
+}
+
 #views-bootstrap-news-list .node .news-content,
 #views-bootstrap-news-front-block .node .news-content {
   padding: 0 25px 25px 25px;
@@ -9144,7 +9161,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   content: '_';
   line-height: 50px;
   position: absolute;
-  left: 30px;
+  left: 40px;
 }
 
 #views-bootstrap-news-list .node .news-content .field--name-node-post-date,
@@ -9190,7 +9207,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   margin-bottom: 30px;
 }
 
-.path-actualites h2.js-quickedit-page-title {
+.path-actualites h2.page-header {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: 'Spotka';
@@ -9202,7 +9219,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   position: relative;
 }
 
-.path-actualites h2.js-quickedit-page-title:after {
+.path-actualites h2.page-header:after {
   content: " ";
   background: url("../images/trait_bleu.jpg") no-repeat;
   width: 100px;
@@ -9819,24 +9836,186 @@ blockquote {
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1024px) {
+  header .region-header a.logo {
+    width: 22%;
+  }
+  header .region-header #block-partner-top-block {
+    width: 55%;
+  }
+  .header-amp .bg {
+    width: 7%;
+  }
+  #block-views-block-news-front-block .all-news-link a {
+    font-size: 11px;
+  }
+  #block-amp-programme-block .amp-programme-link-title a {
+    padding: 10px 15px;
+  }
+  #block-savethedate .field--name-field-info-text p.niv1 {
+    font-size: 56px;
+    line-height: 40px;
+  }
+  #block-savethedate .field--name-field-info-text p.niv2 {
+    font-size: 16px;
+  }
+  #block-savethedate .field--name-field-info-text p.niv3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .path-frontpage .highlighted .persos-vecto {
+    bottom: 6%;
+  }
+  .highlighted .persos-vecto {
+    background: url(../images/persos_vecto.png) no-repeat right;
+    width: 1513px;
+    height: 173px;
+    position: absolute;
+    bottom: 26%;
+    right: 0;
+    background-size: 65%;
+  }
+  .precontent {
+    margin-left: 35px;
+  }
+  .precontent #block-amp-contrib-block a {
+    font-size: 16px;
+  }
+  .precontent #block-amp-contrib-block .amp-contrib-link-title:after {
+    left: 85%;
+  }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  header .region-header a.logo {
+    width: 80%;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1001;
+  }
   #block-socialmedialinks-header,
   #block-partner-top-block {
     display: none;
   }
   .block-superfish {
-    background: #0167b1;
-    width: 100%;
-    position: absolute;
-    bottom: -110px;
+    width: auto;
+    position: relative;
+    background: transparent;
+    bottom: 0;
     right: 0;
     height: auto;
-    z-index: 1000;
-    color: #fff;
+    z-index: 1002;
   }
   .block-superfish a {
     color: #fff;
+  }
+  .sf-accordion-toggle.sf-style-none a.sf-expanded,
+  .sf-accordion-toggle.sf-style-none a {
+    background: #0167b1;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 10000;
+  }
+  .sf-accordion-toggle.sf-style-none a.sf-expanded {
+    /*top: -130px;*/
+  }
+  .sf-accordion-toggle.sf-style-none a span {
+    display: none;
+  }
+  .sf-accordion-toggle.sf-style-none a:after {
+    color: #fff;
+    font-family: 'FontAwesome';
+    content: '\f0c9';
+    font-size: 24px;
+  }
+  .sf-accordion-toggle.sf-style-none a:hover {
+    text-decoration: none;
+    background: #f37521;
+  }
+  ul#superfish-main-accordion {
+    position: absolute;
+    top: 61px !important;
+  }
+  ul.sf-menu.sf-accordion,
+  ul.sf-menu.sf-accordion li {
+    padding: 10px;
+  }
+  ul.sf-menu.sf-accordion li {
+    border-bottom: 1px solid #fff;
+  }
+  ul.sf-menu.sf-accordion li > a {
+    background: transparent;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  ul.sf-menu.sf-accordion li li {
+    border: none;
+    padding: 10px;
+    background: #0167b1;
+  }
+  ul.sf-menu.sf-accordion li li > a {
+    font-size: 16px;
+    padding: 5px 0 5px 10px;
+  }
+  ul.sf-menu.sf-accordion .sf-sub-indicator:after {
+    content: '\f107';
+    font-family: 'FontAwesome';
+    font-size: 22px;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    text-indent: 0;
+    top: 0;
+  }
+  ul.sf-menu.sf-accordion .sf-sub-indicator {
+    height: 20px;
+    line-height: 9999px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    right: 2em;
+    speak: none;
+    text-indent: -9999px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 14px;
+  }
+  ul.sf-menu.sf-accordion.sf-expanded, ul.sf-menu.sf-accordion li.sf-expanded > ul {
+    background: #0167b1;
+  }
+  ul.sf-menu.sf-accordion.sf-expanded {
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .path-frontpage .highlighted .persos-vecto {
+    bottom: -50px;
+  }
+  .highlighted .persos-vecto {
+    background: url(../images/persos_vecto.png) no-repeat right;
+    width: 1513px;
+    height: 173px;
+    position: absolute;
+    bottom: 26%;
+    right: auto;
+    background-size: 40%;
+  }
+  .paragraph.paragraph--type--image-text-banner.paragraph--view-mode--default .field--name-field-text {
+    width: 80%;
+    font-size: 20px;
+  }
+  blockquote {
+    width: 100%;
   }
   .footer-fluid #block-partner-footer-block .field--item {
     flex-grow: 1;

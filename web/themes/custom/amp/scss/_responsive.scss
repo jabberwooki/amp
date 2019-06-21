@@ -6,29 +6,197 @@
     }
 
     /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
-
+    @media only screen and (max-width : 1024px) {
+        header{
+        .region-header{
+                a.logo {
+                    width: 22%;
+                }
+                #block-partner-top-block {
+                    width: 55%;
+                }
+            }
+        }
+        .header-amp .bg{
+            width: 7%;
+        }
+        #block-views-block-news-front-block .all-news-link a {
+            font-size: 11px;
+        }
+        #block-amp-programme-block .amp-programme-link-title a{
+            padding: 10px 15px;
+        }
+        #block-savethedate .field--name-field-info-text{
+            p.niv1 {
+                font-size: 56px;
+                line-height: 40px;
+            }
+            p.niv2 {
+                font-size: 16px;
+            }
+            p.niv3 {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+        .path-frontpage .highlighted .persos-vecto {
+            bottom: 6%;
+        }
+        .highlighted .persos-vecto {
+            background: url(../images/persos_vecto.png) no-repeat right;
+            width: 1513px;
+            height: 173px;
+            position: absolute;
+            bottom: 26%;
+            right: 0;
+            background-size: 65%;
+        }
+        .precontent {
+            margin-left: 35px;
+            #block-amp-contrib-block a {
+                font-size: 16px;
+            }
+            #block-amp-contrib-block .amp-contrib-link-title:after {
+                left: 85%;
+            }
+        }
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+        header .region-header a.logo {
+            width: 80%;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1001;
+        }
         #block-socialmedialinks-header,
         #block-partner-top-block{
             display: none;
         }
         .block-superfish {
-            background: #0167b1;
-            width: 100%;
-            position: absolute;
-            bottom: -110px;
+            width: auto;
+            position: relative;
+            background: transparent;
+            bottom: 0;
             right: 0;
             height: auto;
-            z-index: 1000;
-            color: #fff;
+            z-index: 1002;
             a{
                 color: #fff;
             }
         }
+        //SUPERFISH MOBILE
+        .sf-accordion-toggle.sf-style-none a.sf-expanded,
+        .sf-accordion-toggle.sf-style-none a{
+            background:$brand-primary;
+            text-align: center;
+            padding: 5px 10px;
+            margin-top: 10px;
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            z-index: 10000;
+        }
+        .sf-accordion-toggle.sf-style-none a.sf-expanded{
+        /*top: -130px;*/
+        }
+        .sf-accordion-toggle.sf-style-none a span{
+        display: none;
+        }
+        .sf-accordion-toggle.sf-style-none a:after{
+            color: #fff;
+            font-family: 'FontAwesome';
+            content:'\f0c9';
+            font-size: 24px;
+        }
+        .sf-accordion-toggle.sf-style-none a:hover{
+        text-decoration: none;
+        background: $brand-secondary;
+        }
+        ul#superfish-main-accordion {
+            position: absolute;
+            top: 61px !important;
+        }
+        ul.sf-menu.sf-accordion,
+        ul.sf-menu.sf-accordion li{
+            padding: 10px;
+        }
+        ul.sf-menu.sf-accordion li{
+            border-bottom: 1px solid #fff;
+        }
+        ul.sf-menu.sf-accordion li>a{
+            background: transparent;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        ul.sf-menu.sf-accordion li li{
+            border: none;
+            padding: 10px;
+            background: $brand-primary;
+        }
+        ul.sf-menu.sf-accordion li li>a{
+            font-size: 16px;
+            padding: 5px 0 5px 10px;
+        }
+        ul.sf-menu.sf-accordion .sf-sub-indicator:after {
+            content: '\f107';
+            font-family: 'FontAwesome';
+            font-size: 22px;
+            left: 0;
+            line-height: 1;
+            position: absolute;
+            text-indent: 0;
+            top: 0;
+        }
+        ul.sf-menu.sf-accordion .sf-sub-indicator {
+            height: 20px;
+            line-height: 9999px;
+            opacity: 1;
+            overflow: hidden;
+            position: absolute;
+            right: 2em;
+            speak: none;
+            text-indent: -9999px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 14px;
+        }
+        ul.sf-menu.sf-accordion.sf-expanded, ul.sf-menu.sf-accordion li.sf-expanded > ul{
+            background: $brand-primary;
+        }
+        ul.sf-menu.sf-accordion.sf-expanded{
+            -moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
+            -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+            box-shadow: 0 0 10px rgba(0,0,0,.2); 
+        }
+
+        .path-frontpage .highlighted .persos-vecto {
+            bottom: -50px;
+        }
+        .highlighted .persos-vecto {
+            background: url(../images/persos_vecto.png) no-repeat right;
+            width: 1513px;
+            height: 173px;
+            position: absolute;
+            bottom: 26%;
+            right: auto;
+            background-size: 40%;
+        }
+
+        .paragraph.paragraph--type--image-text-banner.paragraph--view-mode--default .field--name-field-text{
+            width: 80%;
+            font-size: 20px;
+        }
+        blockquote{
+            width: 100%;
+        }
+
         .footer-fluid #block-partner-footer-block .field--item {
             flex-grow: 1;
             max-width: 180px;

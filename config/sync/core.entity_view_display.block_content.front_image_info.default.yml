@@ -7,10 +7,10 @@ dependencies:
     - field.field.block_content.front_image_info.field_image
     - field.field.block_content.front_image_info.field_info_text
     - field.field.block_content.front_image_info.field_link
-    - image.style.bandeau_home_desktop
+    - responsive_image.styles.bandeau_home
   module:
-    - image_title_caption
     - link
+    - responsive_image
     - text
 id: block_content.front_image_info.default
 targetEntityType: block_content
@@ -21,10 +21,10 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      image_style: bandeau_home_desktop
+      responsive_image_style: bandeau_home
       image_link: ''
     third_party_settings: {  }
-    type: image_title_caption
+    type: responsive_image
     region: content
   field_info_text:
     weight: 1

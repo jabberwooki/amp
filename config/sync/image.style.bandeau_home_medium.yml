@@ -1,0 +1,15 @@
+uuid: 66a8475f-375b-406c-a2ee-f78e97397ddb
+langcode: fr
+status: true
+dependencies: {  }
+name: bandeau_home_medium
+label: 'Bandeau home medium'
+effects:
+  7638ba98-d340-417c-8558-311c6a14c39a:
+    uuid: 7638ba98-d340-417c-8558-311c6a14c39a
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: 490
+      upscale: false

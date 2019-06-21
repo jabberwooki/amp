@@ -24,6 +24,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
   entity_reference_revisions: 0
   field: 0
   field_group: 0
@@ -50,6 +51,7 @@ module:
   quickedit: 0
   rdf: 0
   recreate_block_content: 0
+  responsive_image: 0
   search: 0
   sendinblue: 0
   shortcut: 0

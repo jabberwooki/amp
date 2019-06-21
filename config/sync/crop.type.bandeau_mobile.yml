@@ -1,0 +1,12 @@
+uuid: 07f402c8-0e24-4feb-97c4-75b18b711b43
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Bandeau mobile'
+id: bandeau_mobile
+description: ''
+aspect_ratio: '768:600'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
