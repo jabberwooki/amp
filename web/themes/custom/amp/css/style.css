@@ -9835,6 +9835,46 @@ blockquote {
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px) {
+  .header-amp .bg {
+    width: 10%;
+  }
+  #block-savethedate .field--name-field-info-text p.niv1 {
+    font-size: 93px;
+  }
+  #block-savethedate .field--name-field-info-text p.niv2 {
+    font-size: 27px;
+  }
+  #block-savethedate .field--name-field-info-text p.niv3 {
+    font-size: 30px;
+  }
+  .path-frontpage .highlighted .persos-vecto {
+    bottom: 7%;
+  }
+  .highlighted .persos-vecto {
+    background-size: 71%;
+    background-position: right;
+    bottom: 11%;
+  }
+  .precontent #block-amp-contrib-block .amp-contrib-link-title:after {
+    left: 85%;
+  }
+  .precontent #block-amp-contrib-block a {
+    font-size: 14px;
+    left: 80px;
+  }
+  .precontent #block-sib-front-form .form-control {
+    width: 60% !important;
+  }
+  .precontent #block-sib-front-form .btn-default {
+    font-size: 12px;
+  }
+  .precontent #block-sib-front-form h2.block-title {
+    font-size: 10px;
+    width: 70%;
+  }
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1024px) {
   header .region-header a.logo {
@@ -10018,8 +10058,8 @@ blockquote {
     width: 100%;
   }
   .footer-fluid #block-partner-footer-block .field--item {
-    flex-grow: 0;
-    max-width: auto;
+    flex-grow: 1;
+    max-width: 180px;
   }
   .menu--footer {
     text-align: center;
