@@ -18,7 +18,7 @@ webform-bundles:
 popup-guests: 1
 popup-users: 1
 popup-position: bottom
-popup-morelink: /gdpr-compliance/policy
+popup-morelink: 'https://www.afbiodiversite.fr/sites/default/files/Documents/mentions_legales/Politique%20de%20confidentialit%C3%A9%20et%20de%20p'
 popup-custom-color: 1
 popup-color: '#0167b1'
 popup-text: white

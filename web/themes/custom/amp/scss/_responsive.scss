@@ -1,8 +1,53 @@
 /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
-    @media only screen and (max-width : 1200px) {
-
+    @media only screen and (max-width : 1440px) {
+        .header-amp .bg{
+            width: 10%;
+        }
+        #block-savethedate .field--name-field-info-text{
+            p.niv1 {
+                font-size: 93px;
+            }
+            p.niv2 {
+                font-size: 27px;
+            }
+            p.niv3 {
+                font-size: 30px;
+            }
+        }
+        
+        .path-frontpage .highlighted .persos-vecto {
+            bottom: 7%;
+        }
+        .highlighted .persos-vecto {
+            background-size: 71%;
+            background-position: right;
+            bottom: 11%;
+        }
+        .precontent {
+            #block-amp-contrib-block{
+                .amp-contrib-link-title:after{
+                    left:85%;
+                }
+                 a {
+                    font-size: 14px;
+                    left: 80px;
+                 }
+            }
+            #block-sib-front-form{
+                .form-control {
+                    width: 60% !important;
+                }
+                .btn-default{
+                    font-size: 12px;
+                }
+                h2.block-title {
+                    font-size: 10px;
+                    width: 70%;
+                }
+            }
+        }
     }
 
     /* Medium Devices, Desktops */
@@ -208,7 +253,32 @@
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-
+        .precontent {
+            margin-left: 0;
+            #block-amp-contrib-block{
+                    a {
+                        font-size: 14px;
+                        left: 60px;
+                    }
+                    .icon{
+                        background-size:60%;
+                    }
+            }
+            #block-sib-front-form{
+                form {
+                margin-left: 50px;
+                }
+                .icon{
+                    background-size: 60%;
+                }
+                .btn-default{
+                    font-size: 12px;
+                }
+            }
+        }
+        #block-views-block-news-front-block .all-news-link{
+            display: none;
+        }
     }
 
     /* Custom, iPhone Retina */ 
