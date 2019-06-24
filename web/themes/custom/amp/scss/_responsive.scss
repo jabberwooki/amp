@@ -182,7 +182,7 @@
             background: $brand-primary;
         }
         ul.sf-menu.sf-accordion li li>a{
-            font-size: 16px;
+            font-size: 14px;
             padding: 5px 0 5px 10px;
         }
         ul.sf-menu.sf-accordion .sf-sub-indicator:after {
@@ -222,16 +222,16 @@
         }
 
         .path-frontpage .highlighted .persos-vecto {
-            bottom: -50px;
+            bottom: 6%;
         }
         .highlighted .persos-vecto {
             background: url(../images/persos_vecto.png) no-repeat right;
             width: 1513px;
             height: 173px;
             position: absolute;
-            bottom: 26%;
-            right: auto;
-            background-size: 40%;
+            bottom: 6%;
+            right: 0;
+            background-size: 30%;
         }
 
         .paragraph.paragraph--type--image-text-banner.paragraph--view-mode--default .field--name-field-text{
