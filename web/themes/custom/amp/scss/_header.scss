@@ -77,6 +77,9 @@ header{
                 height: auto;
                 position: relative;
             }
+            .field--item:nth-child(3){
+                display: none;
+            }
         }
         
         #block-socialmedialinks-header{

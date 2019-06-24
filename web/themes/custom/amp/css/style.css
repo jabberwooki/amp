@@ -8786,6 +8786,10 @@ header .region-header #block-partner-top-block .field--item {
   position: relative;
 }
 
+header .region-header #block-partner-top-block .field--item:nth-child(3) {
+  display: none;
+}
+
 header .region-header #block-socialmedialinks-header {
   float: right;
   margin-top: 25px;
