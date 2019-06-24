@@ -53,7 +53,9 @@ settings:
   submission_label: ''
   submission_log: false
   submission_views: {  }
-  submission_views_replace: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
   submission_access_denied: default
@@ -118,7 +120,7 @@ settings:
   purge_days: null
   results_disabled: false
   results_disabled_ignore: false
-  token_update: false
+  token_update: true
 access:
   create:
     roles:
@@ -166,4 +168,38 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  courriel:
+    id: email
+    label: 'Inscription au colloque AMP 2019'
+    handler_id: courriel
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: '[webform_submission:values:email:raw]'
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: "&lt;p&gt;Envoy&eacute; le [webform_submission:created]&lt;/p&gt;<br />\r\n&lt;p&gt;Envoy&eacute; par : [webform_submission:user]&lt;/p&gt;<br />\r\n&lt;p&gt;Les valeurs soumises sont :&lt;/p&gt;<br />\r\n[webform_submission:values]<br />\r\n&lt;p&gt;Envoy&eacute; le [webform_submission:created]&lt;/p&gt;<br />\r\n&lt;p&gt;Envoy&eacute; par : [webform_submission:user]&lt;/p&gt;<br />\r\n&lt;p&gt;Les valeurs soumises sont :&lt;/p&gt;<br />\r\n&lt;br/&gt;<br />\r\n&lt;p&gt;[webform_submission:update-url]&lt;/p&gt;"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
