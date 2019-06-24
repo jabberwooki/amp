@@ -13,6 +13,9 @@ function image_title_caption_theme() {
     'image_title_caption_formatter' => array(
       'variables' => array('item' => NULL, 'item_attributes' => NULL, 'url' => NULL, 'image_style' => NULL),
     ),
+    'resp_image_title_caption_formatter' => array(
+      'variables' => array('item' => NULL, 'item_attributes' => NULL, 'url' => NULL, 'image_style' => NULL),
+    ),
   );
 }
 
@@ -27,3 +30,16 @@ function template_preprocess_image_title_caption_formatter(&$vars) {
   //$vars['caption'] = String::checkPlain($vars['item']->get('title')->getValue());
   $vars['caption'] = $vars['item']->get('title')->getValue();
 }
+
+/**
+ * Implements template_preprocess_resp_image_title_caption_formatter().
+ */
+function template_preprocess_resp_image_title_caption_formatter(&$vars) {
+  template_preprocess_responsive_image_formatter($vars);
+
+  // On ne peut pas utiliser la classe String de Drupal 8 parce qu'il y a conflit
+  // avec la classe String de PHP apparu à partir de la version 7.
+  //$vars['caption'] = String::checkPlain($vars['item']->get('title')->getValue());
+  $vars['caption'] = $vars['item']->get('title')->getValue();
+}
+
