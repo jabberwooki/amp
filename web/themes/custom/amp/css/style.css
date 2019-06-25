@@ -8917,6 +8917,15 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   line-height: 50px;
 }
 
+#block-savethedate .image-caption {
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+
 .precontent {
   margin-left: 65px;
 }
