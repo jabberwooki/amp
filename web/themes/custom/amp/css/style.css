@@ -9943,8 +9943,8 @@ blockquote {
     display: none;
   }
   .block-superfish {
-    width: auto;
-    position: relative;
+    width: 100%;
+    position: absolute;
     background: transparent;
     bottom: 0;
     right: 0;
