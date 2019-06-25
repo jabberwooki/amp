@@ -13,7 +13,7 @@ dependencies:
     - ds
     - entity_reference_revisions
     - field_group
-    - image_title_caption
+    - image
     - user
 third_party_settings:
   ds:
@@ -107,7 +107,7 @@ content:
       link: ''
     third_party_settings: {  }
   field_image:
-    type: image_title_caption
+    type: image
     weight: 1
     region: ds_content
     label: hidden
