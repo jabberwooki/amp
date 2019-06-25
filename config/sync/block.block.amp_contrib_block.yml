@@ -1,0 +1,20 @@
+uuid: 74d9638f-4c55-40ed-9f70-e754132f429b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - amp_contribution
+  theme:
+    - amp
+id: amp_contrib_block
+theme: amp
+region: precontent
+weight: -8
+provider: null
+plugin: amp_contribution_block
+settings:
+  id: amp_contribution_block
+  label: 'AMP Contribution Block'
+  provider: amp_contribution
+  label_display: '0'
+visibility: {  }

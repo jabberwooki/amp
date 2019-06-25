@@ -1,0 +1,22 @@
+uuid: 87a3ef6a-edaf-4092-9e1f-3a7ef64dd80c
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - amp
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: amp_local_tasks
+theme: amp
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

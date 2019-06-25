@@ -1,0 +1,17 @@
+uuid: 8af944b6-4308-449a-ae1f-b63c79eb05b4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.bandeau_desktop
+  module:
+    - crop
+name: bandeau_home_desktop
+label: 'Bandeau home desktop'
+effects:
+  03b85ab3-c68a-40e5-8ac5-faeed91788a8:
+    uuid: 03b85ab3-c68a-40e5-8ac5-faeed91788a8
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: bandeau_desktop

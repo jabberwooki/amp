@@ -1,0 +1,43 @@
+uuid: f280cf4b-e7da-41cf-9643-2bdccec8fdcb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_image.field_caption
+    - field.field.paragraph.carousel_image.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.carousel_image
+  module:
+    - image_widget_crop
+id: paragraph.carousel_image.default
+targetEntityType: paragraph
+bundle: carousel_image
+mode: default
+content:
+  field_caption:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - carrousel
+      crop_types_required:
+        - carrousel
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+hidden:
+  created: true
+  status: true

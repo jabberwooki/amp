@@ -1,0 +1,6 @@
+name: AMP Bloc Appel à Contribution
+description: Bloc page d'accueil avec lien vers le formulaire de saisie d'une contribution.
+package: AMP
+
+type: module
+core: 8.x

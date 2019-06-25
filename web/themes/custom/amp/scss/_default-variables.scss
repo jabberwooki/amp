@@ -1,0 +1,49 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the directory for the theme root used to locate images, fonts etc.
+$theme-root: '..';
+
+// Set other directories relative to theme root.
+$image-path: '#{$theme-root}/images';
+$icon-font-path: '#{$theme-root}/bootstrap/assets/fonts/bootstrap/';
+
+
+//** Background color for `<body>`.
+$body-bg:               #f7f7f7 !default;
+
+//Colors
+$brand-primary:         #0167b1;
+$brand-secondary:       #f37521;
+
+//Fonts
+@font-face {
+    font-family: 'Spotka';
+    src: url('../fonts/SpotkaRegular/SpotkaRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SpotkaRegular/SpotkaRegular.woff') format('woff'), 
+         url('../fonts/SpotkaRegular/SpotkaRegular.ttf')  format('truetype'), 
+         url('../fonts/SpotkaRegular/SpotkaRegular.svg#SpotkaRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spotka';
+    src: url('../fonts/SpotkaBlack/SpotkaBlack.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/SpotkaBlack/SpotkaBlack.woff') format('woff'),
+         url('../fonts/SpotkaBlack/SpotkaBlack.ttf')  format('truetype'),
+         url('../fonts/SpotkaBlack/SpotkaBlack.svg#SpotkaBlack') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+$font-family-sans-serif:  "Montserrat", Helvetica, Arial, sans-serif !default;

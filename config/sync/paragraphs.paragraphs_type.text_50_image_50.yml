@@ -1,0 +1,9 @@
+uuid: 714b97e9-1b17-4251-b963-0d55b983b676
+langcode: fr
+status: true
+dependencies: {  }
+id: text_50_image_50
+label: 'Texte 50% - Image 50%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

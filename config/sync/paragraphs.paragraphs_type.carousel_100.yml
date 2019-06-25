@@ -1,0 +1,9 @@
+uuid: b48e83d4-330e-48c0-b672-1964730dee12
+langcode: fr
+status: true
+dependencies: {  }
+id: carousel_100
+label: 'Carrousel 100%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

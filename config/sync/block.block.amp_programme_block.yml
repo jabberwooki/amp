@@ -1,0 +1,26 @@
+uuid: 1151a385-e9cd-4bfa-873e-418077f2baef
+langcode: fr
+status: true
+dependencies:
+  module:
+    - amp_programme
+    - system
+  theme:
+    - amp
+id: amp_programme_block
+theme: amp
+region: content
+weight: -2
+provider: null
+plugin: amp_programme_block
+settings:
+  id: amp_programme_block
+  label: 'AMP Programme Block'
+  provider: amp_programme
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: 7ab2c7e2-4bd4-4841-aa2b-03db333ba54c
+langcode: fr
+status: true
+dependencies: {  }
+id: documents_100
+label: 'Documents 100%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

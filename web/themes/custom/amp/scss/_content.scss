@@ -1,0 +1,613 @@
+//IMAGES
+.field--name-field-image{
+    position: relative;
+    .image-caption{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background-color: rgba(52, 52, 62, 0.85);
+        color: white;
+        font-size:10px;
+        font-weight: 600;
+        padding: 2px 5px;
+    }
+}
+//ACTUS
+#block-views-block-news-front-block{
+    margin-top: 65px;
+    .header_news{
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    h2.block-title{
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-family: 'Spotka';
+        font-weight: 400;
+        font-size: 48px;
+        color: #333;
+        padding: 0;
+        height : 100%;
+        position: relative;
+        &:after{
+            content: " ";
+            background: url('../images/trait_bleu.jpg') no-repeat;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
+    }
+    .all-news-link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 30px;
+        text-align: right;
+        a {
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            color:#333;
+            border: 2px solid #333;
+            border-radius: 20px;
+            padding: 5px 10px;
+                &:hover{
+                    color: $brand-secondary;
+                    border-color: $brand-secondary;
+                }
+        }
+    }
+}
+
+#views-bootstrap-news-list .node,
+#views-bootstrap-news-front-block .node{
+    background: white;
+    .image-caption{
+        display: none;
+    }
+}
+#views-bootstrap-news-list .node .news-content,
+#views-bootstrap-news-front-block .node .news-content{
+    padding: 0 25px 25px 25px;
+       h3{
+        font-size: 20px;
+        font-family: 'Spotka';
+        a{
+            color:$brand-primary;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-decoration: none;
+            &:hover{
+                color:$brand-secondary;
+            }
+            &:after{
+                content:'_';
+                line-height: 50px;
+                position: absolute;
+                left: 40px;
+            }
+        }
+       }
+       .field--name-node-post-date{
+        font-size: 14px;
+        font-family: 'Spotka';
+        font-weight: 800;
+        color: #333;
+        margin-top: 20px;
+       }
+       .field--name-field-summary{
+           font-size: 13px;
+           line-height: 18px;
+           margin-top: 5px;
+       }
+       .field--name-node-link{
+        text-align: right;
+        margin-top: 30px;
+        a{
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            color:$brand-primary;
+            border: 2px solid $brand-primary;
+            border-radius: 20px;
+            padding: 8px 16px;
+            &:hover{
+                color: $brand-secondary;
+                border-color: $brand-secondary;
+            }
+        }
+       }
+}
+#views-bootstrap-news-list .node{
+    margin-bottom: 30px;
+}
+
+.path-actualites h2.page-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Spotka';
+    font-weight: 400;
+    font-size: 48px;
+    color: #333;
+    padding: 0;
+    height : 100%;
+    position: relative;
+    &:after{
+        content: " ";
+        background: url('../images/trait_bleu.jpg') no-repeat;
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+    }
+}
+
+//BLOC PROGRAMME
+.header-amp .bg {
+    position: absolute;
+    right: 0;
+    background: $brand-primary;
+    height: 632px;
+    width: 20%;
+    margin-top: 65px;
+}
+#block-amp-programme-block{
+    background: $brand-primary;
+    margin-top: 65px;
+    color: white;
+    padding: 35px 30px 45px 30px;
+    .amp-programme-block-title{
+        font-size: 20px;
+        font-family: 'Spotka';
+        text-transform: uppercase;
+        font-weight: 800;
+        position: relative;
+        &:after{
+            content: " ";
+            background: url('../images/trait_orange.jpg') no-repeat;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
+    }
+    .amp-programme-image{
+        background: url('../images/programme_img.png') no-repeat;
+        width: 320px;
+        height: 391px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .amp-programme-link-title{
+        text-align: center;
+        margin-top: 28px;
+        a{
+            @include btn-amp;
+        }
+    }
+}
+
+//BUNDLES PARAGRAPHS
+
+.field--name-node-title h2{
+    font-family: 'Spotka';
+    font-weight: 400;
+    color: $brand-primary;
+    font-size:40px;
+}
+.paragraph .field--name-field-text p{
+    margin: 0 0 20px;
+    line-height: 22px;
+}
+p.intro{
+    font-family: 'Spotka';
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.42857 !important;
+}
+p.color{
+    color: $brand-secondary;
+}
+h3 .field--item,
+h3.titre{
+    font-family: 'Spotka';
+    font-size: 20px;
+    font-weight: 800;
+    color: $brand-primary;
+    margin-bottom: 20px;
+    position: relative;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
+}
+h4.titre{
+    font-family: 'Spotka';
+    color: $brand-secondary;
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 20px;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
+}
+h4.titredebloc{
+    font-family: 'Spotka';
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 20px;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
+}
+h5.titre{
+    font-family: 'Spotka';
+    color: $brand-primary;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    &:after{
+        content:'_';
+        line-height: 40px;
+        position: absolute;
+        left: 0;
+    }
+}
+blockquote {
+    margin: 0 auto;
+    width: 75%;
+    color: #0167b1;
+    font-weight: 500;
+    font-style: italic;
+    border-left: 0;
+    font-size: 14px;
+    line-height: 19px;
+    position: relative;
+    background-image: url(../images/citation.png);
+    background-position: middle left;
+    background-repeat: no-repeat;
+    padding: 0 40px 0 80px;
+    margin-bottom: 10px;
+}
+
+//PARAGRAPH
+.paragraph{
+    margin-bottom: 35px;
+}
+/*LIENS HYPERTEXTES*/
+.paragraph a {
+    color: $brand-secondary;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.paragraph a:hover{
+    color: $brand-primary;
+}
+// LISTES
+.field--name-body ul,
+.paragraph .field--name-field-text ul {
+    padding-left: 3em;
+    margin-bottom: 25px;
+}
+.paragraph .field--name-field-text ul li,
+.field--name-body li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+ }
+ .paragraph .field--name-field-text ul li:before,
+ .field--name-body li:before {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -1.5em;
+    color: $brand-primary;
+    font-size: 10px;
+    margin-top: 3px;
+}
+.paragraph .field--name-field-text ol {
+    list-style: none;
+    counter-reset: li;
+    padding-left: 3em;
+    margin-bottom: 25px;
+}
+.paragraph .field--name-field-text ol li {
+    counter-increment: li;
+    margin-bottom: 5px;
+}
+.paragraph .field--name-field-text ol li::before {
+    content: counter(li) ". ";
+    color: $brand-primary;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: 700;
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+// BLOCS DE COULEURS
+.bloc-left .field--name-field-colored-block{
+    background-color: $brand-primary;
+    padding: 20px 25px;
+}
+.bloc-right .field--name-field-colored-block{
+    background-color: $brand-secondary;
+    padding: 20px 25px;
+}
+.field--name-field-colored-block table,
+.field--name-field-colored-block ul li,
+.field--name-field-colored-block ul li a,
+.field--name-field-colored-block a,
+.field--name-field-colored-block p a,
+.field--name-field-colored-block p{
+    color: #fff; 
+}
+.field--name-field-colored-block ul li a:hover,
+.field--name-field-colored-block p a:hover{
+    color: #fff;
+}
+
+//PARAGRAPH BANNER
+.paragraph.paragraph--type--image-text-banner.paragraph--view-mode--default {
+    min-height: 300px;
+    position: relative;
+    .field--name-field-text{
+        font-size: 36px;
+        font-family: 'Spotka';
+        font-weight: 800;
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        p{
+            line-height: 1.42857 !important;
+        }
+    }
+}
+
+//PARAGRAPH DIAPORAMA
+.paragraph--type--carousel-100{
+    .slick-prev.slick-arrow{
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        z-index: 100;
+    }
+    .slick-next.slick-arrow{
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        z-index: 100;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-family: 'fontawesome';
+        font-size: 16px;
+        line-height: 1;
+        opacity: 1;
+        color: $brand-primary !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: #fff;
+        border-radius: 50%;
+        padding: 60% 78%;
+    }
+    .slick-next:before {
+        content: '\f061';
+    }
+    .slick-prev:before {
+        content: '\f060';
+    }
+    .field--name-field-caption{
+        background: #fff;
+        font-weight: 600;
+        color: $brand-primary;
+        padding: 10px 15px;
+        -moz-box-shadow: 10px 10px 20px 0px #f1f1f1;
+        -webkit-box-shadow: 10px 10px 20px 0px #f1f1f1;
+        -o-box-shadow: 10px 10px 20px 0px #f1f1f1;
+        box-shadow: 10px 10px 20px 0px #f1f1f1;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#f1f1f1, Direction=134, Strength=20);
+    }
+}
+
+/*DOCUMENTS A TELECHARGER*/
+.paragraph--type--text-50-documents-50, 
+.paragraph--type--documents-50-text-50,
+.paragraph--type--documents-100{
+    .field--name-field-documents{
+        background: $brand-primary;
+        border-radius: 5px;
+        color: #fff;
+        padding: 30px 20px;
+        margin-top: 25px;
+    }
+    .field--label{
+        color: white;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        border: none;
+        font-family: 'Spotka';
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        position: relative;
+        &:after{
+            content:'_';
+            line-height: 50px;
+            position: absolute;
+            left: 0;
+        }
+    }
+    .field--item .file {
+        display: inline-block;
+        border-bottom: 1px solid #fff;
+        padding: 8px 0;
+    }
+    .file>span:first-child {
+        border-left: none;
+    }
+    .file>span {
+        background: transparent;
+        color: #fff;
+        border:none;
+    }
+    .file-link{ 
+        float: left;
+        margin-left: 10px;
+        &:after{
+            content: '_';
+            line-height: 30px;
+            position: absolute;
+            left: 28px;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            word-break: break-word;
+        }
+    }
+    .file-icon,
+    .file-link,
+    .file-size{
+        display: initial;
+        vertical-align: middle;
+    }
+    .file-size{
+        clear: left;
+        text-align: left;
+        padding: 0;
+        font-weight: 400;
+        margin-top: 10px;
+        float: left;
+        margin-left: 10px;
+    }
+    .file{
+        min-height: 87px;
+    }
+    .file-icon{
+        .text-primary {
+            color: white;
+            font-size :300%;
+        }
+    }
+} 
+.paragraph--type--documents-100{
+    .field--name-field-documents{
+        margin-top: 52px;
+    }
+    .field--label{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after{
+            left: 50%;
+        }
+    }
+    .field--items{
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+        -webkit-column-gap: 50px;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+    }
+}
+
+//NODE ACTU
+.page-node-type-advanced-page .node--type-advanced-page,
+.page-node-type-page .node--type-page,
+.page-node-type-news .node--type-news{
+    margin-top: 45px;
+    .field--name-node-post-date {
+        font-size: 24px;
+        font-family: 'Spotka';
+        font-weight: 800;
+        color: #333;
+    }
+    .field--name-node-title h2{
+        position: relative;
+        margin-bottom:50px;
+        &:after{
+            content: " ";
+            background: url('../images/trait_bleu.jpg') no-repeat;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
+    }
+}
+.page-node-type-advanced-page .node--type-advanced-page{
+    .field--name-node-title h2{
+        &:after{
+            left: 20px;
+        }
+    }
+}
+
+//PAGINATION
+.pagination{
+    .pager__item.pager__item--first,
+    .pager__item.pager__item--previous,
+    .pager__item.pager__item--next,
+    .pager__item.pager__item--last{
+        a{
+            border: none;
+            background: transparent;
+            color: #333;
+            font-family: 'Spotka';
+            font-weight: 400;
+            &:hover{
+                background: transparent;
+                color: $brand-primary;
+            }
+        }
+    }
+    li.pager__item{
+        a{
+            background: #fff;
+            border-radius: 50%;
+            border:2px solid $brand-primary;
+            color: $brand-primary;
+            font-family: 'Spotka';
+            font-weight: 800;
+            margin-left: 8px;
+        }
+    }
+    li.pager__item a:hover,
+    li.pager__item.is-active.active a{
+        background: $brand-primary;
+        color: #fff;
+    }
+}
+

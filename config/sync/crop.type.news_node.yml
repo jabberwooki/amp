@@ -1,0 +1,12 @@
+uuid: 2c2a3281-ab2e-4b37-93d6-d64355ac2f7a
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Actus node'
+id: news_node
+description: ''
+aspect_ratio: '375:235'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,17 @@
+uuid: d59127eb-21e4-41ac-8286-ce9a6a72adb2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.carrousel
+  module:
+    - crop
+name: carrousel_paragraph
+label: 'Carrousel paragraph'
+effects:
+  a0438e23-f599-4449-9288-968d3a280b25:
+    uuid: a0438e23-f599-4449-9288-968d3a280b25
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: carrousel

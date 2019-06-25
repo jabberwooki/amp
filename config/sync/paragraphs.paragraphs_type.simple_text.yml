@@ -1,0 +1,9 @@
+uuid: 3df27aec-de65-4af2-bc9f-ac252edc32b6
+langcode: fr
+status: true
+dependencies: {  }
+id: simple_text
+label: 'Texte simple'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

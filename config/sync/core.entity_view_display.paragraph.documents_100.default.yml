@@ -1,0 +1,23 @@
+uuid: ffb4bbe1-3567-44a5-8b96-01b26612c340
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.documents_100.field_documents
+    - paragraphs.paragraphs_type.documents_100
+  module:
+    - file
+id: paragraph.documents_100.default
+targetEntityType: paragraph
+bundle: documents_100
+mode: default
+content:
+  field_documents:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

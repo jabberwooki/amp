@@ -1,0 +1,20 @@
+uuid: 52cb183c-7adc-49e0-a157-a7c70b890119
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - amp
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: amp_local_actions
+theme: amp
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

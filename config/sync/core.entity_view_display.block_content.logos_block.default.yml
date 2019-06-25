@@ -1,0 +1,37 @@
+uuid: cf413435-5e07-45fa-80bb-ac2d175916d1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.logos_block
+    - field.field.block_content.logos_block.field_logo
+  module:
+    - ds
+    - field_image_link
+id: block_content.logos_block.default
+targetEntityType: block_content
+bundle: logos_block
+mode: default
+content:
+  field_logo:
+    weight: 1
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: link
+      link_title_tag: ''
+      link_title_position: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+      link_title_display: false
+      link_rel: '0'
+      link_target: '0'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: image_link
+    region: content
+hidden:
+  langcode: true

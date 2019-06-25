@@ -1,0 +1,31 @@
+uuid: eea491a3-3f30-444a-a6e9-3490478c9bf7
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:front_image_info:d2729386-db33-482e-bc67-d0ea2726c706'
+  module:
+    - block_content
+    - system
+  theme:
+    - amp
+id: savethedate
+theme: amp
+region: highlighted
+weight: -8
+provider: null
+plugin: 'block_content:d2729386-db33-482e-bc67-d0ea2726c706'
+settings:
+  id: 'block_content:d2729386-db33-482e-bc67-d0ea2726c706'
+  label: 'Save the date'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

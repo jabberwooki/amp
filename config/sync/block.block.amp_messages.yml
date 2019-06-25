@@ -1,0 +1,22 @@
+uuid: 2fa8e000-6ce6-4ce7-bbe5-651b594463e0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - amp
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: amp_messages
+theme: amp
+region: content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

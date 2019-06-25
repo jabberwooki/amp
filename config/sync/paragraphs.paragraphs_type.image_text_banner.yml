@@ -1,0 +1,9 @@
+uuid: b7ecdb16-a829-44f2-887a-d359c3293d9d
+langcode: fr
+status: true
+dependencies: {  }
+id: image_text_banner
+label: 'Bandeau image avec texte'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

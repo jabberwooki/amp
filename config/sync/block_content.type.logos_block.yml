@@ -1,0 +1,8 @@
+uuid: 61f78174-58ce-4e44-8d5f-47b2ad58d59f
+langcode: fr
+status: true
+dependencies: {  }
+id: logos_block
+label: Logos
+revision: 0
+description: 'Permet de créer un bloc contenant un ou plusieurs logos cliquables.'

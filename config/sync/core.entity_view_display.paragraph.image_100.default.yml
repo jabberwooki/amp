@@ -1,0 +1,24 @@
+uuid: 73767ac1-a6a7-407d-9674-ee2240f066cf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_100.field_image
+    - paragraphs.paragraphs_type.image_100
+  module:
+    - image_title_caption
+id: paragraph.image_100.default
+targetEntityType: paragraph
+bundle: image_100
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image_title_caption
+    region: content
+hidden: {  }

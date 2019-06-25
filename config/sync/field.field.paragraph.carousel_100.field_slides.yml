@@ -1,0 +1,67 @@
+uuid: bc3dea96-e916-4753-9884-f49bd82a10d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slides
+    - paragraphs.paragraphs_type.carousel_100
+    - paragraphs.paragraphs_type.carousel_image
+  module:
+    - entity_reference_revisions
+id: paragraph.carousel_100.field_slides
+field_name: field_slides
+entity_type: paragraph
+bundle: carousel_100
+label: Diapositives
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      carousel_image: carousel_image
+    target_bundles_drag_drop:
+      carousel_image:
+        enabled: true
+        weight: 14
+      carousel_100:
+        weight: 15
+        enabled: false
+      documents_100:
+        weight: 16
+        enabled: false
+      documents_50_text_50:
+        weight: 17
+        enabled: false
+      image_100:
+        weight: 18
+        enabled: false
+      image_33_text_67:
+        weight: 19
+        enabled: false
+      image_50_text_50:
+        weight: 20
+        enabled: false
+      simple_text:
+        weight: 21
+        enabled: false
+      text_50_documents_50:
+        weight: 22
+        enabled: false
+      text_50_image_50:
+        weight: 23
+        enabled: false
+      text_67_image_33:
+        weight: 24
+        enabled: false
+      title_h3:
+        weight: 25
+        enabled: false
+      video_100:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,6 @@
+name: AMP Bloc Programme
+description: Bloc page d'accueil avec lien vers le programme.
+package: AMP
+
+type: module
+core: 8.x

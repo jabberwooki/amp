@@ -1,0 +1,12 @@
+uuid: 3454dc10-6e7c-4b27-b195-ea7b4bd54e6e
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Actus page'
+id: news_page
+description: ''
+aspect_ratio: '3:2'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,15 @@
+uuid: e8d0e4b7-1bbb-491c-b20e-37cb73c3d482
+langcode: fr
+status: false
+dependencies: {  }
+id: recette
+label: Recette
+description: ''
+folder: ''
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

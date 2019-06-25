@@ -1,0 +1,25 @@
+uuid: 6c2a9611-b5f0-40e3-b141-ac3303891117
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.news_page
+  module:
+    - crop
+name: news_page
+label: 'Actus page'
+effects:
+  8eb253f1-e5fc-4c81-9326-15bba32d0fba:
+    uuid: 8eb253f1-e5fc-4c81-9326-15bba32d0fba
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: news_page
+  c2d252e4-4c15-4e1a-9430-0609b135d603:
+    uuid: c2d252e4-4c15-4e1a-9430-0609b135d603
+    id: image_scale
+    weight: 2
+    data:
+      width: 490
+      height: null
+      upscale: false

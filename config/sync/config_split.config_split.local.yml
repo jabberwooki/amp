@@ -1,0 +1,19 @@
+uuid: c0fa1285-7bfc-4cc8-b0ee-ad9dab65cec8
+langcode: fr
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: 'Modules activés localement seulement.'
+folder: ../config/envs/local
+module:
+  devel: 0
+  devel_generate: 0
+  kint: 0
+  smtp: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

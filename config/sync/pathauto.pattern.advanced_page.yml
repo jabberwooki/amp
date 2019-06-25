@@ -1,0 +1,22 @@
+uuid: 92dd1a28-00b0-4f36-85e4-a500b40e5df2
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: advanced_page
+label: 'Page avancée'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents]/[node:title]'
+selection_criteria:
+  3a63b3ef-2a55-4f15-944b-162362d069df:
+    id: node_type
+    bundles:
+      advanced_page: advanced_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3a63b3ef-2a55-4f15-944b-162362d069df
+selection_logic: and
+weight: -5
+relationships: {  }

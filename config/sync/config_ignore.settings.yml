@@ -1,0 +1,8 @@
+ignored_config_entities:
+  0: sendinblue.config_global.settings
+  2: sendinblue.config_registering_user.settings
+  4: sendinblue.config_send_email.settings
+  6: block.block.sib_front_form
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
+langcode: fr

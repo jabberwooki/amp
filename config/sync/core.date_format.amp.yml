@@ -1,0 +1,8 @@
+uuid: 3376af2f-4e63-4709-96d1-ef022c20712c
+langcode: fr
+status: true
+dependencies: {  }
+id: amp
+label: 'Date AMP'
+locked: false
+pattern: d.m.Y

@@ -1,0 +1,7 @@
+name: Image title caption
+type: module
+description: Utilise l'attribut 'title' des images et l\'affiche sous forme de légende. Fonctionne aussi avec les images responsives.
+core: 8.x
+dependencies:
+  - image
+  - responsive_image

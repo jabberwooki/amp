@@ -1,0 +1,121 @@
+uuid: eabd7906-e9a9-48f6-92e9-9b93c3812d0e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.news.field_content
+    - field.field.node.news.field_image
+    - field.field.node.news.field_summary
+    - image.style.news_node
+    - node.type.news
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_group
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_left
+        - field_image
+        - group_right
+        - node_post_date
+        - addtoany
+        - node_title
+        - field_content
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_amp
+  field_group:
+    group_left:
+      children:
+        - field_image
+        - addtoany
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-4'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Left
+    group_right:
+      children:
+        - node_post_date
+        - node_title
+        - field_content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Right
+id: node.news.full
+targetEntityType: node
+bundle: news
+mode: full
+content:
+  addtoany:
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    region: ds_content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: news_node
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_summary: true
+  langcode: true
+  links: true

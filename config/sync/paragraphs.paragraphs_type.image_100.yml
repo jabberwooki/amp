@@ -1,0 +1,9 @@
+uuid: 7684b851-de0e-4b86-a4b1-1b72a4bdbde8
+langcode: fr
+status: true
+dependencies: {  }
+id: image_100
+label: 'Image 100%'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
