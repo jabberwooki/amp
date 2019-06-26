@@ -10,11 +10,9 @@
         $(".region-highlighted picture").after('<div class="image-caption">' + legend  + '</div>');
 
         // Insertion d'une légende d'image sur l'image d'un node actualité.
-        var done = false;
-
         var newsLegend = $('.node--type-news.node--view-mode-full .field--name-field-image img').attr('title');
         $(".node--type-news.node--view-mode-full .image-caption").remove();
-        $(".node--type-news.node--view-mode-full .field--name-field-image").after('<div class="image-caption">' + newsLegend + '</div>');
+        $(".node--type-news.node--view-mode-full .field--name-field-image").append('<div class="image-caption">' + newsLegend + '</div>');
 
         // Donne une valeur différente (0,1,2,etc...) à l'attribut target du lien <a> de chaque logo partenaire.
         var targetValue = 0;
