@@ -12,7 +12,7 @@ dependencies:
   module:
     - ds
     - field_group
-    - image_title_caption
+    - image
     - user
 third_party_settings:
   ds:
@@ -40,6 +40,15 @@ third_party_settings:
         - field_summary
         - node_link
     fields:
+      node_title:
+        plugin_id: node_title
+        weight: 21
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
       node_link:
         plugin_id: node_link
         weight: 24
@@ -55,15 +64,6 @@ third_party_settings:
         weight: 22
         label: hidden
         formatter: ds_post_date_amp
-      node_title:
-        plugin_id: node_title
-        weight: 21
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h3
-          class: ''
   field_group:
     group_content:
       children:
@@ -106,7 +106,7 @@ bundle: news
 mode: teaser
 content:
   field_image:
-    type: image_title_caption
+    type: image
     weight: 0
     region: ds_content
     label: hidden
