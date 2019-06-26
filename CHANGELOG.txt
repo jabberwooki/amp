@@ -1,3 +1,7 @@
+Hotfix image-caption-responsive
+-------------------------------
+Ajout d'une hauteur max de la légende veticale (en fait max-width).
+
 Colloque AMP v1.0
 -----------------
 Création de la première version de production.
