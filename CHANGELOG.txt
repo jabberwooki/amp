@@ -1,11 +1,15 @@
-Hotfix correction-jquery-insertion-legende
-------------------------------------------
+Hotfix correction-url-page-rgpd - 2019-06-26
+--------------------------------------------
+  * Modification du lien 'Plus d'information' dans le popup rgpd.
+
+Hotfix correction-jquery-insertion-legende - 2019-06-26
+-------------------------------------------------------
   * Correction du jquery d'insertion de la légende d'image d'une actu dans le fichier amp.js.
 
-Hotfix image-caption-responsive
--------------------------------
+Hotfix image-caption-responsive - 2019-06-26
+--------------------------------------------
   * Ajout d'une hauteur max de la légende veticale (en fait max-width).
 
-Colloque AMP v1.0
------------------
+Colloque AMP v1.0 - 2019-06-25
+------------------------------
   * Création de la première version de production.
