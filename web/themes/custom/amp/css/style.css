@@ -8924,6 +8924,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   transform-origin: 0 0;
+  max-width: 32%;
 }
 
 .precontent {
@@ -9861,6 +9862,9 @@ blockquote {
   #block-savethedate .field--name-field-info-text p.niv3 {
     font-size: 30px;
   }
+  #block-savethedate .image-caption {
+    max-width: 30%;
+  }
   .path-frontpage .highlighted .persos-vecto {
     bottom: 7%;
   }
@@ -9915,6 +9919,9 @@ blockquote {
   #block-savethedate .field--name-field-info-text p.niv3 {
     font-size: 18px;
     line-height: 25px;
+  }
+  #block-savethedate .image-caption {
+    max-width: 30%;
   }
   .path-frontpage .highlighted .persos-vecto {
     bottom: 6%;
