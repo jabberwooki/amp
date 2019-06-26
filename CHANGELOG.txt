@@ -1,3 +1,7 @@
+Hotfix modif-logo-site - 2019-06-26
+-----------------------------------
+  * Remplacement du fichier logo du site par un logo de meilleure qualité.
+
 Hotfix correction-url-page-rgpd - 2019-06-26
 --------------------------------------------
   * Modification du lien 'Plus d'information' dans le popup rgpd.
