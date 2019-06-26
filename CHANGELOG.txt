@@ -1,3 +1,7 @@
+Colloque AMP v1.0.1 - 2019-06-26
+--------------------------------
+  * Remplacement du fichier logo du site. Le hotfix ci-dessous (modif-logo-site) n'a servi à rien.
+
 Hotfix modif-logo-site - 2019-06-26
 -----------------------------------
   * Remplacement du fichier logo du site par un logo de meilleure qualité.
