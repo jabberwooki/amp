@@ -1,7 +1,11 @@
+Hotfix correction-jquery-insertion-legende
+------------------------------------------
+  * Correction du jquery d'insertion de la légende d'image d'une actu dans le fichier amp.js.
+
 Hotfix image-caption-responsive
 -------------------------------
-Ajout d'une hauteur max de la légende veticale (en fait max-width).
+  * Ajout d'une hauteur max de la légende veticale (en fait max-width).
 
 Colloque AMP v1.0
 -----------------
-Création de la première version de production.
+  * Création de la première version de production.
