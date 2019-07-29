@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   module:
-    - ctools
     - system
   theme:
     - amp
@@ -23,13 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /actualites
+    pages: "/actualites\r\n/participer/appel-a-contributions"
     negate: false
     context_mapping: {  }
-  'entity_bundle:webform_submission':
-    id: 'entity_bundle:webform_submission'
-    bundles:
-      contribution: contribution
-    negate: false
-    context_mapping:
-      webform_submission: '@webform.webform_submission_route_context:webform_submission'
