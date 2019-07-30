@@ -171,7 +171,7 @@ access:
 handlers:
   courriel:
     id: email
-    label: 'Inscription au colloque AMP 2019'
+    label: 'Enregistrement d''une contribution'
     handler_id: courriel
     status: true
     conditions: {  }
@@ -188,8 +188,8 @@ handlers:
       from_mail: _default
       from_options: {  }
       from_name: _default
-      subject: _default
-      body: "&lt;p&gt;Envoy&eacute; le [webform_submission:created]&lt;/p&gt;<br />\r\n&lt;p&gt;Envoy&eacute; par : [webform_submission:user]&lt;/p&gt;<br />\r\n&lt;p&gt;Les valeurs soumises sont :&lt;/p&gt;<br />\r\n[webform_submission:values]<br />\r\n&lt;p&gt;Envoy&eacute; le [webform_submission:created]&lt;/p&gt;<br />\r\n&lt;p&gt;Envoy&eacute; par : [webform_submission:user]&lt;/p&gt;<br />\r\n&lt;p&gt;Les valeurs soumises sont :&lt;/p&gt;<br />\r\n&lt;br/&gt;<br />\r\n&lt;p&gt;[webform_submission:update-url]&lt;/p&gt;"
+      subject: '[4ème colloque national AMP] - Enregistrement de votre contribution'
+      body: "&lt;p&gt;Envoy&eacute; le [webform_submission:created]&lt;/p&gt;<br />\r\n&lt;p&gt;Envoy&eacute; par : [webform_submission:user]&lt;/p&gt;<br />\r\n&lt;p&gt;Les valeurs soumises sont :&lt;/p&gt;<br />\r\n[webform_submission:values]<br />\r\n&lt;br/&gt;<br />\r\n&lt;br/&gt;<br />\r\nLien de mise &agrave; jour de votre soumission :<br />\r\n&lt;p&gt;[webform_submission:update-url]&lt;/p&gt;"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -202,4 +202,4 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      theme_name: bootstrap
+      theme_name: ''
