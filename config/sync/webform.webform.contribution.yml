@@ -179,11 +179,11 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: '[webform_submission:values:email:raw]'
       to_options: {  }
-      cc_mail: '[webform_submission:values:email:raw]'
+      cc_mail: ''
       cc_options: {  }
-      bcc_mail: ''
+      bcc_mail: _default
       bcc_options: {  }
       from_mail: _default
       from_options: {  }
@@ -202,4 +202,4 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      theme_name: ''
+      theme_name: amp
