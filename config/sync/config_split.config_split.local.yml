@@ -11,11 +11,11 @@ module:
   devel_generate: 0
   devel_php: 0
   kint: 0
-  smtp: 0
 theme: {  }
-blacklist:
+blacklist: {  }
+graylist:
+  - smtp.settings
   - system.mail
-graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
