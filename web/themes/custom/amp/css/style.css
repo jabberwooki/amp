@@ -9791,6 +9791,60 @@ blockquote {
   color: #fff;
 }
 
+.path-webform .region-content {
+  margin-top: 45px;
+}
+
+.path-webform h2.page-header {
+  font-family: 'Spotka';
+  font-weight: 400;
+  color: #0167b1;
+  font-size: 40px;
+  position: relative;
+}
+
+.path-webform h2.page-header:after {
+  content: " ";
+  background: url(../images/trait_bleu.jpg) no-repeat;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+.path-webform .webform-submission-contribution-form .webform-required {
+  float: right;
+  width: 50%;
+  padding: 15px 15px 0 15px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.path-webform .webform-submission-contribution-form #edit-contrib-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.path-webform .webform-submission-contribution-form #edit-contrib-form .panel-default > .panel-heading {
+  color: #fff;
+  background-color: #0167b1;
+  border-color: #ddd;
+}
+
+.path-webform .webform-submission-contribution-form #edit-contrib-form .panel-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.path-webform .webform-submission-contribution-form .form-actions,
+.path-webform .webform-submission-contribution-form .form-item-gdpr-warning {
+  float: right;
+  width: 50%;
+  padding-left: 15px;
+}
+
 .footer-fluid {
   background: white;
   margin-top: 80px;
