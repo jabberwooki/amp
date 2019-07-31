@@ -1,7 +1,7 @@
 theme: amp
 defaults:
-  sender: mime_mail
-  formatter: mime_mail
+  sender: SMTPMailSystem
+  formatter: SMTPMailSystem
 _core:
   default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
 langcode: fr
