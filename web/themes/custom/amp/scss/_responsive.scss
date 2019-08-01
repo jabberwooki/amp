@@ -258,7 +258,7 @@
         .menu--footer{
             text-align: center;
         }
-    }
+}
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
@@ -287,6 +287,13 @@
         }
         #block-views-block-news-front-block .all-news-link{
             display: none;
+        }
+        //APPEL A CONTRIBUTION
+        .path-webform{
+            .form-actions,
+            .form-item-gdpr-warning{
+                width: 100%;
+            }
         }
     }
 

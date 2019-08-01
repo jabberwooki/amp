@@ -657,8 +657,11 @@ blockquote {
         .form-actions,
         .form-item-gdpr-warning{
             float: right;
-            width: 50%;
-            padding-left: 15px;
+            padding-right: 15px;
+            padding-left:15px;
+        }
+        .form-actions{
+            clear: right;
         }
     }
 }

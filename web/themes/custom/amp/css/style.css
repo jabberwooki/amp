@@ -9841,8 +9841,12 @@ blockquote {
 .path-webform .webform-submission-contribution-form .form-actions,
 .path-webform .webform-submission-contribution-form .form-item-gdpr-warning {
   float: right;
-  width: 50%;
+  padding-right: 15px;
   padding-left: 15px;
+}
+
+.path-webform .webform-submission-contribution-form .form-actions {
+  clear: right;
 }
 
 .footer-fluid {
@@ -10166,6 +10170,10 @@ blockquote {
   }
   #block-views-block-news-front-block .all-news-link {
     display: none;
+  }
+  .path-webform .form-actions,
+  .path-webform .form-item-gdpr-warning {
+    width: 100%;
   }
 }
 
