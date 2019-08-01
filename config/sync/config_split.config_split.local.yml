@@ -13,12 +13,7 @@ module:
   kint: 0
 theme: {  }
 blacklist: {  }
-graylist:
-  - mailsystem.settings
-  - mimemail.settings
-  - smtp.settings
-  - system.mail
-  - system.site
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
