@@ -28,7 +28,7 @@ permissions:
   - 'edit any advanced_page content'
   - 'edit any news content'
   - 'edit any page content'
-  - 'edit any webform'
+  - 'edit any webform submission'
   - 'edit own news content'
   - 'translate interface'
   - 'view any webform submission'
