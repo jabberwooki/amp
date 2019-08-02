@@ -294,26 +294,31 @@ blockquote {
     margin-bottom: 35px;
 }
 /*LIENS HYPERTEXTES*/
+.webform-submission-contribution-form #edit-processed-text a,
 .paragraph a {
     color: $brand-secondary;
     text-decoration: underline;
     font-weight: 600;
 }
+.webform-submission-contribution-form #edit-processed-text a:hover,
 .paragraph a:hover{
     color: $brand-primary;
 }
 // LISTES
+.webform-submission-contribution-form #edit-processed-text ul,
 .field--name-body ul,
 .paragraph .field--name-field-text ul {
     padding-left: 3em;
     margin-bottom: 25px;
 }
+.webform-submission-contribution-form #edit-processed-text ul li,
 .paragraph .field--name-field-text ul li,
 .field--name-body li{
     list-style: none;
     margin-bottom: 5px;
     font-size: 14px;
  }
+ .webform-submission-contribution-form #edit-processed-text ul li:before,
  .paragraph .field--name-field-text ul li:before,
  .field--name-body li:before {
     content: '\f061';
@@ -324,16 +329,19 @@ blockquote {
     font-size: 10px;
     margin-top: 3px;
 }
+.webform-submission-contribution-form #edit-processed-text ol,
 .paragraph .field--name-field-text ol {
     list-style: none;
     counter-reset: li;
     padding-left: 3em;
     margin-bottom: 25px;
 }
+.webform-submission-contribution-form #edit-processed-text ol li,
 .paragraph .field--name-field-text ol li {
     counter-increment: li;
     margin-bottom: 5px;
 }
+.webform-submission-contribution-form #edit-processed-text ol li::before,
 .paragraph .field--name-field-text ol li::before {
     content: counter(li) ". ";
     color: $brand-primary;
@@ -608,6 +616,61 @@ blockquote {
     li.pager__item.is-active.active a{
         background: $brand-primary;
         color: #fff;
+    }
+}
+
+//APPEL A CONTRIBUTION
+.path-webform{
+    .region-content{
+        margin-top: 45px;
+    }
+    h2.page-header {
+        font-family: 'Spotka';
+        font-weight: 400;
+        color: $brand-primary;
+        font-size: 40px;
+        position: relative;
+        &:after{
+            content: " ";
+            background: url(../images/trait_bleu.jpg) no-repeat;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+        }
+    }
+    .webform-submission-contribution-form{
+        .webform-required{
+            float: right;
+            width: 50%;
+            padding: 15px 15px 0 15px;
+            background: #fff;
+            border-radius: 5px 5px 0 0;
+        }
+        #edit-contrib-form{
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            .panel-default > .panel-heading {
+                color: #fff;
+                background-color: $brand-primary;
+                border-color: #ddd;
+            }
+            .panel-title{
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+        .form-actions,
+        .form-item-gdpr-warning{
+            float: right;
+            padding-right: 15px;
+            padding-left:15px;
+        }
+        .form-actions{
+            clear: right;
+        }
     }
 }
 

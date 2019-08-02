@@ -1,34 +1,36 @@
-uuid: 62d9f4a5-24aa-4cfa-8b95-da21e508f829
+uuid: d9e08494-64b9-43f7-a9ff-da3c53170329
 langcode: fr
 status: true
 dependencies: {  }
-id: redactor
-label: Rédacteur
-weight: -6
+id: webmaster
+label: Webmaster
+weight: -7
 is_admin: null
 permissions:
   - 'access administration pages'
-  - 'access content'
   - 'access content overview'
   - 'access in-place editing'
-  - 'access sendinblue signup pagess'
-  - 'access site in maintenance mode'
   - 'access toolbar'
+  - 'access user profiles'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'administer gdpr compliance'
   - 'administer menu'
+  - 'administer users'
+  - 'administer webform submission'
   - 'create advanced_page content'
   - 'create news content'
   - 'create page content'
   - 'delete any advanced_page content'
   - 'delete any news content'
   - 'delete any page content'
-  - 'delete own advanced_page content'
-  - 'delete own news content'
-  - 'delete own page content'
+  - 'delete any webform submission'
   - 'edit any advanced_page content'
   - 'edit any news content'
   - 'edit any page content'
-  - 'edit own advanced_page content'
+  - 'edit any webform submission'
   - 'edit own news content'
-  - 'edit own page content'
+  - 'translate interface'
+  - 'view any webform submission'
   - 'view own unpublished content'
   - 'view the administration theme'

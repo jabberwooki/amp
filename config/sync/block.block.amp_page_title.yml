@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /actualites
+    pages: "/actualites\r\n/participer/appel-a-contributions"
     negate: false
     context_mapping: {  }

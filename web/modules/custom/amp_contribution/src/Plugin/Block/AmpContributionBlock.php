@@ -28,7 +28,7 @@ class AmpContributionBlock extends BlockBase {
    */
   public function build() {
     $contrib_link_title = 'Appel à contribution';
-    $contrib_link_url = '/participer/appel-contributions';
+    $contrib_link_url = '/participer/appel-a-contributions';
 
     return [
       '#theme' => 'amp_contribution__block',
