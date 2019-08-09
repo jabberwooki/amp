@@ -1,3 +1,42 @@
+Colloque AMP v1.1 - 2019-08-02
+------------------------------
+  * Modifs texte formulaire appel a contribution, peut être les dernières ?
+  * Modification texte du formulaire d'appel a contribution
+  * Modification dans le texte de gauche pour le lien 5 enjeux stratégiques
+  * CSS style lien hypertexte et listes pour texte à gauche du formulaire d'appel à contribution
+  * modification pour mettre le lien vers la page les 5 enjeux strategiques
+  * Modification webform texte de gauche et css
+  * champ fichier attaché NON obligatoire, captcha replacé, texte sur page de confirmation modifié
+  * Correction des droits webmaster pour Webform.
+  * Réenregistrement des paramètres de base du site (system.site.yml) dans le config split local conditionnel.
+  * Re-paramétrage de l'envoi de courriel : Plus de différence entre local, recette et prod. Utilisation du relais SMTP du compte Sendinblue de Sophie.
+  * Paramétrage de mailsystem pour qu'il formate et envoie les emails avec le relais SMTP (sendinblue) depuis les instances de dev locales.
+  * Ajout des configs mailsystem et mimemail au config split local en tant que splits conditionnels.
+  * Réactivation de mailsystem et mimemail.
+  * modification du layout du webform appel a contribution
+  * css du formulaire appel à contribution
+  * Création du rôle Webmaster et réglage des droits pour ce rôle.
+  * Ajout du paramétrage de base du site (system.site.yml) au config split local, en tant que split conditionnel.
+  * Modification de l'email du site : christophe.espiau@orange.fr remplacé par contact@colloque-amp.fr
+  * Ajout d'un champ Captcha (image) au formulaire de contribution.
+  * Installation et activation des modules captcha et image_captcha.
+  * Adresse email du site christophe.espiau@gmail.com remplacée par christophe.espiau@orange.fr
+  * Modification de paramétrage du module smtp (utilisé seulement par les instances locales) : Relais SMTP de MailJet remplacé par celui de Sendinblue.
+  * Désactivation des modules mailsystem et mimemail, puis activation du module captcha.
+  * Modifications de paramétrage (emails to, bc, bbc, reply-to...).
+  * Formulaire de contribution : Modification du titre et du corps de l'email.
+  * Formulaire de contribution : ajout d'un template custom mimemail-message.html.twig et de sa feuille de style mail.css (voir répertoires .../amp/templates et .../amp/css).
+  * Install, activation et paramétrage des modules mailsystem et mimemail pour envoyer des emails au format HTML.
+  * Modif de paramétrage du formulaire de contribution : envoi en HTML avec thème Bootstrap.
+  * Re-paramétrage de la messagerie pour pouvoir envoyer des messages avec le module SMTP en local et avec Drupal (valeur par defaut) sur dev et prod.
+  * Appel à contributions: modification du titre du formulaire (titre plus complet).
+  * Appel à contributions : Ajout de 2 conteneurs div et d'un champ markup contenant le long texte d'explication.
+  * Ajout du fichier de config system.mail.yml au config split local.
+  * Install et activation du module devel_php puis ajout de ce module au config split local.
+  * Affichage du titre du formulaire de contribution
+  * Appel à contributions : ajout des champs et paramétrages demandés par AMP.
+  * Install et activation du module contrib simple_sitemap.
+
 Colloque AMP v1.0.1 - 2019-06-26
 --------------------------------
   * Remplacement du fichier logo du site. Le hotfix ci-dessous (modif-logo-site) n'a servi à rien.
