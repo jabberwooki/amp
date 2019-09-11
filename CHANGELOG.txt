@@ -1,3 +1,11 @@
+Colloque AMP v1.2 - 2019-09-11
+------------------------------
+  * Fermeture du formulaire d'appel à contributions.
+  * Champs "Aires marines protégées concernées" : rendu non obligatoire
+  * Merge branch 'develop' of https://github.com/jabberwooki/amp into develop
+  * Modification texte formulaire demander par antoine début des vacances chrsitophe
+  * Parametrage sitemap.xml
+
 Colloque AMP v1.1 - 2019-08-02
 ------------------------------
   * Modifs texte formulaire appel a contribution, peut être les dernières ?
