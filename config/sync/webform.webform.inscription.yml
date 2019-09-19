@@ -1,0 +1,219 @@
+uuid: 4f85324c-5fce-45ae-aab6-4757f0775956
+langcode: fr
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: inscription
+title: '4ème colloque national des AMP - Inscription'
+description: 'Formulaire d&#39;inscription au colloque.'
+category: ''
+elements: "user_infos:\n  '#type': webform_wizard_page\n  '#title': 'Informations personnelles'\n  firstname:\n    '#type': textfield\n    '#title': Prénom\n    '#autocomplete': 'off'\n    '#required': true\n  lastname:\n    '#type': textfield\n    '#title': Nom\n    '#autocomplete': 'off'\n    '#required': true\n  organisation:\n    '#type': textfield\n    '#title': Organisme\n    '#autocomplete': 'off'\n    '#required': true\n  email:\n    '#type': email\n    '#title': Email\n    '#autocomplete': 'off'\n    '#required': true\n    '#unique': true\n    '#unique_error': 'Cet adresse email est déjà enregistrée'\n  business_sector:\n    '#type': webform_select_other\n    '#title': 'Secteur d''activité'\n    '#options':\n      ges: Gestionnaire\n      eta: 'Etat et etablissements'\n      col: 'Collectivité territoriale'\n      sci: Scientifique\n      etu: Etudiant\n      soc: Socioprofessionnel\n      ass: Associations\n    '#other__placeholder': 'Saisir votre secteur d''activité...'\n    '#required': true\n    '#required_error': 'Le champ Secteur d''activité est obligatoire'\n  position:\n    '#type': textfield\n    '#title': Fonction\n    '#required': true\n  days_attendance:\n    '#type': fieldset\n    '#title': 'Participation aux journées'\n    '#required': true\n    day_selection:\n      '#type': select\n      '#title': 'Sélection de la journée'\n      '#description': 'Vous ne pouvez choisir qu&#39;une seule journ&eacute;e.'\n      '#title_display': inline\n      '#options':\n        day1: 'Journée 1 - 22 octobre 2019'\n        day2: 'Journée 2 - 23 octobre 2019'\n        day3: 'Journée 3 - 24 octobre 2019'\n      '#required': true\n      '#required_error': 'Le champ Choix de la journée est obligatoire.'\n    lunch:\n      '#type': radios\n      '#title': 'Buffet du midi'\n      '#title_display': inline\n      '#options': yes_no\n      '#required': true\n      '#states':\n        enabled:\n          ':input[name=\"day_selection\"]':\n            filled: true\nissue_subscription:\n  '#type': webform_wizard_page\n  '#title': 'Inscription à un parcours Enjeu'\n  issue_subscription_infos:\n    '#type': processed_text\n    '#text': \"<p>Il sera composé d’une plénière thématique le <strong>22/10</strong>, d’une séquence atelier stratégique le <strong>23/10</strong> et d’une séquence atelier opérationnel le <strong>24/10</strong>.</p>\\r\\n\"\n    '#format': full_html\n  plenaries_infos:\n    '#type': processed_text\n    '#text': \"<p><strong>Les plénières thématiques</strong></p>\\r\\n\\r\\n<p>Les plénières thématiques viseront à partager les éléments du bilan évaluatif de la SCGAMP 2012-2020 et à échanger avec les participants sur les enjeux de la future Stratégie. Chaque plénière durera deux heures et accueillera un panel d’intervenants composé de représentants des six collèges (Gestionnaires d’AMP, Etat, Collectivités territoriales, acteurs socioprofessionnels, scientifiques, ONG).</p>\\r\\n\"\n    '#format': full_html\n  workshops_infos:\n    '#type': processed_text\n    '#text': \"<p><strong>Les ateliers</strong></p>\\r\\n\\r\\n<p>Les ateliers constitueront le format privilégié pour la production collective de propositions concernant les contenus de la future stratégie.<br />\\r\\nL’ensemble des propositions issues des ateliers fournira un premier cadre et la matière de départ pour l’écriture de la nouvelle stratégie qui sera lancée après le colloque sous l’égide du MTES .</p>\\r\\n\\r\\n<p>Le format des ateliers sera conçu pour 15 à 20 personnes et seront structurés en deux temps forts :&nbsp;<br />\\r\\n&nbsp;&nbsp;&nbsp; • Les ateliers du 23 octobre viseront à produire une vision partagée sur les résultats à atteindre d’ici 2030 pour chacun des cinq enjeux stratégiques. Les conclusions seront présentées en plénière de restitution le 24 au matin.<br />\\r\\n&nbsp;&nbsp;&nbsp; • Les ateliers du 24 octobre viseront à proposer des leviers d’action innovant servant le le futur cadre opérationnel à mettre en œuvre pour les 5 enjeux.</p>\\r\\n\"\n    '#format': full_html\n  thematic_plenaries:\n    '#type': fieldset\n    '#title': 'Plénières thématiques'\n    '#required': true\n    issue_selection:\n      '#type': select\n      '#title': 'Sélection de l''enjeu'\n      '#description': \"Un seul choix possible.<br />\\r\\nS&eacute;lectionnez un enjeu pour afficher le texte explicatif correspondant.\"\n      '#description_display': before\n      '#options':\n        issue1: 'Enjeu n°1 - un réseau complet et cohérent'\n        issue2: 'Enjeu n°2 - un réseau de qualité grâce à une gestion efficace et efficiente'\n        issue3: 'Enjeu n°3 - un réseau contribuant à des usages durables'\n        issue4: 'Enjen n°4 - un réseau intégré dans les politiques et les territoires'\n        issue5: 'Enjeu n°5 - un réseau mobilisateur et engageant'\n      '#required': true\n      '#required_error': 'Le champ Plénières thématiques est obligatoire.'\n    issue1_info:\n      '#type': processed_text\n      '#states':\n        visible-slide:\n          ':input[name=\"issue_selection\"]':\n            value: issue1\n      '#text': \"<p>Pour être effectifs, les réseaux d’AMP doivent être cohérents, c’est à dire suffisamment étendus et bien connectés, représenter les exemples de l’ensemble de la biodiversité marine et des habitats et ce en proportion suffisante, et garantir le maintien des processus écologiques. Les différents statuts d’AMP doivent également être bien articulés et comprendre des protections renforcées, essentielles pour assurer la viabilité d’espèces particulièrement menacées et préserver les ressources halieutiques.</p>\\r\\n\"\n      '#format': full_html\n    issue2_info:\n      '#type': processed_text\n      '#states':\n        visible-slide:\n          ':input[name=\"issue_selection\"]':\n            value: issue2\n      '#text': \"<p>Si le réseau d’AMP doit être complet et cohérent, il doit également être géré efficacement. Incluse en tant qu'élément qualitatif dans l'objectif 11 d'Aichi de la CDB, l’efficacité de la gestion est visée par la SCAMP qui donne des orientations qui précisant les « modalités d’un réseau bien géré ». Une gestion efficace repose sur la planification de la gestion pour le moyen terme (10-15 ans) comportant des finalités et des cibles à atteindre évaluables, un programme d’actions, un programme de surveillance, des indicateurs et une méthode d’évaluation. LA question des moyens est également au centre des questions d’efficacité de la gestion. Afin d’assurer la durabilité des systèmes de gestion et des programmes de contrôle et de surveillance, les réseaux d’AMP doivent chercher des financements pérennes et disposer de ressources humaines suffisantes.</p>\\r\\n\"\n      '#format': full_html\n    issue3_info:\n      '#type': processed_text\n      '#states':\n        visible-slide:\n          ':input[name=\"issue_selection\"]':\n            value: issue3\n      '#text': \"<p>Texte en cours de rédaction...</p>\\r\\n\"\n      '#format': full_html\n    issue4_info:\n      '#type': processed_text\n      '#states':\n        visible-slide:\n          ':input[name=\"issue_selection\"]':\n            value: issue4\n      '#text': \"<p>Suite au Grenelle de la mer, la France s'est engagée dans la construction d'une politique maritime intégrée de la mer et du littoral fondée sur une approche écosystémique et intersectorielle. La stratégie nationale pour la mer et le littoral (SNML) traduit cette orientation. Elle est déclinée dans le cadre des Documents Stratégiques de Façade (DSF) et des Documents Stratégiques de Bassin Maritime (DSBM), qui constituent des outils réglementaires fort d'intégration des AMP mais dont les rôles doivent être concrétisés pour assurer une meilleure articulation entre les dispositifs sectoriels. L’intégration des AMP dans les politiques territoriales fait aussi appel à la cohérence terre-mer (66 % des AMP sont des sites mixtes terrestres et marins) et aux collectivités territoriales dont le rôle en matière de biodiversité, de qualité de l’eau ou de climat, a largement été modifié depuis les récentes évolutions législatives.<br />\\r\\nEnfin, du fait de sa position géographique et de sa présence dans 3 océans, la coopération régionale est un enjeu fort pour la France qui est partie contractante à six conventions de mer régionale.</p>\\r\\n\"\n      '#format': full_html\n    issue5_info:\n      '#type': processed_text\n      '#states':\n        visible-slide:\n          ':input[name=\"issue_selection\"]':\n            value: issue5\n      '#text': \"<p>Les engagements internationaux et nationaux impliquent une nécessaire association de la société civile dans la gestion et la gouvernance des AMP.&nbsp;Les AMP peuvent contribuer à opérer des changements dans les pratiques et les comportements, voire à un changement de paradigme. Cependant, la création d’une AMP peut s’accompagner d'un manque d’acceptation sociale, expliqué en partie par une incompréhension des bénéfices engendrés par la protection du milieu marin. La mobilisation et l’engagement des citoyens envers les aires marines protégées est un enjeu de plus en plus prégnant et fait appel à plusieurs thématiques comme l’Education à l’Environnement et au Développement Durable (EEDD) ou la sensibilisation des citoyens à l’importance et aux bénéfices de la protection de la biodiversité marine.</p>\\r\\n\"\n      '#format': full_html"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: /participer/inscription
+  page_confirm_path: ''
+  form_title: source_entity_webform
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: true
+  form_unsaved: true
+  form_disable_back: true
+  form_submit_back: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: true
+  wizard_progress_percentage: false
+  wizard_progress_link: true
+  wizard_start_label: ''
+  wizard_preview_link: true
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: name
+  preview: 1
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: 'Inscription au colloque'
+  confirmation_message: 'Votre inscription a bien &eacute;t&eacute; enregistr&eacute;e.'
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - administrator
+      - webmaster
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles:
+      - administrator
+      - webmaster
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles:
+      - administrator
+      - webmaster
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles:
+      - administrator
+      - webmaster
+    users: {  }
+    permissions: {  }
+  administer:
+    roles:
+      - administrator
+      - webmaster
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+handlers:
+  subscription_email:
+    id: email
+    label: 'Enregistrement d''une inscription'
+    handler_id: subscription_email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: '[site:mail]'
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: '[4ème colloque national AMP] - Enregistrement de votre inscription'
+      body: "Votre inscription a bien &eacute;t&eacute; enregistr&eacute;e. Les valeurs que vous avez soumises sont les suivantes.<br />\r\n<br />\r\n[webform_submission:values]<br />\r\n<br />\r\nLien de mise &agrave; jour de votre inscription :<br />\r\n[webform_submission:update-url]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''

@@ -17,10 +17,8 @@
         // Donne une valeur différente (0,1,2,etc...) à l'attribut target du lien <a> de chaque logo partenaire.
         var targetValue = 0;
         $(".image-link-image a").each(function() {
-          console.log($(this).attr('target', targetValue));
           targetValue++;
         });
-
       }
     };
 })(jQuery);
