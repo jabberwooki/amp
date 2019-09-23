@@ -9863,6 +9863,100 @@ blockquote {
   clear: right;
 }
 
+.inscription-content {
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+
+.inscription-content .webform-required {
+  font-style: italic;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 40px;
+}
+
+.inscription-content .progress-step:not(:last-child)::after {
+  top: 24px;
+  bottom: 24px;
+}
+
+.inscription-content .webform-progress-tracker .progress-step:not(.is-active) .progress-marker,
+.inscription-content .webform-progress-tracker .progress-step:hover .progress-marker,
+.inscription-content .webform-progress-tracker .progress-step::after {
+  background-color: #999;
+}
+
+.inscription-content .progress-step.is-active .progress-marker {
+  background-color: #f37521;
+}
+
+.inscription-content .progress-marker {
+  width: 48px;
+  height: 48px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.inscription-content .webform-progress .progress-title[role="link"] {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.inscription-content .webform-button--previous.btn,
+.inscription-content .webform-button--next.btn {
+  background-color: #f37521;
+  color: white;
+  border: none;
+  float: right;
+  margin: 20px 0 20px 0;
+  font-weight: 700;
+}
+
+.inscription-content .webform-button--previous.btn:hover,
+.inscription-content .webform-button--next.btn:hover {
+  background-color: #0167b1;
+}
+
+.inscription-content .webform-button--previous.btn {
+  float: none;
+}
+
+.inscription-content .webform-button--submit.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.inscription-content .panel-default > .panel-heading {
+  color: #fff;
+  background-color: #0167b1;
+  border-color: #ddd;
+}
+
+.inscription-content .panel-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.inscription-content #edit-issue-subscription-infos a {
+  font-weight: 700;
+  color: #f37521;
+}
+
+.inscription-content .webform-progress__status {
+  display: none;
+}
+
+.inscription-content .webform-confirmation__message {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #0167b1;
+  padding-bottom: 50px;
+}
+
 .footer-fluid {
   background: white;
   margin-top: 80px;
