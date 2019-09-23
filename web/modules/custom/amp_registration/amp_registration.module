@@ -1,0 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ubuntu
+ * Date: 07/05/2019
+ * Time: 08:11
+ */
+
+function amp_registration_theme($existing, $type, $theme, $path) {
+  return [
+    'amp_registration__block' => [
+      'variables' => [
+        'registration_link_title' => '',
+        'registration_link_url' => '',
+      ],
+    ],
+  ];
+}
