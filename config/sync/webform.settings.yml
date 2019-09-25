@@ -24,9 +24,9 @@ settings:
   default_wizard_next_button_label: 'Page suivante >'
   default_wizard_start_label: Début
   default_wizard_confirmation_label: Terminé
-  default_preview_next_button_label: Preview
+  default_preview_next_button_label: Aperçu
   default_preview_prev_button_label: '< Précédent'
-  default_preview_label: Preview
+  default_preview_label: Aperçu
   default_preview_title: '[webform:title] : Prévisualisation'
   default_preview_message: 'Please review your submission. Your submission is not complete until you press the "Submit" button!'
   default_draft_button_label: 'Enregistrer le brouillon'
