@@ -1,3 +1,30 @@
+Colloque AMP v1.3 - 2019-09-25
+------------------------------
+  * Formulaire inscription : Champ Secteur d'activité -> Gestionnaire devient Gestionnaire d'AMP; Texte Parcours 2 modifié à la demande de JF Sys.
+  * Ajout du module Honeypot et paramétrage de webform pour qu'il utilise honeypot.
+  * Formulaire inscription : paramétrage d'un envoi de mail aussi quand l'inscription est modifiée et quand elle est supprimée.
+  * Modification messagerie : plus de différence entre local, dev et prod. Toutes les instances utilisent le relais Sendinblue SMTP du compte de C.Espiau.
+  * Modif du paramétrage messagerie : Dans la config générale (serveurs dev et prod), MailSystem est paramétré pour utiliser MimeMail au lieu de Serveur de courriel PHP par défaut.
+  * Formulaire inscription : texte de la 4ème plénière du champ de formulaire remplacé par le texte de la page Programme (pourtant, pas de différence).
+  * Formulaire inscription : modification de messages utilisateur, réglage du formulaire à 1 seul envoi par personne.
+  * Modification du formulaire d'inscription. Rajout de la modif de texte de Sophie dans le champ Journée 1 > Conférence débat, perdue lors de la résolution de conflit précédente.
+  * Résolution de conflit.
+  * Modification du formulaire d'inscription : Champ 'Sélection de la plénière' remplacé par les champs 'Choix N°1' et 'Choix N°2'.
+  * modif texte formulaire
+  * Modification du config split local pour qu'il utilise le relais SMTP Sendinblue du compte perso C.Espiau.
+  * Remise en place du système d'envoi de mail PHP par défaut pour la configuration générale.
+  * Re-paramétrage du module SMTP pour qu'il utilise le relais SMTP Sendinblue du compte de Christophe. Celui de Sophie ne fonctionne pas.
+  * Formulaire d'inscription : template + css +layout config
+  * Bloc registration CSS et template
+  * Modif du formulaire d'inscription : changement du message d'erreur (champ unique) pour le champ Email.
+  * Désactivation du bloc AMP Contribution.
+  * Activation du module custom AMP Registration. Placement du bloc amp_registration_block dans la région Pre-Content et export de la configuration.
+  * Création du module custom AMP Registration.
+  * Formulaire d'inscription : champs Journées passés de case à cocher à bouton radio.
+  * Corrections dans les textes des enjeux du formulaire d'inscription.
+  * Modification du formulaire d'inscription.
+  * Création du formulaire d'inscription.
+
 Colloque AMP v1.2 - 2019-09-11
 ------------------------------
   * Fermeture du formulaire d'appel à contributions.
