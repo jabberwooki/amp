@@ -14,9 +14,6 @@ module:
 theme: {  }
 blacklist: {  }
 graylist:
-  - mailsystem.settings
-  - smtp.settings
-  - system.mail
   - system.site
 graylist_dependents: true
 graylist_skip_equal: true
