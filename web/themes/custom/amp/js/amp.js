@@ -19,6 +19,43 @@
         $(".image-link-image a").each(function() {
           targetValue++;
         });
+
+        //////////////  Gestion des champs du formulaire d'inscription /////////////////////////////////////////////////
+
+        // Onglet 2, dépendance des champs Choix N°1 et Choix N°2.
+        var select1 = $("#edit-issue-selection");
+        var select2 = $("#edit-issue-selection2");
+
+        // A la modification du champ Choix N°1
+        select1.change(function() {
+          var selected1 = $(this).val();
+          var selected2 = select2.find(":selected").val();
+
+          if (selected1 != "") {
+            // On cache dans select2 l'option choisie dans select1
+            $('#edit-issue-selection2 option').show();
+            $('#edit-issue-selection2 option[value="' + selected1 + '"]').hide();
+          }
+          else {
+            $('#edit-issue-selection2 option').show();
+          }
+        });
+
+        // A la modification du champ Choix N°2
+        select2.change(function() {
+          var selected2 = $(this).val();
+          var selected1 = select1.find(":selected").val();
+          
+          if (selected2 != "") {
+            // On cache dans select1 l'option choisie dans select2
+            $('#edit-issue-selection option').show();
+            $('#edit-issue-selection option[value="' + selected2 + '"]').hide();
+          }
+          else {
+            $('#edit-issue-selection option').show();
+          }
+        });
+
       }
     };
 })(jQuery);
