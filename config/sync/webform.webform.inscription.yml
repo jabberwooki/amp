@@ -195,6 +195,8 @@ handlers:
     settings:
       states:
         - completed
+        - updated
+        - deleted
       to_mail: '[webform_submission:values:email:raw]'
       to_options: {  }
       cc_mail: ''
