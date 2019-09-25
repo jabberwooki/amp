@@ -674,3 +674,83 @@ blockquote {
     }
 }
 
+//INSCRIPTION FORM
+.inscription-content {
+    background: white;
+    position: relative;
+    z-index: 1;
+    .webform-required {
+        font-style: italic;
+        font-size: 12px;
+        color: red;
+        margin-bottom: 40px;
+    }
+    .progress-step:not(:last-child)::after {
+        top: 24px;
+        bottom: 24px;
+    }
+    .webform-progress-tracker .progress-step:not(.is-active) .progress-marker,
+    .webform-progress-tracker .progress-step:hover .progress-marker,
+    .webform-progress-tracker .progress-step::after {
+        background-color: #999;
+    }
+    .progress-step.is-active .progress-marker {
+        background-color: $brand-secondary;
+    }
+    .progress-marker {
+        width: 48px;
+        height: 48px;
+        font-weight: 800;
+        font-size: 16px;
+    }
+    .webform-progress .progress-title[role="link"] {
+        color: #000;
+        font-weight: 700;
+        text-decoration:underline;
+    }
+    .webform-button--previous.btn,
+    .webform-button--next.btn{
+        background-color: $brand-secondary;
+        color:white;
+        border:none;
+        float: right;
+        margin: 20px 0 20px 0;
+        font-weight:700;
+        &:hover{
+            background-color: $brand-primary;
+        }
+    }
+    .webform-button--previous.btn{
+        float:none;
+    }
+    .webform-button--submit.btn{
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .panel-default > .panel-heading {
+        color: #fff;
+        background-color: #0167b1;
+        border-color: #ddd;
+    }
+    .panel-title {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    #edit-issue-subscription-infos a{
+        font-weight: 700;
+        color: $brand-secondary;
+    }
+    .webform-progress__status{
+        display:none;
+    }
+    .webform-confirmation__message{
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 22px;
+        color: $brand-primary;
+        padding-bottom: 50px;
+    }
+}
+

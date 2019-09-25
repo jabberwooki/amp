@@ -1,6 +1,6 @@
 uuid: 74d9638f-4c55-40ed-9f70-e754132f429b
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - amp_contribution

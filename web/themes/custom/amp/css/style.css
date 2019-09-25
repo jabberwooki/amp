@@ -8851,7 +8851,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
 }
 
 .highlighted {
-  background: url(../images/bandeau_interne.jpg) no-repeat;
+  background: url("../images/bandeau_interne.jpg") no-repeat;
   width: 100%;
   height: 257px;
   position: relative;
@@ -8941,12 +8941,14 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   color: white;
 }
 
+.precontent #block-amp-registration-block,
 .precontent #block-amp-contrib-block {
   position: relative;
   background-image: linear-gradient(to right, #ff8e2d, #ff6701);
   margin-right: 30px;
 }
 
+.precontent #block-amp-registration-block:after,
 .precontent #block-amp-contrib-block:after {
   left: 100%;
   top: 50%;
@@ -8962,6 +8964,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   margin-top: -40px;
 }
 
+.precontent #block-amp-registration-block .icon,
 .precontent #block-amp-contrib-block .icon {
   background: url("../images/icon_user.png") no-repeat;
   width: 56px;
@@ -8969,6 +8972,7 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   margin: 10px 0;
 }
 
+.precontent #block-amp-registration-block a,
 .precontent #block-amp-contrib-block a {
   font-family: 'Spotka';
   font-size: 20px;
@@ -8984,11 +8988,13 @@ header .region-header #block-socialmedialinks-header .fa-2x {
   transform: translateY(-50%);
 }
 
+.precontent #block-amp-registration-block a:hover,
 .precontent #block-amp-contrib-block a:hover {
   color: #ff4800;
   background: #fff;
 }
 
+.precontent #block-amp-registration-block .amp-contrib-link-title:after,
 .precontent #block-amp-contrib-block .amp-contrib-link-title:after {
   font-size: 20px;
   font-family: 'Spotka';
@@ -9855,6 +9861,100 @@ blockquote {
 
 .path-webform .webform-submission-contribution-form .form-actions {
   clear: right;
+}
+
+.inscription-content {
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+
+.inscription-content .webform-required {
+  font-style: italic;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 40px;
+}
+
+.inscription-content .progress-step:not(:last-child)::after {
+  top: 24px;
+  bottom: 24px;
+}
+
+.inscription-content .webform-progress-tracker .progress-step:not(.is-active) .progress-marker,
+.inscription-content .webform-progress-tracker .progress-step:hover .progress-marker,
+.inscription-content .webform-progress-tracker .progress-step::after {
+  background-color: #999;
+}
+
+.inscription-content .progress-step.is-active .progress-marker {
+  background-color: #f37521;
+}
+
+.inscription-content .progress-marker {
+  width: 48px;
+  height: 48px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.inscription-content .webform-progress .progress-title[role="link"] {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.inscription-content .webform-button--previous.btn,
+.inscription-content .webform-button--next.btn {
+  background-color: #f37521;
+  color: white;
+  border: none;
+  float: right;
+  margin: 20px 0 20px 0;
+  font-weight: 700;
+}
+
+.inscription-content .webform-button--previous.btn:hover,
+.inscription-content .webform-button--next.btn:hover {
+  background-color: #0167b1;
+}
+
+.inscription-content .webform-button--previous.btn {
+  float: none;
+}
+
+.inscription-content .webform-button--submit.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.inscription-content .panel-default > .panel-heading {
+  color: #fff;
+  background-color: #0167b1;
+  border-color: #ddd;
+}
+
+.inscription-content .panel-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.inscription-content #edit-issue-subscription-infos a {
+  font-weight: 700;
+  color: #f37521;
+}
+
+.inscription-content .webform-progress__status {
+  display: none;
+}
+
+.inscription-content .webform-confirmation__message {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #0167b1;
+  padding-bottom: 50px;
 }
 
 .footer-fluid {

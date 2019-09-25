@@ -1,0 +1,6 @@
+name: AMP Bloc Inscription
+description: Bloc page d'accueil avec lien vers le formulaire d'inscription au colloque.
+package: AMP
+
+type: module
+core: 8.x

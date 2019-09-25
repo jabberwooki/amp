@@ -1,0 +1,20 @@
+uuid: 902ccfcd-3a9a-4595-bb73-cd0799b5ce13
+langcode: fr
+status: true
+dependencies:
+  module:
+    - amp_registration
+  theme:
+    - amp
+id: amp_registration_block
+theme: amp
+region: precontent
+weight: -9
+provider: null
+plugin: amp_registration_block
+settings:
+  id: amp_registration_block
+  label: 'AMP Registration Block'
+  provider: amp_registration
+  label_display: '0'
+visibility: {  }
