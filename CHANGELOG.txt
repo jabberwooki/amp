@@ -1,3 +1,8 @@
+Colloque AMP Hotfix suppression-relais-smtp-sendinblue - 2019-09-30
+-------------------------------------------------------------------
+  * Merge tag 'suppression-relais-smtp-sendinblue' into develop
+  * Merge tag 'v1.3' into develop
+
 Colloque AMP v1.3 - 2019-09-25
 ------------------------------
   * Formulaire inscription : Champ Secteur d'activité -> Gestionnaire devient Gestionnaire d'AMP; Texte Parcours 2 modifié à la demande de JF Sys.
