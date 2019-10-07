@@ -1,3 +1,7 @@
+Colloque AMP v1.3.1 - 2019-10-07
+--------------------------------
+  * Install et activation du module contrib D8 Editor File upload (editor_file) qui permet d'ajouter d'uploader des fichiers dans le champ ckeditor d'un contenu.
+
 Colloque AMP Hotfix suppression-relais-smtp-sendinblue - 2019-09-30
 -------------------------------------------------------------------
   * Merge tag 'suppression-relais-smtp-sendinblue' into develop
