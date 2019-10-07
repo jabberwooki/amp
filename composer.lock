@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4913f45353407831bbcaf67c289cf076",
+    "content-hash": "ce660864196b5eabbbf8db787d914e98",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3200,6 +3200,53 @@
             "homepage": "https://www.drupal.org/project/editor_advanced_link",
             "support": {
                 "source": "https://git.drupalcode.org/project/editor_advanced_link"
+            }
+        },
+        {
+            "name": "drupal/editor_file",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/editor_file.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_file-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "9a03e0ac4f21cfa3fa4772fb30861d7e4a82a8c1"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1554478985",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DuaelFr",
+                    "homepage": "https://www.drupal.org/user/931394"
+                }
+            ],
+            "description": "Allow users to link uploaded files in the text Editor.",
+            "homepage": "https://www.drupal.org/project/editor_file",
+            "support": {
+                "source": "https://git.drupalcode.org/project/editor_file"
             }
         },
         {
@@ -8328,7 +8375,7 @@
             "version": "8.3.1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/coder.git",
+                "url": "https://git.drupalcode.org/project/coder.git",
                 "reference": "29a25627e7148b3119c84f18e087fc3b8c85b959"
             },
             "require": {
