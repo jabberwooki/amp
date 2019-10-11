@@ -1,9 +1,9 @@
 uuid: 4f85324c-5fce-45ae-aab6-4757f0775956
 langcode: fr
-status: open
+status: scheduled
 dependencies: {  }
 open: null
-close: null
+close: '2019-10-12T00:00:00'
 weight: 0
 uid: 1
 template: false
