@@ -1,0 +1,9 @@
+uuid: 505821b5-41e5-4c23-89d4-aff6473f080e
+langcode: fr
+status: true
+dependencies: {  }
+id: gallery_image
+label: 'Image de la galerie'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

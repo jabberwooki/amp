@@ -1,0 +1,82 @@
+uuid: 13759f8e-18e7-4567-8a06-0f6455ce498a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_photos
+    - paragraphs.paragraphs_type.gallery_image
+    - paragraphs.paragraphs_type.photo_gallery
+  module:
+    - entity_reference_revisions
+id: paragraph.photo_gallery.field_photos
+field_name: field_photos
+entity_type: paragraph
+bundle: photo_gallery
+label: Photos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery_image: gallery_image
+    target_bundles_drag_drop:
+      gallery_image:
+        enabled: true
+        weight: 19
+      blok_33_text_67:
+        weight: 20
+        enabled: false
+      carousel_100:
+        weight: 21
+        enabled: false
+      carousel_image:
+        weight: 22
+        enabled: false
+      documents_100:
+        weight: 23
+        enabled: false
+      documents_50_text_50:
+        weight: 24
+        enabled: false
+      image_100:
+        weight: 25
+        enabled: false
+      image_33_text_67:
+        weight: 26
+        enabled: false
+      image_50_text_50:
+        weight: 27
+        enabled: false
+      image_text_banner:
+        weight: 28
+        enabled: false
+      photo_gallery:
+        weight: 29
+        enabled: false
+      simple_text:
+        weight: 30
+        enabled: false
+      text_50_documents_50:
+        weight: 31
+        enabled: false
+      text_50_image_50:
+        weight: 32
+        enabled: false
+      text_67_block_33:
+        weight: 33
+        enabled: false
+      text_67_image_33:
+        weight: 34
+        enabled: false
+      title_h3:
+        weight: 35
+        enabled: false
+      video_100:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

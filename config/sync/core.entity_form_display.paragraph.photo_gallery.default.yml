@@ -1,0 +1,38 @@
+uuid: 178b09ca-267b-4203-91b4-7d2ab4de5e1c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photo_gallery.field_gallery_name
+    - field.field.paragraph.photo_gallery.field_photos
+    - paragraphs.paragraphs_type.photo_gallery
+  module:
+    - paragraphs
+id: paragraph.photo_gallery.default
+targetEntityType: paragraph
+bundle: photo_gallery
+mode: default
+content:
+  field_gallery_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photos:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

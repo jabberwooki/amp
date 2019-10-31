@@ -23,18 +23,14 @@
                     }
                 }
                 $items = slickLightbox.$element.find(slickLightbox.options.itemSelector);
-console.log($items);
                 if (slickLightbox.elementIsSlick()) {
                     $items = slickLightbox.filterOutSlickClones($items);
                     $clickedItem = slickLightbox.handlePossibleCloneClick($clickedItem, $items);
-console.log($items);
-console.log($clickedItem);
                 }
                 return slickLightbox.init($items.index($clickedItem));
             });
         }
         SlickLightbox.prototype.init = function (index) {
-console.log('dans init');
             /* Creates the lightbox, opens it, binds events and calls `slick`. Accepts `index` of the element, that triggered it (so that we know, on which slide to start slick). */
             this.didInit = true;
             this.detectIE();
@@ -44,7 +40,6 @@ console.log('dans init');
             return this.open();
         };
         SlickLightbox.prototype.createModalItems = function () {
-console.log('dans createModalItems');
             /* Creates individual slides to be used with slick. If `options.images` array is specified, it uses it's contents, otherwise loops through elements' `options.itemSelector`. */
             var $items, createItem, itemTemplate, lazyPlaceholder, length, links;
             lazyPlaceholder = this.options.lazyPlaceholder || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
@@ -83,7 +78,6 @@ console.log('dans createModalItems');
             return links;
         };
         SlickLightbox.prototype.createModal = function () {
-console.log('dans createModal');
             /* Creates a `slick`-friendly modal. */
             var html, links;
             links = this.createModalItems();
@@ -95,7 +89,6 @@ console.log('dans createModal');
             return $('body').append(this.$modalElement);
         };
         SlickLightbox.prototype.initSlick = function (index) {
-console.log('dans initSlick');
             /* Runs slick by default, using `options.slick` if provided. If `options.slick` is a function, it gets fired instead of us initializing slick. Merges in initialSlide option. */
             var additional;
             additional = { initialSlide: index };
@@ -114,7 +107,6 @@ console.log('dans initSlick');
             return this.$modalElement.trigger('init.slickLightbox');
         };
         SlickLightbox.prototype.open = function () {
-console.log('dans open');
             /* Opens the lightbox. */
             if (this.options.useHistoryApi) {
                 this.writeHistory();
@@ -139,7 +131,6 @@ console.log('dans open');
             return this.destroy();
         };
         SlickLightbox.prototype.bindEvents = function () {
-console.log('dans bindEvents');
             /* Binds global events. */
             var resizeSlides;
             resizeSlides = function (_this) {
