@@ -1,0 +1,21 @@
+uuid: b4f44dd8-1116-4099-90cd-50ad61605e90
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.photo_gallery
+  module:
+    - text
+id: paragraph.photo_gallery.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: photo_gallery
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

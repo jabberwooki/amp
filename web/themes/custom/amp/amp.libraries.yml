@@ -27,6 +27,7 @@ slick:
     libraries/slick/slick/slick.min.js: {}
     #libraries/slick-lightbox/slick-lightbox.js: {}
     js/amp-carousel.js: {}
+    js/amp-photo-gallery.js: {}
   css:
     theme:
       libraries/slick/slick/slick.css: {}
