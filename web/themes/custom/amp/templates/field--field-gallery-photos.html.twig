@@ -46,54 +46,20 @@
     'field--label-' ~ label_display,
   ]
 %}
-{%
-  set title_classes = [
-    'field--label',
-    label_display == 'visually_hidden' ? 'sr-only',
-  ]
-%}
 
-{% if label_hidden %}
-  {% if multiple %}
+{# Show 4 items in a row for XL, 3 for LG and MD, 2 for SM and 1 for XS #}
+{% set item_classes = [
+'col-xl-3',
+'col-md-4',
+'col-sm-6',
+'mb-3',
+'field__item'
+] %}
 
-    {# DEBUT CUSTOMISATION - Affichage des photos en galerie slick avec vignettes #}
-
-    {# Affichage de la photo sélectionnée #}
-    {#<div{{ attributes.addClass(classes, 'field--items') }}>#}
-    <div class="slider slider-for">
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-      {% endfor %}
+<div{{ attributes.addClass(classes, 'field__items') }}>
+  {% for item in items %}
+    <div{{ item.attributes.addClass(item_classes) }}>
+      {{ item.content }}
     </div>
-    {# FIN affichage de la photo sélectionnée #}
-
-    {# Affichage de la navigation #}
-    {#<div{{ attributes.addClass(classes, 'field--items') }}>#}
-    <div class="slider slider-nav">
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-      {% endfor %}
-    </div>
-
-    {# FIN CUSTOMISATION #}
-
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
-{% else %}
-  LABEL NOT HIDDEN
-  <div{{ attributes.addClass(classes) }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-    {% if multiple %}
-      <div class="field--items">
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
-  </div>
-{% endif %}
+  {% endfor %}
+</div>

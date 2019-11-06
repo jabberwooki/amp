@@ -1,0 +1,15 @@
+uuid: 9ff9a7f3-26d7-4554-9a3f-81e7d447b6c7
+langcode: fr
+status: true
+dependencies: {  }
+name: gallery_fullscreen
+label: 'Galerie plein écran'
+effects:
+  0998779c-e4ec-4021-9059-4354be05f8e3:
+    uuid: 0998779c-e4ec-4021-9059-4354be05f8e3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 768
+      anchor: center-center

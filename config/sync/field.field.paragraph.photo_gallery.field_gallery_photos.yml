@@ -1,0 +1,38 @@
+uuid: 126dffe7-e8e8-45ba-adb5-222830baca86
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallery_photos
+    - paragraphs.paragraphs_type.photo_gallery
+  module:
+    - image
+id: paragraph.photo_gallery.field_gallery_photos
+field_name: field_gallery_photos
+entity_type: paragraph
+bundle: photo_gallery
+label: Photos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: galleries_photos
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

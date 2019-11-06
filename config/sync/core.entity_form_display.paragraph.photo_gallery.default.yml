@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.photo_gallery.field_gallery_name
-    - field.field.paragraph.photo_gallery.field_photos
+    - field.field.paragraph.photo_gallery.field_gallery_photos
+    - field.field.paragraph.photo_gallery.field_text
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.photo_gallery
   module:
-    - paragraphs
+    - image
+    - text
 id: paragraph.photo_gallery.default
 targetEntityType: paragraph
 bundle: photo_gallery
@@ -21,17 +24,21 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_photos:
-    type: entity_reference_paragraphs
+  field_gallery_photos:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text:
     weight: 1
     settings:
-      title: Paragraphe
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
     region: content
 hidden:
   created: true
