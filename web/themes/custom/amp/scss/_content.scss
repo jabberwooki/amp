@@ -444,6 +444,31 @@ blockquote {
         filter:progid:DXImageTransform.Microsoft.Shadow(color=#f1f1f1, Direction=134, Strength=20);
     }
 }
+//PARAGRAPH GALLERY
+.paragraph--type--photo-gallery{
+    .field--name-field-gallery-name{
+        font-family: 'Spotka';
+        font-size: 20px;
+        font-weight: 800;
+        color: #0167b1;
+        margin-bottom: 20px;
+        position: relative;
+        margin-left: 15px;
+        &:after{
+            content:'_';
+            line-height: 50px;
+            position: absolute;
+            left: 0px;
+        }
+    }
+    .field--name-field-gallery-photos img {
+        margin: 0 0 1em;
+    }
+    .mb-3{
+        margin-bottom: 1rem !important;
+    }
+}
+
 
 /*DOCUMENTS A TELECHARGER*/
 .paragraph--type--text-50-documents-50, 
