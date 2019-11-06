@@ -1,3 +1,10 @@
+Colleque AMP v1.4 - 2019-11-06
+------------------------------
+  * Modif manuelle de composer.json pour pouvoir installer la librairie colorbox (voir https://www.drupal.org/project/colorbox/issues/2869067).
+  * CSS du paragraph gallery photos
+  * Reconstruction du paragraphe Galerie Photo en copiant la galerie photo de la distrib Droopler, avec utilisation de Colorbox.
+  * Création des paragraph bundles 'Image de la galerie' et 'Galerie photo'.
+
 Hotfix fermeture-automatique-inscriptions - 2019-10-11
 ------------------------------------------------------
   * Programmation de la fermeture du formulaire d'inscription.
